@@ -1,0 +1,78 @@
+html, body {
+    height: 100%;
+    min-width: $minScreenWidth;
+}
+
+html {
+    border-left: 1px solid $border;
+    border-right: 1px solid $border;
+}
+
+a {
+    color: $black;
+    cursor: pointer;
+
+    &:link {
+        color: #111;
+        text-decoration: none;
+    }
+
+    &:visited {
+        color: $black;
+        text-decoration: none;
+    }
+
+    &:hover {
+        color: $redApigee;
+        text-decoration: none;
+    }
+
+    &:active {
+        color: $black;
+        text-decoration: none;
+    }
+}
+
+.title {
+    font-size: 17px;
+}
+
+.thingy {
+    margin-bottom: 0px !important;
+    padding: 10px 10px 10px 0!important;
+    //background-color: #e0e0e0 !important;
+    border-radius: 0px;
+    min-width: 440px;
+
+    .gravatar50 {
+        position: relative;
+        float: left;
+        margin-top: -15px;
+        right: 15px;
+    }
+
+    .app_title {
+        padding-right: 20px;
+    }
+
+    .bar a {
+        float: right;
+    }
+
+    .button {
+        margin-top: -5px;
+        min-width: 150px;
+    }
+
+    .btn-primary {
+        color: #ffffff;
+    }
+}
+
+.monospace {
+    font-family: monospace !important;
+}
+
+.marginless {
+    margin: 0 !important;
+}

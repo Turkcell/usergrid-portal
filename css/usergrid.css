@@ -4456,6 +4456,91 @@ a.thumbnail:hover {
   visibility: hidden;
 }
 
+/* line 1, ../sass/_common.scss */
+html, body {
+  height: 100%;
+  min-width: 640px;
+}
+
+/* line 6, ../sass/_common.scss */
+html {
+  border-left: 1px solid #c9c9c9;
+  border-right: 1px solid #c9c9c9;
+}
+
+/* line 11, ../sass/_common.scss */
+a {
+  color: black;
+  cursor: pointer;
+}
+/* line 15, ../sass/_common.scss */
+a:link {
+  color: #111;
+  text-decoration: none;
+}
+/* line 20, ../sass/_common.scss */
+a:visited {
+  color: black;
+  text-decoration: none;
+}
+/* line 25, ../sass/_common.scss */
+a:hover {
+  color: #ff4300;
+  text-decoration: none;
+}
+/* line 30, ../sass/_common.scss */
+a:active {
+  color: black;
+  text-decoration: none;
+}
+
+/* line 36, ../sass/_common.scss */
+.title {
+  font-size: 17px;
+}
+
+/* line 40, ../sass/_common.scss */
+.thingy {
+  margin-bottom: 0px !important;
+  padding: 10px 10px 10px 0 !important;
+  border-radius: 0px;
+  min-width: 440px;
+}
+/* line 47, ../sass/_common.scss */
+.thingy .gravatar50 {
+  position: relative;
+  float: left;
+  margin-top: -15px;
+  right: 15px;
+}
+/* line 54, ../sass/_common.scss */
+.thingy .app_title {
+  padding-right: 20px;
+}
+/* line 58, ../sass/_common.scss */
+.thingy .bar a {
+  float: right;
+}
+/* line 62, ../sass/_common.scss */
+.thingy .button {
+  margin-top: -5px;
+  min-width: 150px;
+}
+/* line 67, ../sass/_common.scss */
+.thingy .btn-primary {
+  color: #ffffff;
+}
+
+/* line 72, ../sass/_common.scss */
+.monospace {
+  font-family: monospace !important;
+}
+
+/* line 76, ../sass/_common.scss */
+.marginless {
+  margin: 0 !important;
+}
+
 /* line 1, ../sass/_apigee.scss */
 #fullContainer {
   position: relative;
@@ -4471,130 +4556,40 @@ a.thumbnail:hover {
 }
 
 /* line 7, ../sass/usergrid.scss */
-html, body {
-  height: 100%;
-  min-width: 640px;
-}
-
-/* line 12, ../sass/usergrid.scss */
-html {
-  border-left: 1px solid #c9c9c9;
-  border-right: 1px solid #c9c9c9;
-}
-
-/* line 17, ../sass/usergrid.scss */
-a {
-  color: black;
-  cursor: pointer;
-}
-/* line 21, ../sass/usergrid.scss */
-a:link {
-  color: #111;
-  text-decoration: none;
-}
-/* line 26, ../sass/usergrid.scss */
-a:visited {
-  color: black;
-  text-decoration: none;
-}
-/* line 31, ../sass/usergrid.scss */
-a:hover {
-  color: #ff4300;
-  text-decoration: none;
-}
-/* line 36, ../sass/usergrid.scss */
-a:active {
-  color: black;
-  text-decoration: none;
-}
-
-/* line 42, ../sass/usergrid.scss */
-.title {
-  font-size: 17px;
-}
-
-/* line 46, ../sass/usergrid.scss */
-.thingy {
-  margin-bottom: 0px !important;
-  padding: 10px 10px 10px 0 !important;
-  border-radius: 0px;
-  min-width: 440px;
-}
-/* line 53, ../sass/usergrid.scss */
-.thingy .gravatar50 {
-  position: relative;
-  float: left;
-  margin-top: -15px;
-  right: 15px;
-}
-/* line 60, ../sass/usergrid.scss */
-.thingy .app_title {
-  padding-right: 20px;
-}
-/* line 64, ../sass/usergrid.scss */
-.thingy .bar a {
-  float: right;
-}
-/* line 68, ../sass/usergrid.scss */
-.thingy .button {
-  margin-top: -5px;
-  min-width: 150px;
-}
-/* line 73, ../sass/usergrid.scss */
-.thingy .btn-primary {
-  color: #ffffff;
-}
-
-/* line 78, ../sass/usergrid.scss */
-.monospace {
-  font-family: monospace !important;
-}
-
-/* line 84, ../sass/usergrid.scss */
 .header-menus {
   margin: 0 auto;
 }
 
-/* line 88, ../sass/usergrid.scss */
+/* line 11, ../sass/usergrid.scss */
 #pages {
   padding: 0px 0 50px 0px;
 }
-/* line 91, ../sass/usergrid.scss */
+/* line 14, ../sass/usergrid.scss */
 #pages > div {
   display: none;
 }
-/* line 95, ../sass/usergrid.scss */
+/* line 18, ../sass/usergrid.scss */
 #pages .alert-error {
   display: none;
 }
 
-/* line 101, ../sass/usergrid.scss */
+/* line 24, ../sass/usergrid.scss */
 #right a {
   color: #1b97d1;
   font-weight: 400;
 }
-/* line 105, ../sass/usergrid.scss */
+/* line 28, ../sass/usergrid.scss */
 #right a:visited {
   color: #1b97d1;
   font-weight: 400;
 }
 
-/* line 112, ../sass/usergrid.scss */
+/* line 35, ../sass/usergrid.scss */
 #copyright {
   padding: 5px;
 }
 
-/* line 116, ../sass/usergrid.scss */
-.clear {
-  clear: both;
-}
-
-/* line 120, ../sass/usergrid.scss */
-.marginless {
-  margin: 0 !important;
-}
-
-/* line 125, ../sass/usergrid.scss */
+/* line 40, ../sass/usergrid.scss */
 .navbar.navbar-fixed-top:before {
   content: " ";
   display: block;
@@ -4613,18 +4608,18 @@ a:active {
   left: 0px;
 }
 
-/* line 144, ../sass/usergrid.scss */
+/* line 59, ../sass/usergrid.scss */
 .navbar {
   height: 48px;
   min-width: 760px;
   background-color: #ff4300;
   margin: 0px 1px 20px 1px;
 }
-/* line 150, ../sass/usergrid.scss */
+/* line 65, ../sass/usergrid.scss */
 .navbar .navbar-inner {
   display: none;
 }
-/* line 153, ../sass/usergrid.scss */
+/* line 68, ../sass/usergrid.scss */
 .navbar .navbar-inner b.caret {
   position: relative;
   display: inline-block;
@@ -4636,14 +4631,14 @@ a:active {
   border-right: 8px solid transparent;
   opacity: 1;
 }
-/* line 166, ../sass/usergrid.scss */
+/* line 81, ../sass/usergrid.scss */
 .navbar h1, .navbar h2 {
   display: inline;
   float: left;
   color: white;
   font-weight: normal;
 }
-/* line 173, ../sass/usergrid.scss */
+/* line 88, ../sass/usergrid.scss */
 .navbar h1 {
   height: 32px;
   width: 64px;
@@ -4653,7 +4648,7 @@ a:active {
   margin: 0 15px;
   padding-top: 8px;
 }
-/* line 183, ../sass/usergrid.scss */
+/* line 98, ../sass/usergrid.scss */
 .navbar h2 {
   font-size: 13px;
   padding: 5px;
@@ -4661,15 +4656,15 @@ a:active {
   padding-top: 8px;
   color: white;
 }
-/* line 190, ../sass/usergrid.scss */
+/* line 105, ../sass/usergrid.scss */
 .navbar h2 a {
   color: white;
 }
-/* line 195, ../sass/usergrid.scss */
+/* line 110, ../sass/usergrid.scss */
 .navbar .secondary-nav {
   float: right;
 }
-/* line 201, ../sass/usergrid.scss */
+/* line 116, ../sass/usergrid.scss */
 .navbar .nav li a {
   text-shadow: 0 0px 0 white;
   padding: 13px 10px 11px;
@@ -4677,56 +4672,56 @@ a:active {
   color: white;
   line-height: 24px;
 }
-/* line 209, ../sass/usergrid.scss */
+/* line 124, ../sass/usergrid.scss */
 .navbar .nav li #console-link:hover {
   background-color: transparent;
 }
-/* line 215, ../sass/usergrid.scss */
+/* line 130, ../sass/usergrid.scss */
 .navbar .nav .dropdown-toggle span {
   margin-left: 5px;
 }
-/* line 219, ../sass/usergrid.scss */
+/* line 134, ../sass/usergrid.scss */
 .navbar .nav .dropdown-toggle .caret {
   margin-top: 13px;
 }
-/* line 225, ../sass/usergrid.scss */
+/* line 140, ../sass/usergrid.scss */
 .navbar .nav .dropdown-menu a {
   line-height: 18px;
   color: black;
   padding: 3px 15px;
 }
-/* line 230, ../sass/usergrid.scss */
+/* line 145, ../sass/usergrid.scss */
 .navbar .nav .dropdown-menu a:hover {
   color: white;
   background-color: #1b97d1;
 }
-/* line 238, ../sass/usergrid.scss */
+/* line 153, ../sass/usergrid.scss */
 .navbar .nav .active {
   background-color: #b22714 !important;
 }
-/* line 241, ../sass/usergrid.scss */
+/* line 156, ../sass/usergrid.scss */
 .navbar .nav .active .go-home {
   background-color: transparent;
 }
-/* line 244, ../sass/usergrid.scss */
+/* line 159, ../sass/usergrid.scss */
 .navbar .nav .active .go-home:hover {
   background-color: transparent;
 }
-/* line 251, ../sass/usergrid.scss */
+/* line 166, ../sass/usergrid.scss */
 .navbar .nav .active > a {
   color: white;
 }
-/* line 254, ../sass/usergrid.scss */
+/* line 169, ../sass/usergrid.scss */
 .navbar .nav .active > a .caret {
   opacity: 0.7;
 }
 
-/* line 262, ../sass/usergrid.scss */
+/* line 177, ../sass/usergrid.scss */
 .main-nav {
   margin: 0px;
 }
 
-/* line 266, ../sass/usergrid.scss */
+/* line 181, ../sass/usergrid.scss */
 .sub-nav {
   position: fixed;
   top: 42px;
@@ -4738,31 +4733,31 @@ a:active {
   height: 42px;
 }
 
-/* line 277, ../sass/usergrid.scss */
+/* line 192, ../sass/usergrid.scss */
 .right-header a:hover {
   opacity: 0.9;
 }
 
-/* line 281, ../sass/usergrid.scss */
+/* line 196, ../sass/usergrid.scss */
 #header {
   margin: 0;
   padding: 0;
 }
 
-/* line 286, ../sass/usergrid.scss */
+/* line 201, ../sass/usergrid.scss */
 #main1 {
   margin: 84px 0 0 0;
   padding: 0;
   min-width: 1080px;
 }
 
-/* line 292, ../sass/usergrid.scss */
+/* line 207, ../sass/usergrid.scss */
 #main2 {
   margin: 0;
   padding: 0;
 }
 
-/* line 297, ../sass/usergrid.scss */
+/* line 212, ../sass/usergrid.scss */
 #left {
   float: left;
   width: 177px;
@@ -4770,7 +4765,7 @@ a:active {
   padding: 0;
 }
 
-/* line 304, ../sass/usergrid.scss */
+/* line 219, ../sass/usergrid.scss */
 #left2 {
   float: left;
   width: 171px;
@@ -4780,7 +4775,7 @@ a:active {
   border-right: 1px solid #cacaca;
 }
 
-/* line 313, ../sass/usergrid.scss */
+/* line 228, ../sass/usergrid.scss */
 #right {
   float: right;
   width: 180px;
@@ -4788,19 +4783,19 @@ a:active {
   padding: 0;
 }
 
-/* line 320, ../sass/usergrid.scss */
+/* line 235, ../sass/usergrid.scss */
 #middle {
   margin: 0 180px;
   min-width: 700px;
 }
 
-/* line 325, ../sass/usergrid.scss */
+/* line 240, ../sass/usergrid.scss */
 .column-in {
   margin: 0;
   padding: 0px;
 }
 
-/* line 330, ../sass/usergrid.scss */
+/* line 245, ../sass/usergrid.scss */
 .cleaner {
   clear: both;
   height: 1px;
@@ -4811,115 +4806,115 @@ a:active {
   background: transparent;
 }
 
-/* line 341, ../sass/usergrid.scss */
+/* line 256, ../sass/usergrid.scss */
 #footer {
   border-top: 1px solid #cacaca;
   height: 50px;
 }
 
-/* line 347, ../sass/usergrid.scss */
+/* line 262, ../sass/usergrid.scss */
 #sidebar-menu {
   width: 155px;
 }
 
-/* line 353, ../sass/usergrid.scss */
+/* line 268, ../sass/usergrid.scss */
 #sidebar-menu2 {
   width: 155px;
 }
 
-/* line 359, ../sass/usergrid.scss */
+/* line 274, ../sass/usergrid.scss */
 .nav-menu-text {
   padding-left: 10px;
 }
 
-/* line 363, ../sass/usergrid.scss */
+/* line 278, ../sass/usergrid.scss */
 .nav-list {
   padding-left: 0px;
 }
-/* line 366, ../sass/usergrid.scss */
+/* line 281, ../sass/usergrid.scss */
 .nav-list > li > a {
   text-align: left;
   padding: 10px 0 10px 10px;
   margin: 0 0 0 -2px;
 }
-/* line 373, ../sass/usergrid.scss */
+/* line 288, ../sass/usergrid.scss */
 .nav-list .active > a {
   color: white;
 }
-/* line 377, ../sass/usergrid.scss */
+/* line 292, ../sass/usergrid.scss */
 .nav-list .active > a:hover {
   color: #ff4300;
   background: #e5e5e5 !important;
 }
-/* line 383, ../sass/usergrid.scss */
+/* line 298, ../sass/usergrid.scss */
 .nav-list .dropdown-menu a {
   text-shadow: 0 0px 0 white;
   font-weight: normal;
   color: #575560;
 }
-/* line 388, ../sass/usergrid.scss */
+/* line 303, ../sass/usergrid.scss */
 .nav-list .dropdown-menu a:hover {
   color: #ff4300;
   background: #e5e5e5 !important;
 }
 
-/* line 396, ../sass/usergrid.scss */
+/* line 311, ../sass/usergrid.scss */
 #system-panel-buttons a {
   margin: 10px 0;
 }
-/* line 401, ../sass/usergrid.scss */
+/* line 316, ../sass/usergrid.scss */
 #system-panel-buttons .active > a {
   color: #ff4300;
   text-shadow: 1px 1px 0 rgba(255, 59, 0, 0.2);
   font-weight: bold;
 }
 
-/* line 408, ../sass/usergrid.scss */
+/* line 323, ../sass/usergrid.scss */
 #application-panel-buttons {
   position: fixed;
   z-index: 10;
   width: 182px;
 }
 
-/* line 424, ../sass/usergrid.scss */
+/* line 339, ../sass/usergrid.scss */
 #application-panel-buttons2 {
   z-index: 10;
   width: 181px;
 }
 
-/* line 440, ../sass/usergrid.scss */
+/* line 355, ../sass/usergrid.scss */
 #left-collections-content {
   z-index: 10;
   width: 181px;
 }
-/* line 445, ../sass/usergrid.scss */
+/* line 360, ../sass/usergrid.scss */
 #left-collections-content li {
   width: 181px;
 }
 
-/* line 460, ../sass/usergrid.scss */
+/* line 375, ../sass/usergrid.scss */
 .icon-black, #application-panel-buttons .active > a:hover i, #application-panel-buttons2 .active > a:hover i, #left-collections-content .active > a:hover i {
   background-image: url('../images/glyphicons-halflings.png?1363073207');
 }
 
-/* line 464, ../sass/usergrid.scss */
+/* line 379, ../sass/usergrid.scss */
 .nav-tabs {
   display: inline-block;
   width: 100%;
 }
 
-/* line 469, ../sass/usergrid.scss */
+/* line 384, ../sass/usergrid.scss */
 hr.col-divider {
   width: 160px;
   margin: 0 0 0 10px;
 }
 
-/* line 476, ../sass/usergrid.scss */
+/* line 391, ../sass/usergrid.scss */
 #login-page, #signup-page {
   margin: 50px auto;
 }
 
-/* line 480, ../sass/usergrid.scss */
+/* line 395, ../sass/usergrid.scss */
 #login-area, #signup-area {
   position: relative;
   margin: 100px 0 0 -230px;
@@ -4930,7 +4925,7 @@ hr.col-divider {
   border-radius: 5px 5px 5px 5px;
 }
 
-/* line 488, ../sass/usergrid.scss */
+/* line 403, ../sass/usergrid.scss */
 .the-grid {
   background-image: url('../images/usergrid_400.png?1362726070');
   background-repeat: no-repeat;
@@ -4942,19 +4937,19 @@ hr.col-divider {
   transition: color 2s ease-in;
   padding-top: 120px;
 }
-/* line 499, ../sass/usergrid.scss */
+/* line 414, ../sass/usergrid.scss */
 .the-grid p {
   font-size: 14px;
   font-family: palatino;
   font-style: italic;
   padding: 4px;
 }
-/* line 506, ../sass/usergrid.scss */
+/* line 421, ../sass/usergrid.scss */
 .the-grid:hover {
   color: #999;
 }
 
-/* line 511, ../sass/usergrid.scss */
+/* line 426, ../sass/usergrid.scss */
 .logoUserGrid {
   background-image: url('../images/usergrid_200.png?1362726070');
   background-repeat: no-repeat;
@@ -4968,37 +4963,37 @@ hr.col-divider {
   margin: 0;
 }
 
-/* line 525, ../sass/usergrid.scss */
+/* line 440, ../sass/usergrid.scss */
 #forgot-password-page iframe {
   width: 100%;
   height: 700px;
   border: 0;
 }
 
-/* line 533, ../sass/usergrid.scss */
+/* line 448, ../sass/usergrid.scss */
 #console-frame-page iframe {
   width: 100%;
   height: 700px;
   border: 0;
 }
 
-/* line 540, ../sass/usergrid.scss */
+/* line 455, ../sass/usergrid.scss */
 #console-panel {
   width: 100%;
 }
-/* line 543, ../sass/usergrid.scss */
+/* line 458, ../sass/usergrid.scss */
 #console-panel iframe {
   width: 100%;
   min-height: 900px;
 }
 
-/* line 550, ../sass/usergrid.scss */
+/* line 465, ../sass/usergrid.scss */
 .console-section {
   min-width: 450px;
   margin: 0 0px 20px;
   overflow: show;
 }
-/* line 557, ../sass/usergrid.scss */
+/* line 472, ../sass/usergrid.scss */
 .console-section h3 {
   position: relative;
   margin: 0;
@@ -5008,12 +5003,12 @@ hr.col-divider {
   display: inline-block;
   background: #cccccc;
 }
-/* line 566, ../sass/usergrid.scss */
+/* line 481, ../sass/usergrid.scss */
 .console-section h3 .search {
   background-color: #e5e5e5;
   margin-bottom: 0;
 }
-/* line 571, ../sass/usergrid.scss */
+/* line 486, ../sass/usergrid.scss */
 .console-section h3 input.search {
   padding-left: 14px;
   padding-right: 14px;
@@ -5021,7 +5016,7 @@ hr.col-divider {
   -moz-border-radius: 14px 0 0 14px;
   border-radius: 14px 0 0 14px;
 }
-/* line 577, ../sass/usergrid.scss */
+/* line 492, ../sass/usergrid.scss */
 .console-section h3 select.search {
   padding-left: 14px;
   padding-right: 14px;
@@ -5029,25 +5024,25 @@ hr.col-divider {
   -moz-border-radius: 0px 14px 14px 0px;
   border-radius: 0px 14px 14px 0px;
 }
-/* line 583, ../sass/usergrid.scss */
+/* line 498, ../sass/usergrid.scss */
 .console-section h3 .title {
   cursor: pointer;
 }
-/* line 587, ../sass/usergrid.scss */
+/* line 502, ../sass/usergrid.scss */
 .console-section h3 .bar {
   float: right;
   font-size: 12px;
 }
-/* line 590, ../sass/usergrid.scss */
+/* line 505, ../sass/usergrid.scss */
 .console-section h3 .bar a {
   padding: 5px 10px;
   color: #007cdc !important;
 }
-/* line 595, ../sass/usergrid.scss */
+/* line 510, ../sass/usergrid.scss */
 .console-section h3 .bar a:hover {
   color: white !important;
 }
-/* line 601, ../sass/usergrid.scss */
+/* line 516, ../sass/usergrid.scss */
 .console-section h3:after {
   clear: both;
   content: ".";
@@ -5055,32 +5050,32 @@ hr.col-divider {
   height: 0;
   visibility: hidden;
 }
-/* line 610, ../sass/usergrid.scss */
+/* line 525, ../sass/usergrid.scss */
 .console-section form {
   margin: 0px;
   padding-top: 10px;
   display: inline-block;
   width: 460px;
 }
-/* line 617, ../sass/usergrid.scss */
+/* line 532, ../sass/usergrid.scss */
 .console-section .form-actions {
   margin-bottom: 0px;
   -webkit-border-radius: 0 0 5px 5px;
   -moz-border-radius: 0 0 5px 5px;
   border-radius: 0 0 5px 5px;
 }
-/* line 622, ../sass/usergrid.scss */
+/* line 537, ../sass/usergrid.scss */
 .console-section .console-section-contents {
   position: relative;
   padding: 10px;
   line-height: 25px;
   display: block;
 }
-/* line 628, ../sass/usergrid.scss */
+/* line 543, ../sass/usergrid.scss */
 .console-section .console-section-contents .form-actions {
   margin: 20px -10px -10px;
 }
-/* line 632, ../sass/usergrid.scss */
+/* line 547, ../sass/usergrid.scss */
 .console-section .console-section-contents:after {
   content: ".";
   display: block;
@@ -5088,19 +5083,19 @@ hr.col-divider {
   visibility: hidden;
 }
 
-/* line 641, ../sass/usergrid.scss */
+/* line 556, ../sass/usergrid.scss */
 .query-path-area {
   height: 450px;
 }
 
-/* line 646, ../sass/usergrid.scss */
+/* line 561, ../sass/usergrid.scss */
 .well, .suggestionsBox {
   background: none;
   border: none;
   box-shadow: none;
 }
 
-/* line 652, ../sass/usergrid.scss */
+/* line 567, ../sass/usergrid.scss */
 #application-panel .boxContent {
   background-color: #f2f5f7;
   -webkit-border-radius: 0 0 5px 5px;
@@ -5108,13 +5103,13 @@ hr.col-divider {
   border-radius: 0 0 5px 5px;
 }
 
-/* line 658, ../sass/usergrid.scss */
+/* line 573, ../sass/usergrid.scss */
 #shell-panel .boxContent {
   font-family: monospace;
   font-size: 14px;
   min-height: 400px;
 }
-/* line 664, ../sass/usergrid.scss */
+/* line 579, ../sass/usergrid.scss */
 #shell-panel textarea {
   font-family: monospace;
   border: none;
@@ -5125,42 +5120,42 @@ hr.col-divider {
   margin-bottom: 40px;
 }
 
-/* line 675, ../sass/usergrid.scss */
+/* line 590, ../sass/usergrid.scss */
 .bottom-space {
   margin-bottom: 15px;
 }
 
-/* line 680, ../sass/usergrid.scss */
+/* line 595, ../sass/usergrid.scss */
 .form-horizontal .controls span {
   margin-top: 5px;
 }
-/* line 683, ../sass/usergrid.scss */
+/* line 598, ../sass/usergrid.scss */
 .form-horizontal .controls span.add-on {
   margin-top: 0px;
 }
 
-/* line 688, ../sass/usergrid.scss */
+/* line 603, ../sass/usergrid.scss */
 .add-on {
   cursor: pointer;
   padding: 4px 5px !important;
 }
 
-/* line 694, ../sass/usergrid.scss */
+/* line 609, ../sass/usergrid.scss */
 #resolutionSelect-menu {
   display: none;
 }
 
-/* line 697, ../sass/usergrid.scss */
+/* line 612, ../sass/usergrid.scss */
 #ui-datepicker-div {
   display: none;
 }
 
-/* line 700, ../sass/usergrid.scss */
+/* line 615, ../sass/usergrid.scss */
 #applicationSelect-menu {
   display: none;
 }
 
-/* line 704, ../sass/usergrid.scss */
+/* line 619, ../sass/usergrid.scss */
 #applications-menu a {
   z-index: 300;
   overflow: hidden;
@@ -5168,17 +5163,17 @@ hr.col-divider {
   white-space: nowrap;
 }
 
-/* line 711, ../sass/usergrid.scss */
+/* line 626, ../sass/usergrid.scss */
 .dropdown.open .dropdown-toggle {
   color: white;
 }
 
-/* line 716, ../sass/usergrid.scss */
+/* line 631, ../sass/usergrid.scss */
 #application-panel-table table {
   width: 300px;
   margin-left: 10px;
 }
-/* line 720, ../sass/usergrid.scss */
+/* line 635, ../sass/usergrid.scss */
 #application-panel-table table tr > * {
   text-align: left;
   width: 90%;
@@ -5186,46 +5181,46 @@ hr.col-divider {
   text-overflow: ellipsis;
   white-space: nowrap;
 }
-/* line 728, ../sass/usergrid.scss */
+/* line 643, ../sass/usergrid.scss */
 #application-panel-table table th {
   font-weight: bold;
   border-top: 1px solid #cccccc;
 }
-/* line 733, ../sass/usergrid.scss */
+/* line 648, ../sass/usergrid.scss */
 #application-panel-table table tr > *:first-child {
   text-align: right;
   padding-right: 5px;
 }
 
 /*-----------------------------------------------------------*/
-/* line 742, ../sass/usergrid.scss */
+/* line 657, ../sass/usergrid.scss */
 #query-source {
   float: left;
 }
 
 /*-----------------------------------------------------------*/
-/* line 747, ../sass/usergrid.scss */
+/* line 662, ../sass/usergrid.scss */
 .query-result-row {
   border-top: 0px solid #cccccc;
   padding: 0px;
   background: white;
   margin: 0px 0px 0px 0px;
 }
-/* line 752, ../sass/usergrid.scss */
+/* line 667, ../sass/usergrid.scss */
 .query-result-row:nth-child(2n) {
   background: #EEE;
 }
-/* line 756, ../sass/usergrid.scss */
+/* line 671, ../sass/usergrid.scss */
 .query-result-row:last-child {
   border-radius: 0 0 5px 5px;
 }
 
-/* line 763, ../sass/usergrid.scss */
+/* line 678, ../sass/usergrid.scss */
 .query-result-row .query-result-portlet {
   margin: 0 0 5px 21px;
 }
 
-/* line 767, ../sass/usergrid.scss */
+/* line 682, ../sass/usergrid.scss */
 .query-result-portlet {
   font-size: 12px;
   border: 1px solid #cccccc;
@@ -5234,7 +5229,7 @@ hr.col-divider {
   margin: 0px;
 }
 
-/* line 774, ../sass/usergrid.scss */
+/* line 689, ../sass/usergrid.scss */
 .query-result-portlet-title {
   font-size: 12px;
   font-weight: bold;
@@ -5242,22 +5237,22 @@ hr.col-divider {
   padding: 2px 4px;
 }
 
-/* line 781, ../sass/usergrid.scss */
+/* line 696, ../sass/usergrid.scss */
 .query-result-portlet table {
   width: 100%;
 }
 
-/* line 787, ../sass/usergrid.scss */
+/* line 702, ../sass/usergrid.scss */
 .query-result-portlet td {
   padding: 10px;
 }
 
-/* line 791, ../sass/usergrid.scss */
+/* line 706, ../sass/usergrid.scss */
 .query-result-portlet td > div {
   padding: 0px;
 }
 
-/* line 798, ../sass/usergrid.scss */
+/* line 713, ../sass/usergrid.scss */
 .query-result-user-picture {
   width: 50px;
   height: 50px;
@@ -5265,40 +5260,40 @@ hr.col-divider {
   line-height: 0px;
 }
 
-/* line 805, ../sass/usergrid.scss */
+/* line 720, ../sass/usergrid.scss */
 .query-result-table {
   margin: 0px;
 }
-/* line 808, ../sass/usergrid.scss */
+/* line 723, ../sass/usergrid.scss */
 .query-result-table tr {
   border-bottom: 1px solid #cccccc;
 }
-/* line 811, ../sass/usergrid.scss */
+/* line 726, ../sass/usergrid.scss */
 .query-result-table tr:last-child {
   border-bottom: none;
 }
 
-/* line 821, ../sass/usergrid.scss */
+/* line 736, ../sass/usergrid.scss */
 .query-result-table-obj tr td {
   line-height: 18px !important;
 }
-/* line 826, ../sass/usergrid.scss */
+/* line 741, ../sass/usergrid.scss */
 .query-result-table-obj .query-result-table-obj tr {
   background: transparent;
   border-top: none;
 }
 
-/* line 832, ../sass/usergrid.scss */
+/* line 747, ../sass/usergrid.scss */
 .query-result-td-checkbox input {
   width: 20px;
 }
 
-/* line 836, ../sass/usergrid.scss */
+/* line 751, ../sass/usergrid.scss */
 .hidden {
   visibility: hidden;
 }
 
-/* line 840, ../sass/usergrid.scss */
+/* line 755, ../sass/usergrid.scss */
 .query-result-td-checkbox {
   background-color: #888;
   vertical-align: middle;
@@ -5306,73 +5301,73 @@ hr.col-divider {
   border-right: 1px solid #666666;
 }
 
-/* line 847, ../sass/usergrid.scss */
+/* line 762, ../sass/usergrid.scss */
 .query-result-td-picture {
   line-height: 0px;
   vertical-align: middle;
   width: 50px;
 }
 
-/* line 853, ../sass/usergrid.scss */
+/* line 768, ../sass/usergrid.scss */
 .query-result-td-header-name {
   vertical-align: middle;
   padding: 10px 5px;
 }
 
-/* line 858, ../sass/usergrid.scss */
+/* line 773, ../sass/usergrid.scss */
 .query-result-td-header-buttons {
   float: right;
   vertical-align: middle;
   text-align: right;
   padding: 4px 8px;
 }
-/* line 864, ../sass/usergrid.scss */
+/* line 779, ../sass/usergrid.scss */
 .query-result-td-header-buttons button {
   font-size: 12px;
   margin: 0px 0px 0px 0px;
 }
-/* line 869, ../sass/usergrid.scss */
+/* line 784, ../sass/usergrid.scss */
 .query-result-td-header-buttons a {
   font-size: 12px;
   margin: 0px 0px 0px 8px;
   color: #2779AA;
 }
 
-/* line 876, ../sass/usergrid.scss */
+/* line 791, ../sass/usergrid.scss */
 .query-result-header-name {
   padding-left: 8px;
   font-size: 13px;
 }
 
-/* line 881, ../sass/usergrid.scss */
+/* line 796, ../sass/usergrid.scss */
 .query-result-table-name, .query-result-table-value {
   width: 25%;
   padding: 10px !important;
 }
 
-/* line 887, ../sass/usergrid.scss */
+/* line 802, ../sass/usergrid.scss */
 #user-panel-tab-bar .tab-button, #group-panel-tab-bar .tab-button, #role-panel-tab-bar .tab-button {
   background-color: white !important;
   opacity: 1 !important;
   color: #1b97d1;
   cursor: pointer !important;
 }
-/* line 893, ../sass/usergrid.scss */
+/* line 808, ../sass/usergrid.scss */
 #user-panel-tab-bar .tab-button:hover, #group-panel-tab-bar .tab-button:hover, #role-panel-tab-bar .tab-button:hover {
   background-color: #e5e5e5 !important;
   color: #ffffff;
 }
-/* line 898, ../sass/usergrid.scss */
+/* line 813, ../sass/usergrid.scss */
 #user-panel-tab-bar .tab-button:active, #group-panel-tab-bar .tab-button:active, #role-panel-tab-bar .tab-button:active {
   background-color: #1b97d1 !important;
   color: #ffffff;
 }
-/* line 903, ../sass/usergrid.scss */
+/* line 818, ../sass/usergrid.scss */
 #user-panel-tab-bar .tab-button.active, #group-panel-tab-bar .tab-button.active, #role-panel-tab-bar .tab-button.active {
   background-color: #1b97d1 !important;
   color: #ffffff;
 }
-/* line 909, ../sass/usergrid.scss */
+/* line 824, ../sass/usergrid.scss */
 #user-panel-tab-bar .btn, #group-panel-tab-bar .btn, #role-panel-tab-bar .btn {
   text-shadow: none;
   border: 1px solid white;
@@ -5380,64 +5375,64 @@ hr.col-divider {
   box-shadow: none;
 }
 
-/* line 917, ../sass/usergrid.scss */
+/* line 832, ../sass/usergrid.scss */
 .query-button {
   background-color: #cacaca !important;
   opacity: 1 !important;
   color: #ffffff;
   cursor: pointer !important;
 }
-/* line 923, ../sass/usergrid.scss */
+/* line 838, ../sass/usergrid.scss */
 .query-button:hover {
   background-color: #686868 !important;
   color: #ffffff;
 }
-/* line 928, ../sass/usergrid.scss */
+/* line 843, ../sass/usergrid.scss */
 .query-button:active {
   background-color: #1b97d1 !important;
   color: #ffffff;
 }
-/* line 933, ../sass/usergrid.scss */
+/* line 848, ../sass/usergrid.scss */
 .query-button.active {
   background-color: #1b97d1 !important;
   color: #ffffff;
 }
 
-/* line 939, ../sass/usergrid.scss */
+/* line 854, ../sass/usergrid.scss */
 .code-para {
   word-break: normal;
 }
 
-/* line 943, ../sass/usergrid.scss */
+/* line 858, ../sass/usergrid.scss */
 .left-column {
   padding-left: 20px;
   padding-top: 10px;
 }
 
-/* line 948, ../sass/usergrid.scss */
+/* line 863, ../sass/usergrid.scss */
 .right-column {
   border-right: solid 1px #cccccc;
   padding-right: 20px;
 }
 
-/* line 953, ../sass/usergrid.scss */
+/* line 868, ../sass/usergrid.scss */
 .query-console {
   padding: 0px !important;
 }
 
-/* line 957, ../sass/usergrid.scss */
+/* line 872, ../sass/usergrid.scss */
 .outside-link {
   color: #1b97d1 !important;
   margin-bottom: 10px;
   margin-top: 10px;
 }
-/* line 962, ../sass/usergrid.scss */
+/* line 877, ../sass/usergrid.scss */
 .outside-link:hover {
   opacity: 0.7;
 }
 
 /*-------------------------------------------------*/
-/* line 968, ../sass/usergrid.scss */
+/* line 883, ../sass/usergrid.scss */
 .application-row-name {
   font-weight: bold;
 }
@@ -5447,11 +5442,11 @@ hr.col-divider {
  * Users
  *
  *******************************************************************/
-/* line 978, ../sass/usergrid.scss */
+/* line 893, ../sass/usergrid.scss */
 #user-panel h3 {
   overflow: hidden;
 }
-/* line 981, ../sass/usergrid.scss */
+/* line 896, ../sass/usergrid.scss */
 #user-panel h3 img {
   position: absolute;
   left: 0;
@@ -5459,18 +5454,18 @@ hr.col-divider {
   width: 50px;
   height: 50px;
 }
-/* line 989, ../sass/usergrid.scss */
+/* line 904, ../sass/usergrid.scss */
 #user-panel h3 .user-profile-header-name {
   margin-left: 50px;
   float: left;
   font-size: 18px !important;
 }
 
-/* line 997, ../sass/usergrid.scss */
+/* line 912, ../sass/usergrid.scss */
 .console-section-contents.listContent {
   padding: 0px;
 }
-/* line 1000, ../sass/usergrid.scss */
+/* line 915, ../sass/usergrid.scss */
 .console-section-contents.listContent .alphabeticalFilter {
   position: absolute;
   right: 0;
@@ -5482,13 +5477,13 @@ hr.col-divider {
   -moz-border-radius: 10px;
   border-radius: 10px;
 }
-/* line 1009, ../sass/usergrid.scss */
+/* line 924, ../sass/usergrid.scss */
 .console-section-contents.listContent .alphabeticalFilter li {
   display: inline-block;
   width: 35px;
   text-align: center;
 }
-/* line 1014, ../sass/usergrid.scss */
+/* line 929, ../sass/usergrid.scss */
 .console-section-contents.listContent .alphabeticalFilter li a {
   font-weight: bold;
   color: white;
@@ -5496,27 +5491,27 @@ hr.col-divider {
   padding: 5px 10px;
 }
 
-/* line 1024, ../sass/usergrid.scss */
+/* line 939, ../sass/usergrid.scss */
 #users-pagination {
   display: none;
 }
-/* line 1027, ../sass/usergrid.scss */
+/* line 942, ../sass/usergrid.scss */
 #users-pagination #users-previous {
   display: none;
 }
-/* line 1031, ../sass/usergrid.scss */
+/* line 946, ../sass/usergrid.scss */
 #users-pagination #users-next {
   display: none;
 }
 
-/* line 1036, ../sass/usergrid.scss */
+/* line 951, ../sass/usergrid.scss */
 .user-profile-header {
   font-family: sans-serif;
   font-weight: bold;
   background-color: #DEEDF7;
 }
 
-/* line 1043, ../sass/usergrid.scss */
+/* line 958, ../sass/usergrid.scss */
 .user-profile-picture {
   float: left;
   position: relative;
@@ -5526,30 +5521,30 @@ hr.col-divider {
   height: 50px;
 }
 
-/* line 1052, ../sass/usergrid.scss */
+/* line 967, ../sass/usergrid.scss */
 .user-profile-picture-vert-offset {
   margin-left: 50px;
 }
 
-/* line 1056, ../sass/usergrid.scss */
+/* line 971, ../sass/usergrid.scss */
 #roles-table {
   margin-top: 20px !important;
 }
 
-/* line 1060, ../sass/usergrid.scss */
+/* line 975, ../sass/usergrid.scss */
 #roles-pagination {
   display: none;
 }
-/* line 1063, ../sass/usergrid.scss */
+/* line 978, ../sass/usergrid.scss */
 #roles-pagination #roles-previous {
   display: none;
 }
-/* line 1067, ../sass/usergrid.scss */
+/* line 982, ../sass/usergrid.scss */
 #roles-pagination #roles-next {
   display: none;
 }
 
-/* line 1072, ../sass/usergrid.scss */
+/* line 987, ../sass/usergrid.scss */
 .user-roles-title {
   font-size: 18px;
   font-weight: bold;
@@ -5558,20 +5553,20 @@ hr.col-divider {
   padding-bottom: 8px;
 }
 
-/* line 1080, ../sass/usergrid.scss */
+/* line 995, ../sass/usergrid.scss */
 .user-role-row {
   font-size: 18px;
   margin-bottom: 16px;
 }
 
-/* line 1085, ../sass/usergrid.scss */
+/* line 1000, ../sass/usergrid.scss */
 .user-role-row-name {
   font-size: 14px;
   font-family: monospace;
   color: #404040;
 }
 
-/* line 1091, ../sass/usergrid.scss */
+/* line 1006, ../sass/usergrid.scss */
 .user-permissions-title {
   margin-top: 32px;
   font-size: 18px;
@@ -5581,37 +5576,37 @@ hr.col-divider {
   padding-bottom: 8px;
 }
 
-/* line 1100, ../sass/usergrid.scss */
+/* line 1015, ../sass/usergrid.scss */
 .user-group-row {
   font-size: 18px;
   margin-bottom: 16px;
 }
 
-/* line 1105, ../sass/usergrid.scss */
+/* line 1020, ../sass/usergrid.scss */
 .user-group-row-name {
   font-size: 14px;
   font-family: monospace;
   color: #404040;
 }
 
-/* line 1111, ../sass/usergrid.scss */
+/* line 1026, ../sass/usergrid.scss */
 #button-users-prev {
   float: left;
 }
 
-/* line 1115, ../sass/usergrid.scss */
+/* line 1030, ../sass/usergrid.scss */
 #button-users-next {
   float: right;
 }
 
 /*----------------------------------------------*/
-/* line 1120, ../sass/usergrid.scss */
+/* line 1035, ../sass/usergrid.scss */
 .ui-widget-content {
   background: white;
   border: 1px solid #cccccc;
 }
 
-/* line 1125, ../sass/usergrid.scss */
+/* line 1040, ../sass/usergrid.scss */
 .ui-widget-header {
   background: white;
   color: #ff4300;
@@ -5619,32 +5614,32 @@ hr.col-divider {
   border-bottom: 1px solid #e5e5e5;
 }
 
-/* line 1132, ../sass/usergrid.scss */
+/* line 1047, ../sass/usergrid.scss */
 .ui-dialog-buttonpane {
   background-color: #f2f2f2;
   border-top: 1px solid #e5e5e5;
   margin-top: 18px;
 }
 
-/* line 1138, ../sass/usergrid.scss */
+/* line 1053, ../sass/usergrid.scss */
 .ui-dialog {
   padding: 0;
 }
 
 /*------------ btn-usergrid --------------------------*/
-/* line 1144, ../sass/usergrid.scss */
+/* line 1059, ../sass/usergrid.scss */
 .btn-usergrid,
 .btn-usergrid:hover {
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
   color: #ffffff;
 }
 
-/* line 1149, ../sass/usergrid.scss */
+/* line 1064, ../sass/usergrid.scss */
 .btn-usergrid.active {
   color: rgba(255, 255, 255, 0.75);
 }
 
-/* line 1153, ../sass/usergrid.scss */
+/* line 1068, ../sass/usergrid.scss */
 .btn-usergrid {
   background-color: #ff4300;
   background-image: -moz-linear-gradient(top, #ff4300, #ff0303);
@@ -5660,7 +5655,7 @@ hr.col-divider {
   filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
 }
 
-/* line 1171, ../sass/usergrid.scss */
+/* line 1086, ../sass/usergrid.scss */
 .btn-usergrid:hover,
 .btn-usergrid:active,
 .btn-usergrid.active,
@@ -5669,44 +5664,44 @@ hr.col-divider {
   background-color: #C84B27;
 }
 
-/* line 1174, ../sass/usergrid.scss */
+/* line 1089, ../sass/usergrid.scss */
 .btn-usergrid:active, .btn-usergrid.active {
   background-color: #c67605 \9;
 }
 
 /*------------ bootstrap --------------------------*/
-/* line 1179, ../sass/usergrid.scss */
+/* line 1094, ../sass/usergrid.scss */
 .analytics-start-time-span {
   width: 500px;
 }
 
-/* line 1183, ../sass/usergrid.scss */
+/* line 1098, ../sass/usergrid.scss */
 .fixSpan1 {
   display: inline-block;
   width: 40px;
 }
 
-/* line 1188, ../sass/usergrid.scss */
+/* line 1103, ../sass/usergrid.scss */
 .fixSpan2 {
   display: inline-block;
   width: 100px;
 }
 
-/* line 1193, ../sass/usergrid.scss */
+/* line 1108, ../sass/usergrid.scss */
 .fixSpan3 {
   display: inline-block;
   width: 160px;
 }
 
 /*--------------- Analytics --------------------------------------------------*/
-/* line 1199, ../sass/usergrid.scss */
+/* line 1114, ../sass/usergrid.scss */
 #analytics-graph-table {
   border-collapse: collapse;
   width: 950px;
   margin: 10px 0;
   background-color: #ffffff;
 }
-/* line 1205, ../sass/usergrid.scss */
+/* line 1120, ../sass/usergrid.scss */
 #analytics-graph-table td, #analytics-graph-table th {
   text-align: center;
   border: 1px solid #dddddd;
@@ -5716,50 +5711,50 @@ hr.col-divider {
   vertical-align: middle;
   white-space: nowrap;
 }
-/* line 1215, ../sass/usergrid.scss */
+/* line 1130, ../sass/usergrid.scss */
 #analytics-graph-table td {
   max-width: 100px;
   min-width: 100px;
   width: auto !important;
 }
-/* line 1221, ../sass/usergrid.scss */
+/* line 1136, ../sass/usergrid.scss */
 #analytics-graph-table th {
   background-color: #f4f4f4;
 }
-/* line 1225, ../sass/usergrid.scss */
+/* line 1140, ../sass/usergrid.scss */
 #analytics-graph-table .accessHide {
   position: absolute;
   left: -999999px;
 }
-/* line 1230, ../sass/usergrid.scss */
+/* line 1145, ../sass/usergrid.scss */
 #analytics-graph-table caption {
   font-size: 1em;
 }
 
-/* line 1236, ../sass/usergrid.scss */
+/* line 1151, ../sass/usergrid.scss */
 #analytics-graph .visualize-labels-x .label {
   -webkit-transform: rotate(90deg);
   -moz-transform: rotate(90deg);
   font-size: .875em;
   margin-top: 20px;
 }
-/* line 1243, ../sass/usergrid.scss */
+/* line 1158, ../sass/usergrid.scss */
 #analytics-graph .visualize {
   height: 550px !important;
 }
 
 /*-----------------------------------------------*/
-/* line 1249, ../sass/usergrid.scss */
+/* line 1164, ../sass/usergrid.scss */
 #application-panel .console-section-contents > .row > div {
   min-width: 200px;
 }
 
-/* line 1254, ../sass/usergrid.scss */
+/* line 1169, ../sass/usergrid.scss */
 .panel-content {
   margin-top: 20px;
 }
 
-/* line 1258, ../sass/usergrid.scss */
+/* line 1173, ../sass/usergrid.scss */
 #api-activity {
   font-size: 14px;
   text-align: center;
@@ -5776,13 +5771,13 @@ hr.col-divider {
   display: none;
 }
 
-/* line 1272, ../sass/usergrid.scss */
+/* line 1187, ../sass/usergrid.scss */
 .pager {
   margin: 15px;
 }
 
 /*-------------- --------------------------------*/
-/* line 1278, ../sass/usergrid.scss */
+/* line 1193, ../sass/usergrid.scss */
 .query-result-form label {
   display: inline-block;
   width: 120px;
@@ -5790,39 +5785,39 @@ hr.col-divider {
   padding: 5px;
   text-align: right;
 }
-/* line 1286, ../sass/usergrid.scss */
+/* line 1201, ../sass/usergrid.scss */
 .query-result-form input {
   width: 180px;
   padding: 2px;
   margin: 4px;
 }
-/* line 1292, ../sass/usergrid.scss */
+/* line 1207, ../sass/usergrid.scss */
 .query-result-form fieldset {
   border: 1px solid #666666;
   margin: 8px;
   padding: 4px;
 }
-/* line 1297, ../sass/usergrid.scss */
+/* line 1212, ../sass/usergrid.scss */
 .query-result-form fieldset label {
   width: 107px;
 }
-/* line 1302, ../sass/usergrid.scss */
+/* line 1217, ../sass/usergrid.scss */
 .query-result-form legend {
   width: auto;
   font-weight: bold;
   padding: 2px;
   margin-bottom: 5px;
 }
-/* line 1309, ../sass/usergrid.scss */
+/* line 1224, ../sass/usergrid.scss */
 .query-result-form br {
   clear: left;
 }
-/* line 1313, ../sass/usergrid.scss */
+/* line 1228, ../sass/usergrid.scss */
 .query-result-form .submit input {
   margin-left: 4.5em;
 }
 
-/* line 1318, ../sass/usergrid.scss */
+/* line 1233, ../sass/usergrid.scss */
 .shell-output-line-content {
   margin: 0;
   padding-left: 20px;
@@ -5831,13 +5826,13 @@ hr.col-divider {
   line-height: 14px;
 }
 
-/* line 1326, ../sass/usergrid.scss */
+/* line 1241, ../sass/usergrid.scss */
 #shell-content * {
   font-family: monospace;
 }
 
 /* --------- --------------- ------------*/
-/* line 1331, ../sass/usergrid.scss */
+/* line 1246, ../sass/usergrid.scss */
 #statusbar-placeholder {
   display: none;
   bottom: 0px;
@@ -5848,7 +5843,7 @@ hr.col-divider {
   width: auto;
   z-index: 999;
 }
-/* line 1341, ../sass/usergrid.scss */
+/* line 1256, ../sass/usergrid.scss */
 #statusbar-placeholder .alert, #statusbar-placeholder .query-response-empty, #statusbar-placeholder #query-response-message, #statusbar-placeholder .user-panel-section-message, #statusbar-placeholder .group-panel-section-message {
   display: none;
   padding: 4px 35px 4px 14px;
@@ -5856,234 +5851,234 @@ hr.col-divider {
 }
 
 /*----------- Roles ----------------*/
-/* line 1349, ../sass/usergrid.scss */
+/* line 1264, ../sass/usergrid.scss */
 #role-permissions-form button {
   float: right;
 }
 
-/* line 1353, ../sass/usergrid.scss */
+/* line 1268, ../sass/usergrid.scss */
 #role-permissions .well, #role-permissions .suggestionsBox {
   padding: 10px;
 }
-/* line 1356, ../sass/usergrid.scss */
+/* line 1271, ../sass/usergrid.scss */
 #role-permissions .well label, #role-permissions .suggestionsBox label {
   margin: 5px;
 }
-/* line 1360, ../sass/usergrid.scss */
+/* line 1275, ../sass/usergrid.scss */
 #role-permissions .well button, #role-permissions .suggestionsBox button {
   float: right;
 }
 
-/* line 1365, ../sass/usergrid.scss */
+/* line 1280, ../sass/usergrid.scss */
 #role-permissions-table {
   width: auto;
 }
-/* line 1368, ../sass/usergrid.scss */
+/* line 1283, ../sass/usergrid.scss */
 #role-permissions-table th {
   font-weight: bold;
 }
-/* line 1372, ../sass/usergrid.scss */
+/* line 1287, ../sass/usergrid.scss */
 #role-permissions-table tr {
   vertical-align: middle;
 }
-/* line 1376, ../sass/usergrid.scss */
+/* line 1291, ../sass/usergrid.scss */
 #role-permissions-table td {
   vertical-align: middle;
 }
-/* line 1380, ../sass/usergrid.scss */
+/* line 1295, ../sass/usergrid.scss */
 #role-permissions-table .role-permission-op {
   width: 50px !important;
   min-width: 50px !important;
   text-align: center;
 }
-/* line 1386, ../sass/usergrid.scss */
+/* line 1301, ../sass/usergrid.scss */
 #role-permissions-table .role-permission-path {
   min-width: 100px;
   text-align: left;
 }
 
 /*--------- ------------------------ -------------*/
-/* line 1397, ../sass/usergrid.scss */
+/* line 1312, ../sass/usergrid.scss */
 .modal form {
   margin: 0px;
 }
 
-/* line 1401, ../sass/usergrid.scss */
+/* line 1316, ../sass/usergrid.scss */
 .modal-header h4 {
   color: #ff4300;
   font-size: 16px;
   padding: 5px;
 }
 
-/* line 1407, ../sass/usergrid.scss */
+/* line 1322, ../sass/usergrid.scss */
 .modal-footer input {
   float: right;
 }
 
 /*-------------------------------*/
-/* line 1412, ../sass/usergrid.scss */
+/* line 1327, ../sass/usergrid.scss */
 .btn-link {
   border: none;
   color: #1b97d1;
   box-shadow: none;
   background: transparent;
 }
-/* line 1418, ../sass/usergrid.scss */
+/* line 1333, ../sass/usergrid.scss */
 .btn-link:hover {
   color: #ff4300;
 }
 
-/* line 1423, ../sass/usergrid.scss */
+/* line 1338, ../sass/usergrid.scss */
 .btn-danger {
   color: white !important;
 }
-/* line 1426, ../sass/usergrid.scss */
+/* line 1341, ../sass/usergrid.scss */
 .btn-danger:hover {
   color: white !important;
 }
 
-/* line 1431, ../sass/usergrid.scss */
+/* line 1346, ../sass/usergrid.scss */
 .graph {
   margin: 5px -25px 5px 15px;
 }
 
-/* line 1435, ../sass/usergrid.scss */
+/* line 1350, ../sass/usergrid.scss */
 #application-panel-text {
   min-width: 340px !important;
 }
 
-/* line 1439, ../sass/usergrid.scss */
+/* line 1354, ../sass/usergrid.scss */
 .query-result-json-inner {
   border: none;
   margin: 0px;
 }
 
-/* line 1444, ../sass/usergrid.scss */
+/* line 1359, ../sass/usergrid.scss */
 .query-response-empty {
   margin: 15px;
 }
 
-/* line 1449, ../sass/usergrid.scss */
+/* line 1364, ../sass/usergrid.scss */
 #query-response-message {
   margin: 15px;
 }
 
-/* line 1454, ../sass/usergrid.scss */
+/* line 1369, ../sass/usergrid.scss */
 .user-panel-section-message {
   margin: 15px;
 }
 
-/* line 1459, ../sass/usergrid.scss */
+/* line 1374, ../sass/usergrid.scss */
 .user-panel-section {
   margin: 15px;
 }
 
-/* line 1463, ../sass/usergrid.scss */
+/* line 1378, ../sass/usergrid.scss */
 .group-panel-section-message {
   margin: 15px;
 }
 
 /*----------------- Activities ------------------*/
-/* line 1469, ../sass/usergrid.scss */
+/* line 1384, ../sass/usergrid.scss */
 #activities-pagination {
   display: none;
 }
 
-/* line 1473, ../sass/usergrid.scss */
+/* line 1388, ../sass/usergrid.scss */
 .gravatar20 {
   padding: 7px 0 0 10px !important;
   margin: 0px;
   width: 30px;
 }
 
-/* line 1479, ../sass/usergrid.scss */
+/* line 1394, ../sass/usergrid.scss */
 .gravatar50-td {
   padding: 0px !important;
   width: 50px;
   border-right: 1px solid #e5e5e5;
 }
 
-/* line 1485, ../sass/usergrid.scss */
+/* line 1400, ../sass/usergrid.scss */
 .gravatar50 {
   padding: 0px !important;
   width: 50px;
 }
 
-/* line 1490, ../sass/usergrid.scss */
+/* line 1405, ../sass/usergrid.scss */
 td.checkboxo {
   width: 15px;
   padding: 15px !important;
   border-right: 1px solid #e5e5e5;
 }
 
-/* line 1496, ../sass/usergrid.scss */
+/* line 1411, ../sass/usergrid.scss */
 table#organization-admins-table tr td.gravatar20 {
   width: 30px !important;
 }
 
-/* line 1501, ../sass/usergrid.scss */
+/* line 1416, ../sass/usergrid.scss */
 .users-row td, .groups-row td, .roles-row td {
   line-height: 9px !important;
   vertical-align: middle;
 }
-/* line 1506, ../sass/usergrid.scss */
+/* line 1421, ../sass/usergrid.scss */
 .users-row td.checkboxo, .groups-row td.checkboxo, .roles-row td.checkboxo {
   padding-top: 15px !important;
 }
-/* line 1510, ../sass/usergrid.scss */
+/* line 1425, ../sass/usergrid.scss */
 .users-row td.details, .groups-row td.details, .roles-row td.details {
   line-height: 25px !important;
   border-right: 1px solid #e5e5e5;
 }
-/* line 1515, ../sass/usergrid.scss */
+/* line 1430, ../sass/usergrid.scss */
 .users-row td.view-details, .groups-row td.view-details, .roles-row td.view-details {
   line-height: 25px !important;
   width: 75px;
 }
-/* line 1520, ../sass/usergrid.scss */
+/* line 1435, ../sass/usergrid.scss */
 .users-row a.view-details, .groups-row a.view-details, .roles-row a.view-details {
   color: #1b97d1;
 }
 
 /*------------------ Home Page ------------------*/
-/* line 1526, ../sass/usergrid.scss */
+/* line 1441, ../sass/usergrid.scss */
 .table {
   table-layout: fixed;
   margin-bottom: 0px !important;
 }
 
-/* line 1531, ../sass/usergrid.scss */
+/* line 1446, ../sass/usergrid.scss */
 table#roles-table {
   table-layout: auto;
 }
-/* line 1534, ../sass/usergrid.scss */
+/* line 1449, ../sass/usergrid.scss */
 table#roles-table td.checkboxo {
   padding: 0px;
 }
 
-/* line 1539, ../sass/usergrid.scss */
+/* line 1454, ../sass/usergrid.scss */
 table#organization-admins-table {
   table-layout: auto;
 }
 
-/* line 1543, ../sass/usergrid.scss */
+/* line 1458, ../sass/usergrid.scss */
 .zebraRows, .query-result-table-obj tr, #organization-admins .admin-row, #organization-activities .organization-activity-row, #organizations .row {
   background: white;
   border-bottom: 1px solid #e5e5e5;
   border-left: 1px solid #e5e5e5;
   border-right: 1px solid #e5e5e5;
 }
-/* line 1549, ../sass/usergrid.scss */
+/* line 1464, ../sass/usergrid.scss */
 .zebraRows:nth-child(2n), .query-result-table-obj tr:nth-child(2n), #organization-admins .admin-row:nth-child(2n), #organization-activities .organization-activity-row:nth-child(2n), #organizations .row:nth-child(2n) {
   background: #EEE;
 }
-/* line 1553, ../sass/usergrid.scss */
+/* line 1468, ../sass/usergrid.scss */
 .zebraRows:last-child, .query-result-table-obj tr:last-child, #organization-admins .admin-row:last-child, #organization-activities .organization-activity-row:last-child, #organizations .row:last-child {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
 }
-/* line 1557, ../sass/usergrid.scss */
+/* line 1472, ../sass/usergrid.scss */
 .zebraRows td, .query-result-table-obj tr td, #organization-admins .admin-row td, #organization-activities .organization-activity-row td, #organizations .row td {
   padding: 10px;
 }
@@ -6103,69 +6098,69 @@ table#organization-admins-table {
 /*     } */
 /*   } */
 /* } */
-/* line 1578, ../sass/usergrid.scss */
+/* line 1493, ../sass/usergrid.scss */
 #organization-admins {
   padding: 0px;
 }
-/* line 1581, ../sass/usergrid.scss */
+/* line 1496, ../sass/usergrid.scss */
 #organization-admins .alert, #organization-admins .query-response-empty, #organization-admins #query-response-message, #organization-admins .user-panel-section-message, #organization-admins .group-panel-section-message {
   display: inline-block;
   margin: 15px;
 }
-/* line 1590, ../sass/usergrid.scss */
+/* line 1505, ../sass/usergrid.scss */
 #organization-admins a {
   padding: 10px;
 }
-/* line 1595, ../sass/usergrid.scss */
+/* line 1510, ../sass/usergrid.scss */
 #organization-admins .admin-row:last-child {
   border-radius: 0 0 5px 5px;
 }
 
-/* line 1601, ../sass/usergrid.scss */
+/* line 1516, ../sass/usergrid.scss */
 #organization-activities {
   padding: 0px;
 }
-/* line 1604, ../sass/usergrid.scss */
+/* line 1519, ../sass/usergrid.scss */
 #organization-activities .alert, #organization-activities .query-response-empty, #organization-activities #query-response-message, #organization-activities .user-panel-section-message, #organization-activities .group-panel-section-message {
   display: inline-block;
   margin: 15px;
 }
-/* line 1609, ../sass/usergrid.scss */
+/* line 1524, ../sass/usergrid.scss */
 #organization-activities .organization-activity-row:last-child {
   border-radius: 0 0 5px 5px;
 }
-/* line 1613, ../sass/usergrid.scss */
+/* line 1528, ../sass/usergrid.scss */
 #organization-activities .organization-activity-row {
   line-height: 25px;
 }
-/* line 1617, ../sass/usergrid.scss */
+/* line 1532, ../sass/usergrid.scss */
 #organization-activities .organization-activity-row .time {
   color: #888;
   width: 170px;
   display: inline-block;
 }
-/* line 1627, ../sass/usergrid.scss */
+/* line 1542, ../sass/usergrid.scss */
 #organization-activities .organization-activity-row a {
   padding: 10px;
 }
 
-/* line 1633, ../sass/usergrid.scss */
+/* line 1548, ../sass/usergrid.scss */
 #organizations {
   table-layout: auto !important;
   padding: 0px;
 }
-/* line 1637, ../sass/usergrid.scss */
+/* line 1552, ../sass/usergrid.scss */
 #organizations .alert, #organizations .query-response-empty, #organizations #query-response-message, #organizations .user-panel-section-message, #organizations .group-panel-section-message {
   display: inline-block;
   margin: 15px;
 }
-/* line 1646, ../sass/usergrid.scss */
+/* line 1561, ../sass/usergrid.scss */
 #organizations a {
   padding: 3px 10px;
 }
 
 /*-----------------------------------------*/
-/* line 1652, ../sass/usergrid.scss */
+/* line 1567, ../sass/usergrid.scss */
 .smallgravatar, #organization-activities .organization-activity-row img {
   position: relative;
   top: 2px;
@@ -6176,76 +6171,76 @@ table#organization-admins-table {
 }
 
 /* ---------------- Dashboard ---------------- */
-/* line 1662, ../sass/usergrid.scss */
+/* line 1577, ../sass/usergrid.scss */
 table .zebraRows, table .query-result-table-obj tr, .query-result-table-obj table tr, table #organization-admins .admin-row, #organization-admins table .admin-row, table #organization-activities .organization-activity-row, #organization-activities table .organization-activity-row, table #organizations .row, #organizations table .row {
   background: white;
 }
-/* line 1665, ../sass/usergrid.scss */
+/* line 1580, ../sass/usergrid.scss */
 table .zebraRows:nth-child(2n), table .query-result-table-obj tr:nth-child(2n), .query-result-table-obj table tr:nth-child(2n), table #organization-admins .admin-row:nth-child(2n), #organization-admins table .admin-row:nth-child(2n), table #organization-activities .organization-activity-row:nth-child(2n), #organization-activities table .organization-activity-row:nth-child(2n), table #organizations .row:nth-child(2n), #organizations table .row:nth-child(2n) {
   background: #EEE;
 }
 
 /* --------------- Collections -------------- */
-/* line 1671, ../sass/usergrid.scss */
+/* line 1586, ../sass/usergrid.scss */
 .collection-column {
   width: 80%;
 }
 
-/* line 1675, ../sass/usergrid.scss */
+/* line 1590, ../sass/usergrid.scss */
 a.data-explorer-link {
   color: #1b97d1;
 }
 
 /* ---------------- Account Panel ------------ */
-/* line 1680, ../sass/usergrid.scss */
+/* line 1595, ../sass/usergrid.scss */
 .leave-org-row td {
   line-height: 25px !important;
 }
 
-/* line 1685, ../sass/usergrid.scss */
+/* line 1600, ../sass/usergrid.scss */
 #update-account-form .control-group, #update-account-form .help-block {
   padding-left: 40px;
   padding-right: 40px;
 }
 
 /* ---------------- Curl Container ------------ */
-/* line 1693, ../sass/usergrid.scss */
+/* line 1608, ../sass/usergrid.scss */
 .curl-container .curl-info, .curl-container .curl-token {
   padding-left: 5px;
 }
-/* line 1697, ../sass/usergrid.scss */
+/* line 1612, ../sass/usergrid.scss */
 .curl-container .input-append {
   position: relative;
 }
 
-/* line 1702, ../sass/usergrid.scss */
+/* line 1617, ../sass/usergrid.scss */
 .side-label {
   display: inline;
 }
 
-/* line 1706, ../sass/usergrid.scss */
+/* line 1621, ../sass/usergrid.scss */
 .alert .close, .query-response-empty .close, #query-response-message .close, .user-panel-section-message .close, .group-panel-section-message .close {
   top: 2px;
 }
 
-/* line 1710, ../sass/usergrid.scss */
+/* line 1625, ../sass/usergrid.scss */
 .horizontal {
   display: inline;
   float: left;
   padding: 5px;
 }
 
-/* line 1716, ../sass/usergrid.scss */
+/* line 1631, ../sass/usergrid.scss */
 #query-collections-caret {
   margin-top: 6px;
 }
 
-/* line 1720, ../sass/usergrid.scss */
+/* line 1635, ../sass/usergrid.scss */
 #organization-name {
   display: inline;
 }
 
-/* line 1724, ../sass/usergrid.scss */
+/* line 1639, ../sass/usergrid.scss */
 .panel-title {
   font-weight: 400;
   font-size: 16px;
@@ -6253,20 +6248,20 @@ a.data-explorer-link {
   padding: 0 0 0 10px;
 }
 
-/* line 1731, ../sass/usergrid.scss */
+/* line 1646, ../sass/usergrid.scss */
 .panel-desc {
   font-size: 12px;
   color: #919091;
   padding-left: 10px;
 }
 
-/* line 1737, ../sass/usergrid.scss */
+/* line 1652, ../sass/usergrid.scss */
 .sdk-download {
   margin: 30px auto;
   text-align: center;
 }
 
-/* line 1742, ../sass/usergrid.scss */
+/* line 1657, ../sass/usergrid.scss */
 .wrench {
   background-image: url('../images/glyphicons_halflings_135_wrench.png?1362726070');
   display: inline-block;
@@ -6277,22 +6272,22 @@ a.data-explorer-link {
   margin-right: .3em;
 }
 
-/* line 1752, ../sass/usergrid.scss */
+/* line 1667, ../sass/usergrid.scss */
 #application-panel-buttons .active > a i.wrench {
   background-image: url('../images/glyphicons_halflings_wrench_white.png?1362726070') !important;
 }
 
-/* line 1756, ../sass/usergrid.scss */
+/* line 1671, ../sass/usergrid.scss */
 #application-panel-buttons .active > a:hover i.wrench {
   background-image: url('../images/glyphicons_halflings_135_wrench.png?1362726070') !important;
 }
 
-/* line 1762, ../sass/usergrid.scss */
+/* line 1677, ../sass/usergrid.scss */
 .apigee .logo {
   width: 57px;
 }
 
-/* line 1768, ../sass/usergrid.scss */
+/* line 1683, ../sass/usergrid.scss */
 .app-menu {
   overflow: hidden;
   text-overflow: ellipsis;
@@ -6300,15 +6295,15 @@ a.data-explorer-link {
   float: left;
 }
 
-/* line 1775, ../sass/usergrid.scss */
+/* line 1690, ../sass/usergrid.scss */
 .go-home {
   overflow: hidden;
 }
-/* line 1778, ../sass/usergrid.scss */
+/* line 1693, ../sass/usergrid.scss */
 .go-home .icon-home {
   float: left;
 }
-/* line 1782, ../sass/usergrid.scss */
+/* line 1697, ../sass/usergrid.scss */
 .go-home #organization-name {
   width: 80%;
   float: left;
@@ -6318,12 +6313,12 @@ a.data-explorer-link {
   margin-left: 5px;
 }
 
-/* line 1793, ../sass/usergrid.scss */
+/* line 1708, ../sass/usergrid.scss */
 .dropdown-menu {
   max-width: 700px;
 }
 
-/* line 1797, ../sass/usergrid.scss */
+/* line 1712, ../sass/usergrid.scss */
 .bold-header {
   font-weight: 600;
   color: black;
