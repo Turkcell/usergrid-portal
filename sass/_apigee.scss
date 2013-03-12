@@ -1,0 +1,8 @@
+#fullContainer {
+    position: relative; /* needed for footer positioning*/
+    height: auto !important; /* real browsers */
+    min-height: 100%; /* real browsers */
+    height: 100%; /* IE6: treaded as min-height*/
+    min-width: $minScreenWidth;
+    max-width: $maxPanelWidth;
+}

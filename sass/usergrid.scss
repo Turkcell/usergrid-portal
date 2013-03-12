@@ -17,6 +17,7 @@ $apigeeBlue            : #1b97d1;
 
 @import "compass/reset";
 @import "bootstrap";
+@import "apigee";
 
 //--------------General ------------------------------------------------------------
 html, body {
@@ -94,22 +95,7 @@ a {
     font-family: monospace !important;
 }
 
-#selectedApp {
-    font-size: 16px;
-    cursor: pointer;
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-}
 
-#fullContainer {
-    position: relative; /* needed for footer positioning*/
-    height: auto !important; /* real browsers */
-    min-height: 100%; /* real browsers */
-    height: 100%; /* IE6: treaded as min-height*/
-    min-width: $minScreenWidth;
-    max-width: $maxPanelWidth;
-}
 
 .header-menus {
     margin: 0 auto;
