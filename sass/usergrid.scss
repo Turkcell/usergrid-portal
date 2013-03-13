@@ -6,52 +6,8 @@
 @import "header";
 @import "pages";
 @import "navigation";
+@import "buttons";
 @import "apigee";
-
-#system-panel-buttons {
-    a {
-        margin: 10px 0;
-        //border: 1px solid $black;
-    }
-
-    .active > a {
-        color: $redApigee;
-        text-shadow: 1px 1px 0 rgba(255, 59, 0, 0.2);
-        font-weight: bold;
-    }
-}
-
-#application-panel-buttons {
-    position: fixed;
-    z-index: 10;
-    width: 182px;
-
-    .active > a {
-        i {
-            @extend .icon-white;
-        }
-
-        &:hover i {
-            @extend .icon-black;
-        }
-    }
-}
-
-#application-panel-buttons2 {
-    //position:fixed;
-    z-index: 10;
-    width: 181px;
-
-    .active > a {
-        i {
-            @extend .icon-white;
-        }
-
-        &:hover i {
-            @extend .icon-black;
-        }
-    }
-}
 
 #left-collections-content {
     //position:fixed;
@@ -720,42 +676,6 @@ hr.col-divider {
     padding: 0;
 }
 
-/*------------ btn-usergrid --------------------------*/
-.btn-usergrid,
-.btn-usergrid:hover {
-    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
-    color: #ffffff;
-}
-
-.btn-usergrid.active {
-    color: rgba(255, 255, 255, 0.75);
-}
-
-.btn-usergrid {
-    background-color: $apigeeOrange;
-    background-image: -moz-linear-gradient(top, $apigeeOrange, $apigeeNavSelection);
-    background-image: -ms-linear-gradient(top, $apigeeOrange, $apigeeNavSelection);
-    background-image: -webkit-gradient(linear, 0 0, 0 100%, from($apigeeOrange), to($apigeeNavSelection));
-    background-image: -webkit-linear-gradient(top, $apigeeOrange, $apigeeNavSelection);
-    background-image: -o-linear-gradient(top, $apigeeOrange, $apigeeNavSelection);
-    background-image: linear-gradient(top, $apigeeOrange, $apigeeNavSelection);
-    background-repeat: repeat-x;
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$apigeeOrange', endColorstr='$apigeeNavSelection', GradientType=0);
-    border-color: #C84B27 #C84B27 #ad6704;
-    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
-    filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
-}
-.btn-usergrid:hover,
-.btn-usergrid:active,
-.btn-usergrid.active,
-.btn-usergrid.disabled,
-.btn-usergrid[disabled] {
-    background-color: #C84B27;
-}
-.btn-usergrid:active, .btn-usergrid.active {
-    background-color: #c67605 \9;
-}
-
 /*------------ bootstrap --------------------------*/
 .analytics-start-time-span {
     width: 500px;
@@ -1328,14 +1248,6 @@ a.data-explorer-link {
     vertical-align: text-top;
     background-repeat: no-repeat;
     margin-right: .3em;
-}
-
-#application-panel-buttons .active > a i.wrench {
-    background-image: image-url("glyphicons_halflings_wrench_white.png") !important;
-}
-
-#application-panel-buttons .active > a:hover i.wrench {
-    background-image: image-url("glyphicons_halflings_135_wrench.png") !important;
 }
 
 //Apigee Specific data

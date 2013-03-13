@@ -1,0 +1,82 @@
+@import "variables";
+
+#system-panel-buttons {
+    a {
+        margin: 10px 0;
+        //border: 1px solid $black;
+    }
+
+    .active > a {
+        color: $redApigee;
+        text-shadow: 1px 1px 0 rgba(255, 59, 0, 0.2);
+        font-weight: bold;
+    }
+}
+
+#application-panel-buttons {
+    position: fixed;
+    z-index: 10;
+    width: 182px;
+
+    .active > a {
+        i {
+            @extend .icon-white;
+        }
+
+        &:hover i {
+            @extend .icon-black;
+        }
+    }
+}
+
+#application-panel-buttons .active > a i.wrench {
+    background-image: image-url("glyphicons_halflings_wrench_white.png") !important;
+}
+
+#application-panel-buttons .active > a:hover i.wrench {
+    background-image: image-url("glyphicons_halflings_135_wrench.png") !important;
+}
+
+#application-panel-buttons2 {
+    //position:fixed;
+    z-index: 10;
+    width: 181px;
+
+    .active > a {
+        i {
+            @extend .icon-white;
+        }
+
+        &:hover i {
+            @extend .icon-black;
+        }
+    }
+}
+
+.btn-usergrid,
+.btn-usergrid:hover {
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+    color: #ffffff;
+}
+
+.btn-usergrid.active {
+    color: rgba(255, 255, 255, 0.75);
+}
+
+.btn-usergrid {
+    background-color: mix($apigeeOrange, $apigeeNavSelection);
+    @include background-image(linear-gradient(top, $apigeeOrange, $apigeeNavSelection));
+    border-color: #C84B27 #C84B27 #ad6704;
+    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+}
+.btn-usergrid:hover,
+.btn-usergrid:active,
+.btn-usergrid.active,
+.btn-usergrid.disabled,
+.btn-usergrid[disabled] {
+    background-color: #C84B27;
+}
+
+.btn-usergrid:active, .btn-usergrid.active {
+    background-color: #c67605 \9;
+}
