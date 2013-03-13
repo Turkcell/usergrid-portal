@@ -5,56 +5,8 @@
 @import "common";
 @import "header";
 @import "pages";
+@import "navigation";
 @import "apigee";
-
-//----------------- Navigation --------------------------------------------------------------------
-#sidebar-menu {
-    //position: absolute;
-    //left: 0px;
-    width: 155px;
-}
-
-#sidebar-menu2 {
-    //position: absolute;
-    //left: 0px;
-    width: 155px;
-}
-
-.nav-menu-text {
-    padding-left: 10px;
-}
-
-.nav-list {
-    padding-left: 0px;
-
-    & > li > a {
-        text-align: left;
-        // .border-radius(5px);
-        padding: 10px 0 10px 10px;
-        margin: 0 0 0 -2px;
-    }
-
-    .active > a {
-        //background-color:$redApigee;
-        color: $white;
-
-        &:hover {
-            color: $redApigee;
-            background: $linkHoverBgColor !important;
-        }
-    }
-
-    .dropdown-menu a {
-        text-shadow: 0 0px 0 white;
-        font-weight: normal;
-        color: $grayApigee;
-
-        &:hover{
-            color: $redApigee;
-            background: $linkHoverBgColor !important;
-        }
-    }
-}
 
 #system-panel-buttons {
     a {
@@ -123,11 +75,6 @@
 
 .icon-black {
     background-image: image-url("glyphicons-halflings.png");
-}
-
-.nav-tabs {
-    display: inline-block;
-    width: 100%;
 }
 
 hr.col-divider {
