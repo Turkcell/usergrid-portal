@@ -1,0 +1,53 @@
+@import "variables";
+
+.form-horizontal .controls span {
+    margin-top: 5px;
+
+    &.add-on {
+        margin-top:0px;
+    }
+}
+
+.add-on {
+    cursor: pointer;
+    padding: 4px 5px !important;
+}
+
+.well {
+    background: none;
+    border: none;
+    box-shadow: none;
+}
+
+.btn-link {
+    border: none;
+    color: $linkColor;
+    box-shadow: none;
+    background: transparent;
+
+    &:hover {
+        color: $redApigee;
+    }
+}
+
+.btn-danger {
+    color: white !important;
+
+    &:hover {
+        color: white !important;
+    }
+}
+
+.modal form {
+    margin: 0px;
+}
+
+.modal-header h4 {
+    color: $redApigee;
+    font-size: 16px;
+    padding: 5px;
+}
+
+.modal-footer input {
+    float: right;
+}
