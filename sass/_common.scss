@@ -76,3 +76,76 @@ a {
 .marginless {
     margin: 0 !important;
 }
+
+#main1 {
+    margin: 84px 0 0 0;
+    padding: 0;
+    min-width: 1080px;
+}
+
+#main2 {
+    margin: 0;
+    padding: 0;
+}
+
+#left {
+    float: left;
+    width: 177px;
+    margin: 0;
+    padding: 0;
+}
+
+#left2 {
+    float: left;
+    width: 171px;
+    margin: 0 0 0 -4px;
+    padding: 10px;
+    min-height: 1050px;
+    border-right: 1px solid #cacaca;
+}
+
+#right {
+    float: right;
+    width: 180px;
+    margin: 0;
+    padding: 0;
+
+    a {
+        color: $apigeeBlue;
+        font-weight: 400;
+
+        &:visited  {
+            color: $apigeeBlue;
+            font-weight: 400;
+        }
+    }
+}
+
+#middle {
+    margin: 0 180px;
+    min-width: 700px;
+}
+
+#footer {
+    border-top: 1px solid #cacaca;
+    height: 50px;
+}
+
+#copyright {
+    padding: 5px;
+}
+
+.column-in {
+    margin: 0;
+    padding: 0px;
+}
+
+.cleaner {
+    clear: both;
+    height: 1px;
+    font-size: 1px;
+    border: none;
+    margin: 0;
+    padding: 0;
+    background: transparent;
+}
