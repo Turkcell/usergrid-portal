@@ -7,6 +7,7 @@
 @import "pages";
 @import "navigation";
 @import "buttons";
+@import "overrides";
 @import "apigee";
 
 #left-collections-content {
@@ -231,9 +232,7 @@ hr.col-divider {
 #resolutionSelect-menu {
     display: none;
 }
-#ui-datepicker-div {
-    display: none;
-}
+
 #applicationSelect-menu {
     display: none;
 }
@@ -651,29 +650,6 @@ hr.col-divider {
 
 #button-users-next {
     float: right;
-}
-
-/*----------------------------------------------*/
-.ui-widget-content {
-    background: white;
-    border: 1px solid #CCCCCC;
-}
-
-.ui-widget-header {
-    background: white;
-    color: $redApigee;
-    border: none;
-    border-bottom: 1px solid $border2;
-}
-
-.ui-dialog-buttonpane {
-    background-color: $modalBar;
-    border-top: 1px solid $border2;
-    margin-top: 18px;
-}
-
-.ui-dialog {
-    padding: 0;
 }
 
 /*------------ bootstrap --------------------------*/

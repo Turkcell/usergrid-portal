@@ -1,0 +1,27 @@
+@import "variables";
+
+.ui-widget-content {
+    background: white;
+    border: 1px solid #CCCCCC;
+}
+
+.ui-widget-header {
+    background: white;
+    color: $redApigee;
+    border: none;
+    border-bottom: 1px solid $border2;
+}
+
+.ui-dialog-buttonpane {
+    background-color: $modalBar;
+    border-top: 1px solid $border2;
+    margin-top: 18px;
+}
+
+.ui-dialog {
+    padding: 0;
+}
+
+#ui-datepicker-div {
+    display: none;
+}
