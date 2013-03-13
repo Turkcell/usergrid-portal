@@ -1,0 +1,45 @@
+#pages {
+    padding: 0px 0 50px 0px;
+
+    & > div{
+        display: none;
+    }
+
+    .alert-error{
+        display: none;
+    }
+}
+
+#login-page {
+    margin: 50px auto;
+}
+
+#login-area {
+    position: relative;
+    margin: 100px 0 0 -230px;
+    left: 50%;
+    border: 1px solid $border;
+    @include border-radius(5px);
+}
+
+#signup-page {
+    @extend #login-page;
+}
+
+#signup-area {
+    @extend #login-area;
+}
+
+.page-iframe {
+    width: 100%;
+    height: 700px;
+    border: 0;
+}
+
+#forgot-password-page iframe {
+    @extend .page-iframe;
+}
+
+#console-frame-page iframe {
+    @extend .page-iframe;
+}
