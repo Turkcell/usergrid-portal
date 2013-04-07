@@ -6,6 +6,7 @@ Vagrant::Config.run do |config|
   config.vm.host_name = "usergrid.dev"
   config.vm.network :hostonly, "10.10.4.22"
   config.vm.share_folder "templates", "/tmp/vagrant-puppet/templates", File.join(puppet_dir, "templates")
+  config.vm.customize ["setextradata", :id, "VBoxInternal2/SharedFoldersEnableSymlinksCreate/v-root", "1"]
 
   config.vm.provision :shell, :path => File.join(puppet_dir, "bootstrap.sh")
 
