@@ -1,0 +1,928 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Usergrid Portal\n"
+"POT-Creation-Date: 2013-04-10 11:31+0200\n"
+"PO-Revision-Date: 2013-04-10 21:10+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Grunt i18n-extract Task\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: en_US\n"
+
+
+#. FRAGMENT <title data-trans="">Apigee App Services Admin Portal</title>
+#: index.html
+msgid "Apigee App Services Admin Portal"
+msgstr ""
+
+#. FRAGMENT <h2 id="ActualPage1" data-trans="">Admin Portal</h2>
+#: index.html
+msgid "Admin Portal"
+msgstr ""
+
+#. FRAGMENT <span data-trans="">Login</span>
+#: index.html
+msgid "Login"
+msgstr ""
+
+#. FRAGMENT <a id="signup-link" data-trans="">Sign Up</a>
+#: index.html
+msgid "Sign Up"
+msgstr ""
+
+#. FRAGMENT <span data-trans="">Forgot Password</span>
+#: index.html
+msgid "Forgot Password"
+msgstr ""
+
+#. FRAGMENT <a class="go-home" data-trans="">App Services</a>
+#: index.html
+msgid "App Services"
+msgstr ""
+
+#. FRAGMENT <a href="http://mobileanalytics.apigee.com/pages/signin.seam " target="_blank" data-trans="">Mobile Analytics</a>
+#: index.html
+msgid "Mobile Analytics"
+msgstr ""
+
+#. FRAGMENT <span data-trans="">Profile</span>
+#: index.html
+msgid "Profile"
+msgstr ""
+
+#. FRAGMENT <span data-trans="">Sign Out</span>
+#: index.html
+msgid "Sign Out"
+msgstr ""
+
+#. FRAGMENT <div id="api-activity" class="alert" data-trans="">Loading...</div>
+#: index.html
+msgid "Loading..."
+msgstr ""
+
+#. FRAGMENT <span data-trans="">Organizations</span>
+#: index.html
+msgid "Organizations"
+msgstr ""
+
+#. FRAGMENT <a data-trans="">loading...</a>
+#: index.html
+msgid "loading..."
+msgstr ""
+
+#. FRAGMENT <span id="nav-app-name" data-trans="">App Name</span>
+#: index.html
+msgid "App Name"
+msgstr ""
+
+#. FRAGMENT <a data-trans="">loading apps...</a>
+#: index.html
+msgid "loading apps..."
+msgstr ""
+
+#. FRAGMENT <span data-trans="">Switch to...</span>
+#: index.html
+msgid "Switch to..."
+msgstr ""
+
+#. FRAGMENT <a href="http://apigee.com/console/others" target="_blank" data-trans="">API Consoles</a>
+#: index.html
+msgid "API Consoles"
+msgstr ""
+
+#. FRAGMENT <a href="http://support.apigee.com/apigee" target="_blank" data-trans="">Support</a>
+#: index.html
+msgid "Support"
+msgstr ""
+
+#. FRAGMENT <a href="http://apigee.com/docs/app_services" target="_blank" data-trans="">Docs</a>
+#: index.html
+msgid "Docs"
+msgstr ""
+
+#. FRAGMENT <a href="http://apigee.com/docs/usergrid/codesamples" target="_blank" data-trans="">Examples & SDKs</a>
+#: index.html
+msgid "Examples & SDKs"
+msgstr ""
+
+#. FRAGMENT <a href="https://groups.google.com/forum/?fromgroups#!forum/usergrid" target="_blank" data-trans="">Google Group</a>
+#: index.html
+msgid "Google Group"
+msgstr ""
+
+#. FRAGMENT <a href="http://apigee.com/about/products/usergrid" target="_blank" data-trans="">About</a>
+#: index.html
+msgid "About"
+msgstr ""
+
+#. FRAGMENT <span data-trans="">Whoops! We encounterd an error connecting to the API. Press refresh to try loading the Admin Portal again.</span>
+#: index.html
+msgid "Whoops! We encounterd an error connecting to the API. Press refresh to try loading the Admin Portal again."
+msgstr ""
+
+#. FRAGMENT <button id="reload-button" class="btn btn-primary" style="float: right; margin: -4px 30px;" onClick="window.location.reload()" data-trans="">Refresh</button>
+#: index.html
+msgid "Refresh"
+msgstr ""
+
+#. FRAGMENT <strong data-trans="">ERROR</strong>
+#: index.html
+msgid "ERROR"
+msgstr ""
+
+#. FRAGMENT <span data-trans="">Your details were incorrect.</span>
+#: index.html
+msgid "Your details were incorrect."
+msgstr ""
+
+#. FRAGMENT <label class="control-label" for="login-email" data-trans="">Email:</label>
+#: index.html
+msgid "Email:"
+msgstr ""
+
+#. FRAGMENT <label class="control-label" for="login-password" data-trans="">Password:</label>
+#: index.html
+msgid "Password:"
+msgstr ""
+
+#. FRAGMENT <span data-trans="">Remember me</span>
+#: index.html
+msgid "Remember me"
+msgstr ""
+
+#. FRAGMENT <span class="title" data-trans="">We're holding a seat for you!</span>
+#: index.html
+msgid "We're holding a seat for you!"
+msgstr ""
+
+#. FRAGMENT <p data-trans="">Thanks for signing up for a spot on our private beta. We will send you an email as soon as we're ready for you!</p>
+#: index.html
+msgid "Thanks for signing up for a spot on our private beta. We will send you an email as soon as we're ready for you!"
+msgstr ""
+
+#. FRAGMENT <p data-trans="">In the mean time, you can stay up to date with App Services on our <a href="https://groups.google.com/forum/?fromgroups#!forum/usergrid">Google Group</a>.</p>
+#: index.html
+msgid "In the mean time, you can stay up to date with App Services on our <a href=\"https://groups.google.com/forum/?fromgroups#!forum/usergrid\">Google Group</a>."
+msgstr ""
+
+#. FRAGMENT <span class="title" data-trans="">Register</span>
+#: index.html
+msgid "Register"
+msgstr ""
+
+#. FRAGMENT <label class="control-label" for="signup-organization-name" data-trans="">Organization Account</label>
+#: index.html
+msgid "Organization Account"
+msgstr ""
+
+#. FRAGMENT <label class="control-label" for="signup-username" data-trans="">Username</label>
+#: index.html
+msgid "Username"
+msgstr ""
+
+#. FRAGMENT <label class="control-label" for="signup-name" data-trans="">Name</label>
+#: index.html
+msgid "Name"
+msgstr ""
+
+#. FRAGMENT <label class="control-label" for="signup-email" data-trans="">Email</label>
+#: index.html
+msgid "Email"
+msgstr ""
+
+#. FRAGMENT <label class="control-label" for="signup-password" data-trans="">Password</label>
+#: index.html
+msgid "Password"
+msgstr ""
+
+#. FRAGMENT <label class="control-label" for="signup-password-confirm" data-trans="">Confirm</label>
+#: index.html
+msgid "Confirm"
+msgstr ""
+
+#. FRAGMENT <h4 class="panel-title" data-trans="">Organization</h4>
+#: index.html
+msgid "Organization"
+msgstr ""
+
+#. FRAGMENT <div class="panel-desc" data-trans="">View your org's apps, activities, administrators and more.</div>
+#: index.html
+msgid "View your org's apps, activities, administrators and more."
+msgstr ""
+
+#. FRAGMENT <span data-trans="">Org Overview</span>
+#: index.html
+msgid "Org Overview"
+msgstr ""
+
+#. FRAGMENT <h4 class="panel-title" data-trans="">Application</h4>
+#: index.html
+msgid "Application"
+msgstr ""
+
+#. FRAGMENT <p class="panel-desc" data-trans="">View your app's data, scripts, analytics and more.</p>
+#: index.html
+msgid "View your app's data, scripts, analytics and more."
+msgstr ""
+
+#. FRAGMENT <span data-trans="">App Overview</span>
+#: index.html
+msgid "App Overview"
+msgstr ""
+
+#. FRAGMENT <span class="nav-menu-text" data-trans="">App End-Users</span>
+#: index.html
+msgid "App End-Users"
+msgstr ""
+
+#. FRAGMENT <span class="nav-menu-text" data-trans="">App Data</span>
+#: index.html
+msgid "App Data"
+msgstr ""
+
+#. FRAGMENT <span class="nav-menu-text" data-trans="">Activities</span>
+#: index.html
+msgid "Activities"
+msgstr ""
+
+#. FRAGMENT <span class="nav-menu-text" data-trans="">Analytics</span>
+#: index.html
+msgid "Analytics"
+msgstr ""
+
+#. FRAGMENT <span class="nav-menu-text" data-trans="">App Settings</span>
+#: index.html
+msgid "App Settings"
+msgstr ""
+
+#. FRAGMENT <span class="nav-menu-text" data-trans="">Shell</span>
+#: index.html
+msgid "Shell"
+msgstr ""
+
+#. FRAGMENT <h4 class="panel-title" data-trans="">End-Users</h4>
+#: index.html
+msgid "End-Users"
+msgstr ""
+
+#. FRAGMENT <p class="panel-desc" data-trans="">Data related to your application end-users.</p>
+#: index.html
+msgid "Data related to your application end-users."
+msgstr ""
+
+#. FRAGMENT <h4 class="panel-title" data-trans="">Data Collections</h4>
+#: index.html
+msgid "Data Collections"
+msgstr ""
+
+#. FRAGMENT <p class="panel-desc" data-trans="">Explore your application's data collections.</p>
+#: index.html
+msgid "Explore your application's data collections."
+msgstr ""
+
+#. FRAGMENT <span class="nav-menu-text" data-trans="">Data Explorer</span>
+#: index.html
+msgid "Data Explorer"
+msgstr ""
+
+#. FRAGMENT <a class="btn" data-toggle="modal" href="#dialog-form-new-collection" data-trans="">Add Collection</a>
+#: index.html
+msgid "Add Collection"
+msgstr ""
+
+#. FRAGMENT <h4 class="panel-title" data-trans="">Quick Start Guide</h4>
+#: index.html
+msgid "Quick Start Guide"
+msgstr ""
+
+#. FRAGMENT <div class="panel-desc" data-trans="">Need help getting started? Follow our Quick Start Guide</div>
+#: index.html
+msgid "Need help getting started? Follow our Quick Start Guide"
+msgstr ""
+
+#. FRAGMENT <a href="http://apigee.com/docs/usergrid/content/quick-start" target="_blank" data-trans="">App Services: Quick Start Guide</a>
+#: index.html
+msgid "App Services: Quick Start Guide"
+msgstr ""
+
+#. FRAGMENT <h4 class="panel-title" data-trans="">SDKs & Modules</h4>
+#: index.html
+msgid "SDKs & Modules"
+msgstr ""
+
+#. FRAGMENT <div class="panel-desc" data-trans="">Download an SDK or module to get up-and-running quickly</div>
+#: index.html
+msgid "Download an SDK or module to get up-and-running quickly"
+msgstr ""
+
+#. FRAGMENT <a href="https://github.com/apigee/usergrid-ios-sdk/archive/master.zip" target="_blank" data-trans="">iOS SDK: Download</a>
+#: index.html
+msgid "iOS SDK: Download"
+msgstr ""
+
+#. FRAGMENT <a href="https://github.com/apigee/usergrid-java-sdk/archive/master.zip" target="_blank" data-trans="">Android SDK: Download</a>
+#: index.html
+msgid "Android SDK: Download"
+msgstr ""
+
+#. FRAGMENT <a href="https://github.com/apigee/usergrid-javascript-sdk/archive/master.zip" data-trans="">Javascript SDK: Download</a>
+#: index.html
+msgid "Javascript SDK: Download"
+msgstr ""
+
+#. FRAGMENT <a href="http://npmjs.org/usergrid" target="_blank" data-trans="">Node.js Module</a>
+#: index.html
+msgid "Node.js Module"
+msgstr ""
+
+#. FRAGMENT <a href="https://github.com/scottganyo/usergrid_iron" target="_blank" data-trans="">Ruby SDK: Download</a>
+#: index.html
+msgid "Ruby SDK: Download"
+msgstr ""
+
+#. FRAGMENT <a href="https://github.com/apigee/Apigee.Net" target="_blank" data-trans="">C# SDK: Download</a>
+#: index.html
+msgid "C# SDK: Download"
+msgstr ""
+
+#. FRAGMENT <span class="title" data-trans="">Current Organization</span>
+#: index.html
+msgid "Current Organization"
+msgstr ""
+
+#. FRAGMENT <span class="title" data-trans="">Applications</span>
+#: index.html
+msgid "Applications"
+msgstr ""
+
+#. FRAGMENT <a class="btn button bottom-space" data-toggle="modal" href="#dialog-form-new-application" data-trans="">New Application</a>
+#: index.html
+msgid "New Application"
+msgstr ""
+
+#. FRAGMENT <span class="title" data-trans="">Organization's Administrators</span>
+#: index.html
+msgid "Organization's Administrators"
+msgstr ""
+
+#. FRAGMENT <a class="btn button bottom-space" data-toggle="modal" href="#dialog-form-new-admin" data-trans="">New Administrator</a>
+#: index.html
+msgid "New Administrator"
+msgstr ""
+
+#. FRAGMENT <span class="title" data-trans="">Organization API Credentials</span>
+#: index.html
+msgid "Organization API Credentials"
+msgstr ""
+
+#. FRAGMENT <a class="btn button bottom-space" onclick="Usergrid.console.newOrganizationCredentials(); return false;" data-trans="">Regenerate Credentials</a>
+#: index.html
+msgid "Regenerate Credentials"
+msgstr ""
+
+#. FRAGMENT <span class="span2" data-trans="">Client ID</span>
+#: index.html
+msgid "Client ID"
+msgstr ""
+
+#. FRAGMENT <span class="span2" data-trans="">Client Secret</span>
+#: index.html
+msgid "Client Secret"
+msgstr ""
+
+#. FRAGMENT <h4 data-trans="">No applications for this organization</h4>
+#: index.html
+msgid "No applications for this organization"
+msgstr ""
+
+#. FRAGMENT <p class="validateTips" data-trans="">All organizations require at least one application. Please create one.</p>
+#: index.html
+msgid "All organizations require at least one application. Please create one."
+msgstr ""
+
+#. FRAGMENT <p class="help-block" data-trans="">Length of name must be between 4 and 80</p>
+#: index.html
+msgid "Length of name must be between 4 and 80"
+msgstr ""
+
+#. FRAGMENT <h4 data-trans="">Create new administrator</h4>
+#: index.html
+msgid "Create new administrator"
+msgstr ""
+
+#. FRAGMENT <span data-trans="">Application Dashboard</span>
+#: index.html
+msgid "Application Dashboard"
+msgstr ""
+
+#. FRAGMENT <h4 data-trans="">Account Settings</h4>
+#: index.html
+msgid "Account Settings"
+msgstr ""
+
+#. FRAGMENT <p data-trans="">Account settings updated.</p>
+#: index.html
+msgid "Account settings updated."
+msgstr ""
+
+#. FRAGMENT <button class="btn btn-usergrid" data-dismiss="modal" data-trans="">OK</button>
+#: index.html
+msgid "OK"
+msgstr ""
+
+#. FRAGMENT <span class="title" data-trans="">Personal Account</span>
+#: index.html
+msgid "Personal Account"
+msgstr ""
+
+#. FRAGMENT <label class="control-label" for="update-account-picture-img" data-trans="">Picture <br>(from <a href="http://gravatar.com">gravatar.com</a>) </label>
+#: index.html
+msgid "Picture <br>(from <a href=\"http://gravatar.com\">gravatar.com</a>) "
+msgstr ""
+
+#. FRAGMENT <span class="help-block" data-trans="">Leave blank any of the following to keep the current password unchanged</span>
+#: index.html
+msgid "Leave blank any of the following to keep the current password unchanged"
+msgstr ""
+
+#. FRAGMENT <label class="control-label" for="old-account-password" data-trans="">Old Password</label>
+#: index.html
+msgid "Old Password"
+msgstr ""
+
+#. FRAGMENT <label class="control-label" for="update-account-password" data-trans="">New Password</label>
+#: index.html
+msgid "New Password"
+msgstr ""
+
+#. FRAGMENT <label class="control-label" for="update-account-password-repeat" data-trans="">Confirm New Password</label>
+#: index.html
+msgid "Confirm New Password"
+msgstr ""
+
+#. FRAGMENT <a class="" data-toggle="modal" href="#dialog-form-new-organization" data-trans="">Add</a>
+#: index.html
+msgid "Add"
+msgstr ""
+
+#. FRAGMENT <h4 data-trans="">Create new organization</h4>
+#: index.html
+msgid "Create new organization"
+msgstr ""
+
+#. FRAGMENT <p class="validateTips" data-trans="">All form fields are required.</p>
+#: index.html
+msgid "All form fields are required."
+msgstr ""
+
+#. FRAGMENT <span class="title" data-trans="">Collection: /users</span>
+#: index.html
+msgid "Collection: /users"
+msgstr ""
+
+#. FRAGMENT <option value="name" data-trans="">Full Name</option>
+#: index.html
+msgid "Full Name"
+msgstr ""
+
+#. FRAGMENT <a class="btn " data-toggle="modal" id="delete-users-link" data-trans="">Delete</a>
+#: index.html
+msgid "Delete"
+msgstr ""
+
+#. FRAGMENT <a style="margin-right: 15px;" class="btn btn-primary" data-toggle="modal" href="#dialog-form-new-user" data-trans="">Create new user</a>
+#: index.html
+msgid "Create new user"
+msgstr ""
+
+#. FRAGMENT <a data-trans="">&larr; Previous</a>
+#: index.html
+msgid "&larr; Previous"
+msgstr ""
+
+#. FRAGMENT <a data-trans="">Next &rarr;</a>
+#: index.html
+msgid "Next &rarr;"
+msgstr ""
+
+#. FRAGMENT <p class="validateTips" data-trans="">Username is required.</p>
+#: index.html
+msgid "Username is required."
+msgstr ""
+
+#. FRAGMENT <label for="new-user-fullname" data-trans="">Full name</label>
+#: index.html
+msgid "Full name"
+msgstr ""
+
+#. FRAGMENT <label for="new-user-validate-password" data-trans="">Confirm password</label>
+#: index.html
+msgid "Confirm password"
+msgstr ""
+
+#. FRAGMENT <h4 data-trans="">Are you sure?</h4>
+#: index.html
+msgid "Are you sure?"
+msgstr ""
+
+#. FRAGMENT <h4 data-trans="">Create new application</h4>
+#: index.html
+msgid "Create new application"
+msgstr ""
+
+#. FRAGMENT <a class="tab-button btn" id="button-user-list" data-trans="">List</a>
+#: index.html
+msgid "List"
+msgstr ""
+
+#. FRAGMENT <a class="tab-button btn" id="button-user-memberships" data-trans="">Groups</a>
+#: index.html
+msgid "Groups"
+msgstr ""
+
+#. FRAGMENT <a class="tab-button btn" id="button-user-graph" data-trans="">Graph</a>
+#: index.html
+msgid "Graph"
+msgstr ""
+
+#. FRAGMENT <a class="tab-button btn" id="button-user-permissions" data-trans="">Roles & Permissions</a>
+#: index.html
+msgid "Roles & Permissions"
+msgstr ""
+
+#. FRAGMENT <h4 data-trans="">Add this user to a Role</h4>
+#: index.html
+msgid "Add this user to a Role"
+msgstr ""
+
+#. FRAGMENT <p class="validateTips" data-trans="">Search for the role you want to add to this user.</p>
+#: index.html
+msgid "Search for the role you want to add to this user."
+msgstr ""
+
+#. FRAGMENT <label for="search-role-name-input" data-trans="">Role</label>
+#: index.html
+msgid "Role"
+msgstr ""
+
+#. FRAGMENT <h4 data-trans="">Add this user to a Group</h4>
+#: index.html
+msgid "Add this user to a Group"
+msgstr ""
+
+#. FRAGMENT <p class="validateTips" data-trans="">Search for the group you want to add this user to.</p>
+#: index.html
+msgid "Search for the group you want to add this user to."
+msgstr ""
+
+#. FRAGMENT <label for="search-group-name-input" data-trans="">Group</label>
+#: index.html
+msgid "Group"
+msgstr ""
+
+#. FRAGMENT <h4 data-trans="">Follow this User</h4>
+#: index.html
+msgid "Follow this User"
+msgstr ""
+
+#. FRAGMENT <p class="validateTips" data-trans="">Search for the user you want to Follow.</p>
+#: index.html
+msgid "Search for the user you want to Follow."
+msgstr ""
+
+#. FRAGMENT <label for="search-follow-username-input" data-trans="">User</label>
+#: index.html
+msgid "User"
+msgstr ""
+
+#. FRAGMENT <span class="title" data-trans="">Collection: /groups</span>
+#: index.html
+msgid "Collection: /groups"
+msgstr ""
+
+#. FRAGMENT <option value="path" data-trans="">Path</option>
+#: index.html
+msgid "Path"
+msgstr ""
+
+#. FRAGMENT <option value="title" data-trans="">Group Name</option>
+#: index.html
+msgid "Group Name"
+msgstr ""
+
+#. FRAGMENT <a style="margin-right: 15px;" class="btn btn-primary" data-toggle="modal" href="#dialog-form-new-group" data-trans="">Create new group</a>
+#: index.html
+msgid "Create new group"
+msgstr ""
+
+#. FRAGMENT <label for="new-group-title" data-trans="">Display Name</label>
+#: index.html
+msgid "Display Name"
+msgstr ""
+
+#. FRAGMENT <label for="new-group-path" data-trans="">Group Path</label>
+#: index.html
+msgid "Group Path"
+msgstr ""
+
+#. FRAGMENT <a class="tab-button btn active" id="button-group-details" data-trans="">Details</a>
+#: index.html
+msgid "Details"
+msgstr ""
+
+#. FRAGMENT <a class="tab-button btn" id="button-group-memberships" data-trans="">Members</a>
+#: index.html
+msgid "Members"
+msgstr ""
+
+#. FRAGMENT <h4 data-trans="">Add a User to this Group</h4>
+#: index.html
+msgid "Add a User to this Group"
+msgstr ""
+
+#. FRAGMENT <p class="validateTips" data-trans="">Search for the user you want to add to this group.</p>
+#: index.html
+msgid "Search for the user you want to add to this group."
+msgstr ""
+
+#. FRAGMENT <h4 data-trans="">Add a Role to this Group</h4>
+#: index.html
+msgid "Add a Role to this Group"
+msgstr ""
+
+#. FRAGMENT <p class="validateTips" data-trans="">Search for the role you want to add to this group.</p>
+#: index.html
+msgid "Search for the role you want to add to this group."
+msgstr ""
+
+#. FRAGMENT <span class="title" data-trans="">Collection: /roles</span>
+#: index.html
+msgid "Collection: /roles"
+msgstr ""
+
+#. FRAGMENT <a style="margin-right: 15px;" class="btn btn-primary" data-toggle="modal" href="#dialog-form-new-role" data-trans="">Add Role</a>
+#: index.html
+msgid "Add Role"
+msgstr ""
+
+#. FRAGMENT <span data-trans="">Role Settings</span>
+#: index.html
+msgid "Role Settings"
+msgstr ""
+
+#. FRAGMENT <h2 data-trans="">No Permissions.</h2>
+#: index.html
+msgid "No Permissions."
+msgstr ""
+
+#. FRAGMENT <h4 data-trans="">Create new Role</h4>
+#: index.html
+msgid "Create new Role"
+msgstr ""
+
+#. FRAGMENT <a class="tab-button btn active" id="button-role-settings" data-trans="">Settings</a>
+#: index.html
+msgid "Settings"
+msgstr ""
+
+#. FRAGMENT <a class="tab-button btn" id="button-role-users" data-trans="">Users</a>
+#: index.html
+msgid "Users"
+msgstr ""
+
+#. FRAGMENT <h4 data-trans="">Add a Group to this Role</h4>
+#: index.html
+msgid "Add a Group to this Role"
+msgstr ""
+
+#. FRAGMENT <p class="validateTips" data-trans="">Search for the group you want to add to this role.</p>
+#: index.html
+msgid "Search for the group you want to add to this role."
+msgstr ""
+
+#. FRAGMENT <h4 data-trans="">Add a user to this Role</h4>
+#: index.html
+msgid "Add a user to this Role"
+msgstr ""
+
+#. FRAGMENT <p class="validateTips" data-trans="">Search for the user you want to add to this role.</p>
+#: index.html
+msgid "Search for the user you want to add to this role."
+msgstr ""
+
+#. FRAGMENT <option value="content" data-trans="">Content</option>
+#: index.html
+msgid "Content"
+msgstr ""
+
+#. FRAGMENT <option value="actor" data-trans="">Actor</option>
+#: index.html
+msgid "Actor"
+msgstr ""
+
+#. FRAGMENT <a class="btn" onclick="Usergrid.console.requestActivities(); return false;" data-trans="">Update Activities</a>
+#: index.html
+msgid "Update Activities"
+msgstr ""
+
+#. FRAGMENT <label class="control-label" for="start-date" data-trans="">Start:</label>
+#: index.html
+msgid "Start:"
+msgstr ""
+
+#. FRAGMENT <label class="control-label" for="end-date" data-trans="">End:</label>
+#: index.html
+msgid "End:"
+msgstr ""
+
+#. FRAGMENT <label class="control-label" for="resolutionSelect" data-trans="">Resolution</label>
+#: index.html
+msgid "Resolution"
+msgstr ""
+
+#. FRAGMENT <option value="all" data-trans="">All</option>
+#: index.html
+msgid "All"
+msgstr ""
+
+#. FRAGMENT <option value="minute" data-trans="">Minute</option>
+#: index.html
+msgid "Minute"
+msgstr ""
+
+#. FRAGMENT <option value="five_minutes" data-trans="">5 Minutes</option>
+#: index.html
+msgid "5 Minutes"
+msgstr ""
+
+#. FRAGMENT <option value="half_hour" data-trans="">30 Minutes</option>
+#: index.html
+msgid "30 Minutes"
+msgstr ""
+
+#. FRAGMENT <option value="hour" data-trans="">Hour</option>
+#: index.html
+msgid "Hour"
+msgstr ""
+
+#. FRAGMENT <option value="six_hour" data-trans="">6 Hours</option>
+#: index.html
+msgid "6 Hours"
+msgstr ""
+
+#. FRAGMENT <option value="half_day" data-trans="">Half Day</option>
+#: index.html
+msgid "Half Day"
+msgstr ""
+
+#. FRAGMENT <option value="day" selected="selected" data-trans="">Day</option>
+#: index.html
+msgid "Day"
+msgstr ""
+
+#. FRAGMENT <option value="week" data-trans="">Week</option>
+#: index.html
+msgid "Week"
+msgstr ""
+
+#. FRAGMENT <option value="month" data-trans="">Month</option>
+#: index.html
+msgid "Month"
+msgstr ""
+
+#. FRAGMENT <button class="btn btn-primary" id="button-analytics-generate" data-trans="">Generate</button>
+#: index.html
+msgid "Generate"
+msgstr ""
+
+#. FRAGMENT <span data-trans="">Result Analytics</span>
+#: index.html
+msgid "Result Analytics"
+msgstr ""
+
+#. FRAGMENT <span data-trans="">Application Properties</span>
+#: index.html
+msgid "Application Properties"
+msgstr ""
+
+#. FRAGMENT <span class="title" data-trans="">Interactive Shell</span>
+#: index.html
+msgid "Interactive Shell"
+msgstr ""
+
+#. FRAGMENT <p data-trans="">Type "help" to view a list of the available commands.</p>
+#: index.html
+msgid "Type \"help\" to view a list of the available commands."
+msgstr ""
+
+#. FRAGMENT <p data-trans="">Response:</p>
+#: index.html
+msgid "Response:"
+msgstr ""
+
+#. FRAGMENT <h4 data-trans="">Create new collection</h4>
+#: index.html
+msgid "Create new collection"
+msgstr ""
+
+#. FRAGMENT <strong data-trans="">Method</strong>
+#: index.html
+msgid "Method"
+msgstr ""
+
+#. FRAGMENT <a id="back-to-collection" class="outside-link" style="display:none" data-trans="">Back to collection</a>
+#: index.html
+msgid "Back to collection"
+msgstr ""
+
+#. FRAGMENT <strong data-trans="">Query String</strong>
+#: index.html
+msgid "Query String"
+msgstr ""
+
+#. FRAGMENT <strong data-trans="">Limit</strong>
+#: index.html
+msgid "Limit"
+msgstr ""
+
+#. FRAGMENT <strong data-trans="">Json Body</strong>
+#: index.html
+msgid "Json Body"
+msgstr ""
+
+#. FRAGMENT <a class="btn pull-left disabled" id="button-query-validate" data-trans="">Validate Json</a>
+#: index.html
+msgid "Validate Json"
+msgstr ""
+
+#. FRAGMENT <button type="button" class="btn btn-primary" id="button-query" data-trans="">Run Query</button>
+#: index.html
+msgid "Run Query"
+msgstr ""
+
+#. FRAGMENT <input onkeyup="Usergrid.console.searchUsers();" type="text" name="search-user-username" id="search-user-username" class="input-small search" placeholder="Search">
+#: index.html
+msgid "Search"
+msgstr ""
+
+#. FRAGMENT <input id="query-path" type="text" name="path" class="span6" autocomplete="off" placeholder="ex: /users">
+#: index.html
+msgid "ex: /users"
+msgstr ""
+
+#. FRAGMENT <input id="query-ql" type="text" name="query" class="span5" placeholder="ex: select * where name='fred'">
+#: index.html
+msgid "ex: select * where name='fred'"
+msgstr ""
+
+#. FRAGMENT <input id="query-limit" type="text" name="query-limit" class="span5" placeholder="ex: 10">
+#: index.html
+msgid "ex: 10"
+msgstr ""
+
+#. FRAGMENT <textarea id="query-source" class="span6 pull-left" rows="4" placeholder="{  &quot;name&quot;  :  &quot;value&quot;  }"></textarea>
+#: index.html
+msgid "{  \"name\"  :  \"value\"  }"
+msgstr ""
+
+#. FRAGMENT <input type="submit" name="button-login" id="button-login" value="Log In" class="btn btn-usergrid">
+#: index.html
+msgid "Log In"
+msgstr ""
+
+#. FRAGMENT <input type="button" name="button-signup" id="button-signup" value="Sign up" class="btn btn-usergrid">
+#: index.html
+msgid "Sign up"
+msgstr ""
+
+#. FRAGMENT <input type="submit" class="btn btn-usergrid" value="Create">
+#: index.html
+msgid "Create"
+msgstr ""
+
+#. FRAGMENT <input type="reset" class="btn" value="Cancel" data-dismiss="modal">
+#: index.html
+msgid "Cancel"
+msgstr ""
+
+#. FRAGMENT <input type="button" name="button-update-account" id="button-update-account" value="Update" class="btn btn-usergrid span">
+#: index.html
+msgid "Update"
+msgstr ""
+
+#. FRAGMENT <input type="submit" class="btn btn-danger" value="Yes, continue">
+#: index.html
+msgid "Yes, continue"
+msgstr ""
+
+#. FRAGMENT <input type="submit" class="btn btn-danger" value="Yes, delete">
+#: index.html
+msgid "Yes, delete"
+msgstr ""
+
+#. FRAGMENT <input type="submit" class="btn btn-usergrid" value="Follow">
+#: index.html
+msgid "Follow"
+msgstr ""
+

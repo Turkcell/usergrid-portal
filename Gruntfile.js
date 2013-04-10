@@ -25,6 +25,11 @@ module.exports = function(grunt) {
                     }}
                 ]
             }
+        },
+        'i18n-extract': {
+            html: {
+                src: ['index.html']
+            }
         }
     });
 
