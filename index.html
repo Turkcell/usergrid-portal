@@ -40,6 +40,11 @@
     <script src="js/app/console.js" type="text/javascript"></script>
     <script src="js/app/ui/ui.js" type="text/javascript"></script>
 
+    <!-- i18n -->
+    <script src="js/lib/Gettext.js"></script>
+    <script src="js/app/i18n.js"></script>
+    <!-- //i18n -->
+
 </head>
 <body>
 
@@ -76,7 +81,7 @@
           </div>
           <div class="right-header">
             <ul id="profileMenu" class="nav secondary-nav">
-              <li ><a href="#">Dashboard</a></li>
+              <li ><a href="#" data-trans>Dashboard</a></li>
               <li class="dropdown">
                 <a id="account-link1" class="dropdown-toggle" data-toggle="dropdown" ><span id="userEmail">test</span> <span class="caret"></span></a>
                 <ul class="dropdown-menu">
@@ -115,6 +120,11 @@
         </div>
         <div class="right-header pull-right">
             <ul class="nav">
+                <li id="js-lang-switcher" class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown"><span class="js-lang-switcher-title"></span> <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                    </ul>
+                </li>
                 <li id="switchTo-menu" class="dropdown">
                     <a id="switchTo-link" class="dropdown-toggle" data-toggle="dropdown"><span data-trans>Switch to...</span> <span class="caret"></span></a>
                     <ul class="dropdown-menu">
