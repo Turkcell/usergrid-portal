@@ -46,6 +46,6 @@ When you run `grunt` command, it will only copy the needed files to `dist` folde
 [Compass]: http://compass-style.org/
 [Grunt]: http://gruntjs.com/
 [VirtualBox]: https://www.virtualbox.org/
-[Vagrant]: http://www.vagrantup.com/
+[Vagrant]: http://downloads.vagrantup.com/tags/v1.0.7
 [Puppet]: https://puppetlabs.com/
 [vagrant-hostmaster]: https://github.com/mosaicxm/vagrant-hostmaster
