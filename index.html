@@ -4,7 +4,7 @@
 <html>
   <head>
   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-  <title>Apigee App Services Admin Portal </title>
+  <title data-trans>Apigee App Services Admin Portal</title>
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" type="text/css" href="css/usergrid.css"/>
     <script src="config.js" type="text/javascript"></script>
@@ -40,10 +40,10 @@
     <script src="js/app/console.js" type="text/javascript"></script>
     <script src="js/app/ui/ui.js" type="text/javascript"></script>
 
-<style type="text/css">
-
-
-</style>
+    <!-- i18n -->
+    <script src="js/lib/Gettext.js"></script>
+    <script src="js/app/i18n.js"></script>
+    <!-- //i18n -->
 
 </head>
 <body>
@@ -61,13 +61,13 @@
         <div id="publicMenu" class="navbar-inner">
           <div class="left-header">
             <h1 class="apigee"><a href="https://apigee.com" target="_blank"><img src="images/logo-white.png">apigee</a></h1>
-            <h2 id="ActualPage1">Admin Portal</h2>
+            <h2 id="ActualPage1" data-trans>Admin Portal</h2>
           </div>
           <div class="right-header">
             <ul id="loginMenu" class="nav secondary-nav">
-              <li><a id="login-link" ><i class="icon-user"></i> Login</a></li>
-              <li><a id="signup-link" > Sign Up</a></li>
-              <li><a id="forgot-password-link" ><i class="icon-lock"></i> Forgot Password</a></li>
+              <li><a id="login-link"><i class="icon-user"></i> <span data-trans>Login</span></a></li>
+              <li><a id="signup-link" data-trans>Sign Up</a></li>
+              <li><a id="forgot-password-link" ><i class="icon-lock"></i> <span data-trans>Forgot Password</span></a></li>
             </ul>
           </div>
         </div>
@@ -75,24 +75,24 @@
           <div class="left-header">
             <h1 class="apigee"><a href="https://apigee.com" target="_blank"><img class="logo" src="images/logo-white.png">apigee</a></h1>
             <ul class="nav">
-              <li class="portal-name" ><a class="go-home">App Services</a></li>
-              <li><a href="http://mobileanalytics.apigee.com/pages/signin.seam " target="_blank"> Mobile Analytics</a></li>
+              <li class="portal-name" ><a class="go-home" data-trans>App Services</a></li>
+              <li><a href="http://mobileanalytics.apigee.com/pages/signin.seam " target="_blank" data-trans>Mobile Analytics</a></li>
             </ul>
           </div>
           <div class="right-header">
             <ul id="profileMenu" class="nav secondary-nav">
-              <li ><a href="#">Dashboard</a></li>
+              <li ><a href="#" data-trans>Dashboard</a></li>
               <li class="dropdown">
                 <a id="account-link1" class="dropdown-toggle" data-toggle="dropdown" ><span id="userEmail">test</span> <span class="caret"></span></a>
                 <ul class="dropdown-menu">
-                  <li><a id="account-link" ><i class="icon-user"></i> Profile</a></li>
-                  <li><a id="logout-link" ><i class="icon-off"></i> Sign Out</a></li>
+                  <li><a id="account-link" ><i class="icon-user"></i> <span data-trans>Profile</span></a></li>
+                  <li><a id="logout-link" ><i class="icon-off"></i> <span data-trans>Sign Out</span></a></li>
                 </ul>
               </li>
             </ul>
           </div>
         </div>
-        <div id="api-activity" class="alert">Loading...</div>
+        <div id="api-activity" class="alert" data-trans>Loading...</div>
       </div>
     </div>
     <div class="sub-nav navbar navbar-fixed privateMenu" style="display: none">
@@ -100,39 +100,43 @@
             <li id="organizations-menu" class="dropdown">
                 <a id="console-links" class="dropdown-toggle" data-toggle="dropdown">
                     <i class="icon-folder-close icon-white"></i>
-                    <span>Organizations</span>
+                    <span data-trans>Organizations</span>
                     <span class="caret"></span>
                 </a>
                 <ul class="dropdown-menu">
-                    <li><a >loading...</a></li>
+                    <li><a data-trans>loading...</a></li>
                 </ul>
             </li>
             <li class="dropdown">
                 <a class="dropdown-toggle" data-toggle="dropdown">
                    <i class="icon-cog icon-white"></i>
-                    <span id="nav-app-name">App Name</span>
+                    <span id="nav-app-name" data-trans>App Name</span>
                     <span class="caret"></span>
                 </a>
                 <ul class="dropdown-menu applications-menu" >
-                    <li><a >loading apps...</a></li>
+                    <li><a data-trans>loading apps...</a></li>
                 </ul>
             </li>
         </div>
         <div class="right-header pull-right">
             <ul class="nav">
-                <li id="switchTo-menu" class="dropdown">
-                    <a id="switchTo-link" class="dropdown-toggle" data-toggle="dropdown" ><span>Switch to...
-                </span> <span class="caret"></span></a>
+                <li id="js-lang-switcher" class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown"><span class="js-lang-switcher-title"></span> <span class="caret"></span></a>
                     <ul class="dropdown-menu">
-                        <li><a href="http://mobileanalytics.apigee.com/pages/signin.seam " target="_blank"> Mobile Analytics</a></li>
-                        <li><a href="http://apigee.com/console/others" target="_blank"> API Consoles</a></li>
                     </ul>
                 </li>
-                <li><a href="http://support.apigee.com/apigee" target="_blank"> Support</a></li>
-                <li><a href="http://apigee.com/docs/app_services" target="_blank"> Docs</a></li>
-                <li><a href="http://apigee.com/docs/usergrid/codesamples" target="_blank">Examples & SDKs</a></li>
-                <li><a href="https://groups.google.com/forum/?fromgroups#!forum/usergrid" target="_blank"> Google Group</a></li>
-                <li><a href="http://apigee.com/about/products/usergrid" target="_blank"> About</a></li>
+                <li id="switchTo-menu" class="dropdown">
+                    <a id="switchTo-link" class="dropdown-toggle" data-toggle="dropdown"><span data-trans>Switch to...</span> <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="http://mobileanalytics.apigee.com/pages/signin.seam " target="_blank" data-trans>Mobile Analytics</a></li>
+                        <li><a href="http://apigee.com/console/others" target="_blank" data-trans>API Consoles</a></li>
+                    </ul>
+                </li>
+                <li><a href="http://support.apigee.com/apigee" target="_blank" data-trans>Support</a></li>
+                <li><a href="http://apigee.com/docs/app_services" target="_blank" data-trans>Docs</a></li>
+                <li><a href="http://apigee.com/docs/usergrid/codesamples" target="_blank" data-trans>Examples & SDKs</a></li>
+                <li><a href="https://groups.google.com/forum/?fromgroups#!forum/usergrid" target="_blank" data-trans>Google Group</a></li>
+                <li><a href="http://apigee.com/about/products/usergrid" target="_blank" data-trans>About</a></li>
             </ul>
         </div>
     </div>
@@ -143,28 +147,28 @@
 
   <div id="message-page" class="container-fluid">
     <div id="message-area" class="alert alert-info curl-data" style="padding: 20px;">
-      Whoops! We encounterd an error connecting to the API.  Press refresh to try loading the Admin Portal again.
-      <button id="reload-button" class="btn btn-primary" style="float: right; margin: -4px 30px;" onClick="window.location.reload()">Refresh</button>
+      <span data-trans>Whoops! We encounterd an error connecting to the API. Press refresh to try loading the Admin Portal again.</span>
+      <button id="reload-button" class="btn btn-primary" style="float: right; margin: -4px 30px;" onClick="window.location.reload()" data-trans>Refresh</button>
     </div>
   </div>
   <div id="login-page" class="container-fluid">
     <div class="row">
       <div id="login-area" class="span6 offset1">
         <div id="login-message" class="alert alert-error">
-          <strong>ERROR</strong>: Your details were incorrect.<br/>
+          <strong data-trans>ERROR</strong>: <span data-trans>Your details were incorrect.</span><br/>
         </div>
         <div class="console-section">
           <div class="well thingy"><span style="margin-left: 30px" class="title">Login</span></div>
           <form name="login-form" id="login-form" class="form-horizontal">
             <div class="control-group">
-              <label class="control-label" for="login-email">Email:</label>
+              <label class="control-label" for="login-email" data-trans>Email:</label>
               <div class="controls">
                 <input type="text" name="login-email" id="login-email" class="" value="" size="20"/>
               </div>
 
             </div>
             <div class="control-group">
-              <label class="control-label" for="login-password">Password:</label>
+              <label class="control-label" for="login-password" data-trans>Password:</label>
               <div class="controls">
                 <input type="password" name="login-password" id="login-password" class="" value="" size="20"/>
 
@@ -173,7 +177,7 @@
             <div class="control-group">
               <div class="controls">
                 <input type="checkbox" value="true" id="remember" name="remember"/>
-                <span>Remember me</span>
+                <span data-trans>Remember me</span>
               </div>
             </div>
             <div class="form-actions">
@@ -190,10 +194,10 @@
     <div class="row">
       <div id="login-area" class="span6 offset1">
         <div class="console-section well thingy">
-          <span class="title">We're holding a seat for you!</span>
+          <span class="title" data-trans>We're holding a seat for you!</span>
           <br /><br />
-          <p>Thanks for signing up for a spot on our private beta. We will send you an email as soon as we're ready for you!</p>
-          <p>In the mean time, you can stay up to date with App Services on our <a href="https://groups.google.com/forum/?fromgroups#!forum/usergrid">Google Group</a>.</p>
+          <p data-trans>Thanks for signing up for a spot on our private beta. We will send you an email as soon as we're ready for you!</p>
+          <p data-trans>In the mean time, you can stay up to date with App Services on our <a href="https://groups.google.com/forum/?fromgroups#!forum/usergrid">Google Group</a>.</p>
         </div>
       </div>
     </div>
@@ -203,40 +207,40 @@
       <div id="signup-area" class="span6 offset1">
         <div id="signup-message" class="alert alert-error"></div>
         <div class="console-section">
-          <div class="well thingy"><span class="title">Register</span> </div>
+          <div class="well thingy"><span class="title" data-trans>Register</span> </div>
           <form name="signup-form" id="signup-form" onsubmit="return false;" class="form-horizontal">
             <div class="control-group">
-              <label class="control-label" for="signup-organization-name">Organization Account</label>
+              <label class="control-label" for="signup-organization-name" data-trans>Organization Account</label>
               <div class="controls">
                 <input type="text" name="signup-organization-name" id="signup-organization-name" class="" value="" size="20"/>
               </div>
             </div>
             <div class="control-group">
-              <label class="control-label" for="signup-username">Username</label>
+              <label class="control-label" for="signup-username" data-trans>Username</label>
               <div class="controls">
                 <input type="text" name="signup-username" id="signup-username" class="" value="" size="20"/>
               </div>
             </div>
             <div class="control-group">
-              <label class="control-label" for="signup-name">Name </label>
+              <label class="control-label" for="signup-name" data-trans>Name</label>
               <div class="controls">
                 <input type="text" name="signup-name" id="signup-name" class="" value="" size="20"/>
               </div>
             </div>
             <div class="control-group">
-              <label class="control-label" for="signup-email">Email </label>
+              <label class="control-label" for="signup-email" data-trans>Email</label>
               <div class="controls">
                 <input type="text" name="signup-email" id="signup-email" class="" value="" size="20"/>
               </div>
             </div>
             <div class="control-group">
-              <label class="control-label" for="signup-password">Password </label>
+              <label class="control-label" for="signup-password" data-trans>Password</label>
               <div class="controls">
                 <input type="password" name="signup-password" id="signup-password" class="" value="" size="20"/>
               </div>
             </div>
             <div class="control-group">
-              <label class="control-label" for="signup-password-confirm">Confirm </label>
+              <label class="control-label" for="signup-password-confirm" data-trans>Confirm</label>
               <div class="controls">
                 <input type="password" name="signup-password-confirm" id="signup-password-confirm" class="" value="" size="20"/>
               </div>
@@ -266,23 +270,23 @@
 
             <div id="sidebar-menu" style="padding-top: 10px;">
               <ul id="application-panel-buttons" class="nav nav-list" style="margin: 0 0 5px -2px;">
-                <h4 class="panel-title">Organization</h4>
-                <div class="panel-desc">View your org's apps, activities, administrators and more.</div>
+                <h4 class="panel-title" data-trans>Organization</h4>
+                <div class="panel-desc" data-trans>View your org's apps, activities, administrators and more.</div>
                 <hr  class="col-divider">
-                <li id="application-panel-button-dashboard"><a href="#"><i class="icon-th"></i> Org Overview</a></li>
+                <li id="application-panel-button-dashboard"><a href="#"><i class="icon-th"></i> <span data-trans>Org Overview</span></a></li>
                 <br/>
-                <h4 class="panel-title">Application</h4>
-                <p class="panel-desc">View your app's data, scripts, analytics and more.</p>
+                <h4 class="panel-title" data-trans>Application</h4>
+                <p class="panel-desc" data-trans>View your app's data, scripts, analytics and more.</p>
                 <hr  class="col-divider">
 
-                <li id="application-panel-button-dashboard"><a href="#dashboard" id="dashboard-link"><i class="icon-th"></i> App Overview</a></li>
+                <li id="application-panel-button-dashboard"><a href="#dashboard" id="dashboard-link"><i class="icon-th"></i> <span data-trans>App Overview</span></a></li>
 
-                <li><a href="#users" id="users-link"><i class="icon-user"></i> <span class="nav-menu-text">App End-Users</span></a></li>
-                <li><a href="#collections" id="collections-link"><i class="icon-book"></i> <span class="nav-menu-text">App Data</span></a></li>
-                <li><a href="#activities" id="activities-link"><i class="icon-calendar"></i> <span class="nav-menu-text">Activities</span></a></li>
-                <li><a href="#analytics" id="analytics-link"><i class="icon-signal"></i> <span class="nav-menu-text">Analytics</span></a></li>
-                <li><a href="#properties" id="properties-link"><i class="wrench "></i> <span class="nav-menu-text">App Settings</span></a></li>
-                <li><a href="#shell" id="shell-link"><i class="icon-warning-sign"></i> <span class="nav-menu-text">Shell</span></a></li>
+                <li><a href="#users" id="users-link"><i class="icon-user"></i> <span class="nav-menu-text" data-trans>App End-Users</span></a></li>
+                <li><a href="#collections" id="collections-link"><i class="icon-book"></i> <span class="nav-menu-text" data-trans>App Data</span></a></li>
+                <li><a href="#activities" id="activities-link"><i class="icon-calendar"></i> <span class="nav-menu-text" data-trans>Activities</span></a></li>
+                <li><a href="#analytics" id="analytics-link"><i class="icon-signal"></i> <span class="nav-menu-text" data-trans>Analytics</span></a></li>
+                <li><a href="#properties" id="properties-link"><i class="wrench "></i> <span class="nav-menu-text" data-trans>App Settings</span></a></li>
+                <li><a href="#shell" id="shell-link"><i class="icon-warning-sign"></i> <span class="nav-menu-text" data-trans>Shell</span></a></li>
               </ul>
             </div>
 
@@ -294,8 +298,8 @@
           <div id="left2-content" class="column-in">
 
             <div id="sidebar-menu2" style="padding-top: 10px; display: none;">
-              <h4 class="panel-title">End-Users</h4>
-              <p class="panel-desc">Data related to your application end-users.</p>
+              <h4 class="panel-title" data-trans>End-Users</h4>
+              <p class="panel-desc" data-trans>Data related to your application end-users.</p>
               <hr style="margin: 0 0 0 1px;">
               <ul id="app-end-users-buttons" class="nav nav-list" style="margin-bottom: 5px;">
                 <li><a href="#users" id="users-sublink"><span class="nav-menu-text">/users</span></a></li>
@@ -305,16 +309,16 @@
             </div>
 
             <div id="left-collections-menu" style="display: none;">
-              <h4 class="panel-title">Data Collections</h4>
-                <p class="panel-desc">Explore your application's data collections.</p>
+              <h4 class="panel-title" data-trans>Data Collections</h4>
+                <p class="panel-desc" data-trans>Explore your application's data collections.</p>
                 <hr class="col-divider">
                 <div style="padding:10px 0 10px 10px;">
-                  <a id="data-explorer-link"><i class="icon-user"></i> <span class="nav-menu-text">Data Explorer</span></a>
+                  <a id="data-explorer-link"><i class="icon-user"></i> <span class="nav-menu-text" data-trans>Data Explorer</span></a>
                 </div>
                 <hr class="col-divider">
 
                 <div id="collections-menu" style="padding: 10px">
-                 <a class="btn" data-toggle="modal" href="#dialog-form-new-collection">Add Collection</a>
+                 <a class="btn" data-toggle="modal" href="#dialog-form-new-collection" data-trans>Add Collection</a>
                 </div>
                 <hr class="col-divider">
                 <div id="left-collections-content">
@@ -328,52 +332,52 @@
         <div id="right">
           <div class="column-in">
             <div style="padding-top: 10px;">
-              <h4 class="panel-title">Quick Start Guide</h4>
-              <div class="panel-desc">Need help getting started? Follow our Quick Start Guide</div>
+              <h4 class="panel-title" data-trans>Quick Start Guide</h4>
+              <div class="panel-desc" data-trans>Need help getting started? Follow our Quick Start Guide</div>
               <hr class="col-divider">
 
               <div class="panel-desc" style="height: 50px; text-align:center; width:100px;margin: 20px auto;">
-              <a href="http://apigee.com/docs/usergrid/content/quick-start" target="_blank">App Services: Quick Start Guide</a>
+              <a href="http://apigee.com/docs/usergrid/content/quick-start" target="_blank" data-trans>App Services: Quick Start Guide</a>
               </div>
 
-              <h4 class="panel-title">SDKs & Modules</h4>
-              <div class="panel-desc">Download an SDK or module to get up-and-running quickly</div>
+              <h4 class="panel-title" data-trans>SDKs & Modules</h4>
+              <div class="panel-desc" data-trans>Download an SDK or module to get up-and-running quickly</div>
               <hr class="col-divider">
 
               <div class="sdk-download">
                 <img src="images/ios-sdk-download.png">
                 <br>
-                <a href="https://github.com/apigee/usergrid-ios-sdk/archive/master.zip" target="_blank">iOS SDK: Download</a>
+                <a href="https://github.com/apigee/usergrid-ios-sdk/archive/master.zip" target="_blank" data-trans>iOS SDK: Download</a>
               </div>
 
               <div class="sdk-download">
                 <img src="images/android-sdk-download.png">
                 <br>
-                <a href="https://github.com/apigee/usergrid-java-sdk/archive/master.zip" target="_blank">Android SDK: Download</a>
+                <a href="https://github.com/apigee/usergrid-java-sdk/archive/master.zip" target="_blank" data-trans>Android SDK: Download</a>
               </div>
 
               <div class="sdk-download">
                 <img src="images/javascript-sdk-download.png">
                 <br>
-                <a href="https://github.com/apigee/usergrid-javascript-sdk/archive/master.zip">Javascript SDK: Download</a>
+                <a href="https://github.com/apigee/usergrid-javascript-sdk/archive/master.zip" data-trans>Javascript SDK: Download</a>
               </div>
 
               <div class="sdk-download">
                 <img src="images/nodejs-sdk-download.png">
                 <br>
-                <a href="http://npmjs.org/usergrid" target="_blank">Node.js Module</a>
+                <a href="http://npmjs.org/usergrid" target="_blank" data-trans>Node.js Module</a>
               </div>
 
               <div class="sdk-download">
                 <img src="images/ruby-sdk-download.png">
                 <br>
-                <a href="https://github.com/scottganyo/usergrid_iron" target="_blank">Ruby SDK: Download</a>
+                <a href="https://github.com/scottganyo/usergrid_iron" target="_blank" data-trans>Ruby SDK: Download</a>
               </div>
 
               <div class="sdk-download">
                 <img src="images/dotnet-sdk-download.png">
                 <br>
-                <a href="https://github.com/apigee/Apigee.Net" target="_blank">C# SDK: Download</a>
+                <a href="https://github.com/apigee/Apigee.Net" target="_blank" data-trans>C# SDK: Download</a>
               </div>
             </div>
           </div>
@@ -388,15 +392,15 @@
                 <div id="console-panel-nav-bar"></div>
                 <div id="home-messages" class="alert" style="display: none;"></div>
                 <div class="console-section">
-                  <div class="well thingy"><span class="title"> Current Organization </span></div>
+                  <div class="well thingy"><span class="title" data-trans>Current Organization</span></div>
                   <table id="organizations-table" class="hideable table">
                     <tbody></tbody>
                   </table>
                 </div>
                 <div class="console-section">
-                  <div class="well thingy"><span class="title"> Applications </span>
+                  <div class="well thingy"><span class="title" data-trans>Applications</span>
                     <div class="bar">
-                      <a class="btn button bottom-space" data-toggle="modal" href="#dialog-form-new-application"> New Application</a>
+                      <a class="btn button bottom-space" data-toggle="modal" href="#dialog-form-new-application" data-trans>New Application</a>
                     </div>
                   </div>
                   <table id="organization-applications-table" class="hideable table">
@@ -405,16 +409,16 @@
                 </div>
                 <div class="console-section">
                   <div class="well thingy">
-                    <span class="title"> Activities </span>
+                    <span class="title" data-trans>Activities</span>
                   </div>
                   <table id="organization-feed-table" class="hideable table">
                     <tbody></tbody>
                   </table>
                 </div>
                 <div class="console-section">
-                  <div class="well thingy"><span class="title"> Organization's Administrators </span>
+                  <div class="well thingy"><span class="title" data-trans>Organization's Administrators</span>
                     <div class="bar">
-                      <a class="btn button bottom-space" data-toggle="modal" href="#dialog-form-new-admin"> New Administrator</a>
+                      <a class="btn button bottom-space" data-toggle="modal" href="#dialog-form-new-admin" data-trans>New Administrator</a>
                     </div>
                   </div>
                   <table id="organization-admins-table" class="hideable table">
@@ -422,16 +426,16 @@
                   </table>
                 </div>
                 <div class="console-section">
-                  <div class="well thingy"><span class="title"> Organization API Credentials </span>
+                  <div class="well thingy"><span class="title" data-trans>Organization API Credentials</span>
                     <div class="bar">
-                      <a class="btn button bottom-space" onclick="Usergrid.console.newOrganizationCredentials(); return false;"> Regenerate Credentials</a>
+                      <a class="btn button bottom-space" onclick="Usergrid.console.newOrganizationCredentials(); return false;" data-trans>Regenerate Credentials</a>
                     </div>
                   </div>
                   <table class="hideable table">
                     <tbody>
                       <tr>
                         <td>
-                          <span class="span2">Client ID</span>
+                          <span class="span2" data-trans>Client ID</span>
                         </td>
                         <td>
                           <span id="organization-panel-key">...</span>
@@ -439,7 +443,7 @@
                       </tr>
                       <tr>
                         <td>
-                          <span class="span2">Client Secret</span>
+                          <span class="span2" data-trans>Client Secret</span>
                         </td>
                         <td>
                           <span id="organization-panel-secret">...</span>
@@ -450,16 +454,16 @@
                 </div>
                 <form id="dialog-form-force-new-application" class="modal hide fade" action="#">
                   <div class="modal-header">
-                    <h4>No applications for this organization</h4>
+                    <h4 data-trans>No applications for this organization</h4>
                   </div>
                   <div class="modal-body">
-                    <p class="validateTips">All organizations require at least one application. Please create one.</p>
+                    <p class="validateTips" data-trans>All organizations require at least one application. Please create one.</p>
                     <fieldset>
                       <div class="control-group">
-                        <label for="new-application-name">Name</label>
+                        <label for="new-application-name" data-trans>Name</label>
                         <div class="controls">
                           <input type="text" name="name" id="" value="" class="input-xlarge new-application-name"/>
-                          <p class="help-block">Length of name must be between 4 and 80</p>
+                          <p class="help-block" data-trans>Length of name must be between 4 and 80</p>
                         </div>
                       </div>
                     </fieldset>
@@ -472,12 +476,12 @@
                 <form id="dialog-form-new-admin" class="modal hide fade">
                   <div class="modal-header">
                     <a class="close" data-dismiss="modal">&times</a>
-                    <h4>Create new administrator</h4>
+                    <h4 data-trans>Create new administrator</h4>
                   </div>
                   <div class="modal-body">
                     <fieldset>
                       <div class="control-group">
-                        <label for="new-admin-email">Email</label>
+                        <label for="new-admin-email" data-trans>Email</label>
                         <div class="controls">
                           <input type="text" name="email" id="new-admin-email" value="" class="input-xlarge"/>
                           <input type="hidden" name="password" id="new-admin-password" value=""/>
@@ -497,7 +501,7 @@
               <div id="dashboard-panel" style="display: none">
                 <div class="console-section">
                   <div class="well thingy">
-                    <span class="title"> Application Dashboard: <span class="app_title"></span> </span>
+                    <span class="title"><span data-trans>Application Dashboard</span>: <span class="app_title"></span> </span>
                   </div>
                   <div class="console-section-contents">
                     <div id="application-panel-table" style="overflow: hidden;">
@@ -522,21 +526,21 @@
                 <div id="account-update-modal" class="modal hide fade">
                   <div class="modal-header">
                     <a class="close" data-dismiss="modal">&times</a>
-                    <h4>Account Settings</h4>
+                    <h4 data-trans>Account Settings</h4>
                   </div>
                   <div class="modal-body">
-                    <p>Account settings updated.</p>
+                    <p data-trans>Account settings updated.</p>
                   </div>
                   <div class="modal-footer">
-                    <button class="btn btn-usergrid" data-dismiss="modal">OK</button>
+                    <button class="btn btn-usergrid" data-dismiss="modal" data-trans>OK</button>
                   </div>
                 </div>
                 <div class="span offset1">
-                  <h2>Account Settings </h2>
+                  <h2 data-trans>Account Settings</h2>
                   <div id="account-panels">
                     <div class="panel-content">
                       <div class="console-section">
-                        <div class="well thingy"><span class="title"> Personal Account </span> </div>
+                        <div class="well thingy"><span class="title" data-trans>Personal Account</span></div>
                         <div class="console-section-contents">
                           <form name="update-account-form" id="update-account-form" class="form-horizontal">
                             <fieldset>
@@ -547,45 +551,45 @@
                                 </div>
                               </div>
                               <div class="control-group">
-                                <label class="control-label" for="update-account-username">Username </label>
+                                <label class="control-label" for="update-account-username" data-trans>Username</label>
                                 <div class="controls">
                                   <input type="text" name="update-account-username" id="update-account-username" class="span4" value="" size="20"/>
                                 </div>
                               </div>
                               <div class="control-group">
-                                <label class="control-label" for="update-account-name">Name </label>
+                                <label class="control-label" for="update-account-name" data-trans>Name</label>
                                 <div class="controls">
                                   <input type="text" name="update-account-name" id="update-account-name" class="span4" value="" size="20"/>
                                 </div>
                               </div>
                               <div class="control-group">
-                                <label class="control-label" for="update-account-email"> Email</label>
+                                <label class="control-label" for="update-account-email" data-trans>Email</label>
                                 <div class="controls">
                                   <input type="text" name="update-account-email" id="update-account-email" class="span4" value="" size="20"/>
                                 </div>
                               </div>
                               <div class="control-group">
-                                <label class="control-label" for="update-account-picture-img">Picture <br />(from <a href="http://gravatar.com">gravatar.com</a>) </label>
+                                <label class="control-label" for="update-account-picture-img" data-trans>Picture <br />(from <a href="http://gravatar.com">gravatar.com</a>) </label>
                                 <div class="controls">
                                   <img id="update-account-picture-img" src="" class="" width="50" />
                                 </div>
                               </div>
-                              <span class="help-block">Leave blank any of the following to keep the current password unchanged</span>
+                              <span class="help-block" data-trans>Leave blank any of the following to keep the current password unchanged</span>
                               <br />
                               <div class="control-group">
-                                <label class="control-label" for="old-account-password">Old Password</label>
+                                <label class="control-label" for="old-account-password" data-trans>Old Password</label>
                                 <div class="controls">
                                   <input type="password" name="old-account-password" id="old-account-password" class="span4" value="" size="20"/>
                                 </div>
                               </div>
                               <div class="control-group">
-                                <label class="control-label" for="update-account-password">New Password</label>
+                                <label class="control-label" for="update-account-password" data-trans>New Password</label>
                                 <div class="controls">
                                   <input type="password" name="update-account-password" id="update-account-password" class="span4" value="" size="20"/>
                                 </div>
                               </div>
                               <div class="control-group">
-                                <label class="control-label" for="update-account-password-repeat">Confirm New Password</label>
+                                <label class="control-label" for="update-account-password-repeat" data-trans>Confirm New Password</label>
                                 <div class="controls">
                                   <input type="password" name="update-account-password-repeat" id="update-account-password-repeat" class="span4" value="" size="20"/>
                                 </div>
@@ -601,9 +605,9 @@
                   </div>
                   <div class="panel-content">
                     <div class="console-section">
-                      <div class="well thingy"><span class="title"> Organizations </span>
+                      <div class="well thingy"><span class="title" data-trans>Organizations</span>
                         <div class="bar">
-                          <a class="" data-toggle="modal" href="#dialog-form-new-organization"> Add </a>
+                          <a class="" data-toggle="modal" href="#dialog-form-new-organization" data-trans>Add</a>
                         </div>
                       </div>
                       <table class="table" id="organizations">
@@ -613,13 +617,13 @@
                   <form id="dialog-form-new-organization" class="modal hide fade">
                     <div class="modal-header">
                       <a class="close" data-dismiss="modal">&times</a>
-                      <h4>Create new organization</h4>
+                      <h4 data-trans>Create new organization</h4>
                     </div>
                     <div class="modal-body">
-                      <p class="validateTips">All form fields are required.</p>
+                      <p class="validateTips" data-trans>All form fields are required.</p>
                       <fieldset>
                         <div class="control-group">
-                          <label for="new-organization-name">Name</label>
+                          <label for="new-organization-name" data-trans>Name</label>
                           <div class="controls">
                             <input type="text" name="organization" id="new-organization-name" class="input-xlarge"/>
                             <p class="help-block hide"></p>
@@ -640,17 +644,17 @@
                     <div id="users-messages" class="alert" style="display: none;"></div>
 
                     <div class="console-section">
-                       <span class="title"> Collection: /users </span>
+                       <span class="title" data-trans>Collection: /users</span>
                       <div class="well thingy">
                         <div class="bar">
                           <input onkeyup="Usergrid.console.searchUsers();" type="text" name="search-user-username" id="search-user-username" class="input-small search" placeholder="Search"/>
                           <select id="search-user-type" onChange="Usergrid.console.searchUsers();" class="input-medium search">
-                            <option value="username">Username</option>
-                            <option value="name">Full Name</option>
+                            <option value="username" data-trans>Username</option>
+                            <option value="name" data-trans>Full Name</option>
                           </select>
 
-                          <a class="btn " data-toggle="modal" id="delete-users-link" > Delete</a>
-                          <a style="margin-right: 15px;" class="btn btn-primary" data-toggle="modal" href="#dialog-form-new-user"> Create new user</a>
+                          <a class="btn " data-toggle="modal" id="delete-users-link" data-trans>Delete</a>
+                          <a style="margin-right: 15px;" class="btn btn-primary" data-toggle="modal" href="#dialog-form-new-user" data-trans>Create new user</a>
 
 
 
@@ -660,8 +664,8 @@
                         <tbody></tbody>
                       </table>
                       <ul id="users-pagination" class="pager">
-                        <li id="users-previous" class="previous"><a >&larr; Previous</a></li>
-                        <li id="users-next" class="next"><a >Next &rarr;</a></li>
+                        <li id="users-previous" class="previous"><a data-trans>&larr; Previous</a></li>
+                        <li id="users-next" class="next"><a data-trans>Next &rarr;</a></li>
                       </ul>
                     </div>
                     <div id="users-curl-container" class="row-fluid curl-container ">
@@ -670,41 +674,41 @@
                   <form id="dialog-form-new-user" class="modal hide fade">
                     <div class="modal-header">
                       <a class="close" data-dismiss="modal">&times</a>
-                      <h4>Create new user</h4>
+                      <h4 data-trans>Create new user</h4>
                     </div>
                     <div class="modal-body">
-                      <p class="validateTips">Username is required.</p>
+                      <p class="validateTips" data-trans>Username is required.</p>
                       <fieldset>
                         <div class="control-group">
-                          <label for="new-user-username">Username</label>
+                          <label for="new-user-username" data-trans>Username</label>
                           <div class="controls">
                             <input type="text" name="username" id="new-user-username" class="input-xlarge"/>
                             <p class="help-block hide"></p>
                           </div>
                         </div>
                         <div class="control-group">
-                          <label for="new-user-fullname">Full name</label>
+                          <label for="new-user-fullname" data-trans>Full name</label>
                           <div class="controls">
                             <input type="text" name="name" id="new-user-fullname" class="input-xlarge"/>
                             <p class="help-block hide"></p>
                           </div>
                         </div>
                         <div class="control-group">
-                          <label for="new-user-email">Email</label>
+                          <label for="new-user-email" data-trans>Email</label>
                           <div class="controls">
                             <input type="text" name="email" id="new-user-email" class="input-xlarge"/>
                             <p class="help-block hide"></p>
                           </div>
                         </div>
                         <div class="control-group">
-                          <label for="new-user-password">Password</label>
+                          <label for="new-user-password" data-trans>Password</label>
                           <div class="controls">
                             <input type="password" name="password" id="new-user-password" class="input-xlarge"/>
                             <p class="help-block hide"></p>
                           </div>
                         </div>
                         <div class="control-group">
-                          <label for="new-user-validate-password">Confirm password</label>
+                          <label for="new-user-validate-password" data-trans>Confirm password</label>
                           <div class="controls">
                             <input type="password" name="validate-password" id="new-user-validate-password" class="input-xlarge"/>
                             <p class="help-block hide"></p>
@@ -735,7 +739,7 @@
               <form id="confirmDialog" class="modal hide fade">
                 <div class="modal-header">
                   <a class="close" data-dismiss="modal">&times</a>
-                  <h4>Are you sure?</h4>
+                  <h4 data-trans>Are you sure?</h4>
                 </div>
                 <div class="modal-body">
                   <p></p>
@@ -761,16 +765,16 @@
                <form id="dialog-form-new-application" class="modal hide fade" action="#">
                 <div class="modal-header">
                   <a class="close" data-dismiss="modal">&times</a>
-                  <h4>Create new application</h4>
+                  <h4 data-trans>Create new application</h4>
                 </div>
                 <div class="modal-body">
-                  <p class="validateTips">All form fields are required.</p>
+                  <p class="validateTips" data-trans>All form fields are required.</p>
                   <fieldset>
                     <div class="control-group">
-                      <label for="new-application-name">Name</label>
+                      <label for="new-application-name" data-trans>Name</label>
                       <div class="controls">
                         <input type="text" name="name" id="" value="" class="input-xlarge new-application-name"/>
-                        <p class="help-block">Length of name must be between 4 and 80</p>
+                        <p class="help-block" data-trans>Length of name must be between 4 and 80</p>
                       </div>
                     </div>
                   </fieldset>
@@ -783,12 +787,12 @@
 
               <div id="user-panel" class="panel-buffer">
                 <div id="user-panel-tab-bar">
-                  <a class="tab-button btn" id="button-user-list" >List</a>
-                  <a class="tab-button btn active" id="button-user-profile" >Profile</a>
-                  <a class="tab-button btn" id="button-user-memberships" >Groups</a>
-                  <a class="tab-button btn" id="button-user-activities" >Activities</a>
-                  <a class="tab-button btn" id="button-user-graph" >Graph</a>
-                  <a class="tab-button btn" id="button-user-permissions" >Roles & Permissions</a>
+                  <a class="tab-button btn" id="button-user-list" data-trans>List</a>
+                  <a class="tab-button btn active" id="button-user-profile" data-trans>Profile</a>
+                  <a class="tab-button btn" id="button-user-memberships" data-trans>Groups</a>
+                  <a class="tab-button btn" id="button-user-activities" data-trans>Activities</a>
+                  <a class="tab-button btn" id="button-user-graph" data-trans>Graph</a>
+                  <a class="tab-button btn" id="button-user-permissions" data-trans>Roles & Permissions</a>
                 </div>
                 <div id="user-panel-profile" class="panel-content"></div>
                 <div id="user-panel-memberships" class="panel-content" style="display: none;"></div>
@@ -798,13 +802,13 @@
                 <form id="dialog-form-add-user-to-role" class="modal hide fade">
                   <div class="modal-header">
                     <a class="close" data-dismiss="modal">&times</a>
-                    <h4>Add this user to a Role</h4>
+                    <h4 data-trans>Add this user to a Role</h4>
                   </div>
                   <div class="modal-body">
-                    <p class="validateTips">Search for the role you want to add to this user.</p>
+                    <p class="validateTips" data-trans>Search for the role you want to add to this user.</p>
                     <fieldset>
                       <div class="control-group">
-                        <label for="search-role-name-input">Role</label>
+                        <label for="search-role-name-input" data-trans>Role</label>
                         <div class="controls">
                           <input type="text" name="search-role-name-input" id="search-role-name-input" class="input-xlarge"/>
                           <p class="help-block hide"></p>
@@ -820,13 +824,13 @@
                 <form id="dialog-form-add-group-to-user" class="modal hide fade">
                   <div class="modal-header">
                     <a class="close" data-dismiss="modal">&times</a>
-                    <h4>Add this user to a Group</h4>
+                    <h4 data-trans>Add this user to a Group</h4>
                   </div>
                   <div class="modal-body">
-                    <p class="validateTips">Search for the group you want to add this user to.</p>
+                    <p class="validateTips" data-trans>Search for the group you want to add this user to.</p>
                     <fieldset>
                       <div class="control-group">
-                        <label for="search-group-name-input">Group</label>
+                        <label for="search-group-name-input" data-trans>Group</label>
                         <div class="controls">
                           <input type="text" name="search-group-name-input" id="search-group-name-input" class="input-xlarge"/>
                           <p class="help-block hide"></p>
@@ -842,13 +846,13 @@
                 <form id="dialog-form-follow-user" class="modal hide fade">
                   <div class="modal-header">
                     <a class="close" data-dismiss="modal">&times</a>
-                    <h4>Follow this User</h4>
+                    <h4 data-trans>Follow this User</h4>
                   </div>
                   <div class="modal-body">
-                    <p class="validateTips">Search for the user you want to Follow.</p>
+                    <p class="validateTips" data-trans>Search for the user you want to Follow.</p>
                     <fieldset>
                       <div class="control-group">
-                        <label for="search-follow-username-input">User</label>
+                        <label for="search-follow-username-input" data-trans>User</label>
                         <div class="controls">
                           <input type="text" name="search-follow-username-input" id="search-follow-username-input"
                                  class="input-xlarge"/>
@@ -870,17 +874,17 @@
                 <div id="groups-panel-list" class="panel-content">
                   <div id="groups-messages" class="alert" style="display: none;"></div>
                   <div class="console-section">
-                      <span class="title"> Collection: /groups </span>
+                      <span class="title" data-trans>Collection: /groups</span>
                       <div class="well thingy">
                         <div class="bar">
                         <input onkeyup="Usergrid.console.searchGroups();" type="text" name="search-user-groupname" id="search-user-groupname" class="input-small search" placeholder="Search"/>
                         <select id="search-group-type" onChange="Usergrid.console.searchGroups();" class="input-medium search">
-                          <option value="path">Path</option>
-                          <option value="title">Group Name</option>
+                          <option value="path" data-trans>Path</option>
+                          <option value="title" data-trans>Group Name</option>
                         </select>
 
                         <a class="btn" id="delete-groups-link" > Delete</a>
-                        <a style="margin-right: 15px;" class="btn btn-primary" data-toggle="modal" href="#dialog-form-new-group"> Create new group</a>
+                        <a style="margin-right: 15px;" class="btn btn-primary" data-toggle="modal" href="#dialog-form-new-group" data-trans>Create new group</a>
 
                       </div>
                     </div>
@@ -888,8 +892,8 @@
                       <tbody></tbody>
                     </table>
                     <ul id="groups-pagination" class="pager">
-                      <li id="groups-previous" class="previous"><a >&larr; Previous</a></li>
-                      <li id="groups-next" class="next"><a >Next &rarr;</a></li>
+                      <li id="groups-previous" class="previous"><a data-trans>&larr; Previous</a></li>
+                      <li id="groups-next" class="next"><a data-trans>Next &rarr;</a></li>
                     </ul>
                   </div>
                   <div id="groups-curl-container" class="row-fluid curl-container ">
@@ -898,20 +902,20 @@
                 <form id="dialog-form-new-group" class="modal hide fade">
                   <div class="modal-header">
                     <a class="close" data-dismiss="modal">&times</a>
-                    <h4>Create new group</h4>
+                    <h4 data-trans>Create new group</h4>
                   </div>
                   <div class="modal-body">
-                    <p class="validateTips">All form fields are required.</p>
+                    <p class="validateTips" data-trans>All form fields are required.</p>
                     <fieldset>
                       <div class="control-group">
-                        <label for="new-group-title">Display Name</label>
+                        <label for="new-group-title" data-trans>Display Name</label>
                         <div class="controls">
                           <input type="text" name="title" id="new-group-title" value="" class="input-xlarge"/>
                           <p class="help-block hide"></p>
                         </div>
                       </div>
                       <div class="control-group">
-                        <label for="new-group-path">Group Path</label>
+                        <label for="new-group-path" data-trans>Group Path</label>
                         <div class="controls">
                           <input type="text" name="path" id="new-group-path" value="" class="input-xlarge"/>
                           <p class="help-block hide"></p>
@@ -927,18 +931,18 @@
               </div>
               <div id="group-panel" class="panel-buffer">
                 <!--ul id="group-panel-tab-bar" class="nav nav-tabs">
-                  <li><a id="button-group-list" >List</a></li>
-                  <li><a id="button-group-details" >Details</a></li>
-                  <li><a id="button-group-memberships" >Members</a></li>
-                  <li><a id="button-group-activities" >Activities</a></li>
-                  <li><a id="button-group-permissions" >Roles & Permissions</a></li>
+                  <li><a id="button-group-list" data-trans>List</a></li>
+                  <li><a id="button-group-details" data-trans>Details</a></li>
+                  <li><a id="button-group-memberships" data-trans>Members</a></li>
+                  <li><a id="button-group-activities" data-trans>Activities</a></li>
+                  <li><a id="button-group-permissions" data-trans>Roles & Permissions</a></li>
                 </ul-->
                 <div id="group-panel-tab-bar">
-                  <a class="tab-button btn" id="button-group-list" >List</a>
-                  <a class="tab-button btn active" id="button-group-details" >Details</a>
-                  <a class="tab-button btn" id="button-group-memberships" >Members</a>
-                  <a class="tab-button btn" id="button-group-activities" >Activities</a>
-                  <a class="tab-button btn" id="button-group-permissions" >Roles & Permissions</a>
+                  <a class="tab-button btn" id="button-group-list" data-trans>List</a>
+                  <a class="tab-button btn active" id="button-group-details" data-trans>Details</a>
+                  <a class="tab-button btn" id="button-group-memberships" data-trans>Members</a>
+                  <a class="tab-button btn" id="button-group-activities" data-trans>Activities</a>
+                  <a class="tab-button btn" id="button-group-permissions" data-trans>Roles & Permissions</a>
                 </div>
 
                 <div id="group-panel-details" class="panel-content"></div>
@@ -948,13 +952,13 @@
                 <form id="dialog-form-add-user-to-group" class="modal hide fade">
                   <div class="modal-header">
                     <a class="close" data-dismiss="modal">&times</a>
-                    <h4>Add a User to this Group</h4>
+                    <h4 data-trans>Add a User to this Group</h4>
                   </div>
                   <div class="modal-body">
-                    <p class="validateTips">Search for the user you want to add to this group.</p>
+                    <p class="validateTips" data-trans>Search for the user you want to add to this group.</p>
                     <fieldset>
                       <div class="control-group">
-                        <label for="search-user-name-input">User</label>
+                        <label for="search-user-name-input" data-trans>User</label>
                         <div class="controls">
                           <input type="text" name="search-user-name-input" id="search-user-name-input" class="input-xlarge" autocomplete="off"/>
                           <p class="help-block hide"></p>
@@ -970,13 +974,13 @@
                 <form id="dialog-form-add-role-to-group" class="modal hide fade">
                   <div class="modal-header">
                     <a class="close" data-dismiss="modal">&times</a>
-                    <h4>Add a Role to this Group</h4>
+                    <h4 data-trans>Add a Role to this Group</h4>
                   </div>
                   <div class="modal-body">
-                    <p class="validateTips">Search for the role you want to add to this group.</p>
+                    <p class="validateTips" data-trans>Search for the role you want to add to this group.</p>
                     <fieldset>
                       <div class="control-group">
-                        <label for="search-groups-role-name-input">Role</label>
+                        <label for="search-groups-role-name-input" data-trans>Role</label>
                         <div class="controls">
                           <input type="text" name="search-groups-role-name-input" id="search-groups-role-name-input" class="input-xlarge" autocomplete="off"/>
                           <p class="help-block hide"></p>
@@ -994,12 +998,12 @@
                 <div id="roles-panel-list" class="panel-content">
                   <div id="roles-messages" class="alert" style="display: none;"></div>
                   <div class="console-section">
-                    <span class="title"> Collection: /roles </span>
+                    <span class="title" data-trans>Collection: /roles</span>
                     <div class="well thingy">
                       <div class="bar">
 
-                        <a class="btn" id="delete-roles-link" > Delete</a>
-                        <a style="margin-right: 15px;" class="btn btn-primary" data-toggle="modal" href="#dialog-form-new-role"> Add Role</a>
+                        <a class="btn" id="delete-roles-link" data-trans>Delete</a>
+                        <a style="margin-right: 15px;" class="btn btn-primary" data-toggle="modal" href="#dialog-form-new-role" data-trans>Add Role</a>
 
 
                       </div>
@@ -1008,8 +1012,8 @@
                       <tbody></tbody>
                     </table>
                     <ul id="roles-pagination" class="pager">
-                      <li id="roles-previous" class="previous"><a >&larr; Previous</a></li>
-                      <li id="roles-next" class="next"><a >Next &rarr;</a></li>
+                      <li id="roles-previous" class="previous"><a data-trans>&larr; Previous</a></li>
+                      <li id="roles-next" class="next"><a data-trans>Next &rarr;</a></li>
                     </ul>
                   </div>
                   <div id="roles-curl-container" class="row-fluid curl-container ">
@@ -1017,10 +1021,10 @@
                 </div>
                 <div id="roles-panel-search" class="panel-content" style="display: none;">
                   <div class="console-section">
-                    <div class="well thingy"><span class="title"> Role Settings: <span class="app_title"></span></span></div>
+                    <div class="well thingy"><span class="title"><span data-trans>Role Settings</span>: <span class="app_title"></span></span></div>
                     <div class="console-section-contents">
                       <div id="roles-settings">
-                        <h2>No Permissions.</h2>
+                        <h2 data-trans>No Permissions.</h2>
                       </div>
                     </div>
                   </div>
@@ -1028,20 +1032,20 @@
                 <form id="dialog-form-new-role" class="modal hide fade">
                   <div class="modal-header">
                     <a class="close" data-dismiss="modal">&times</a>
-                    <h4>Create new Role</h4>
+                    <h4 data-trans>Create new Role</h4>
                   </div>
                   <div class="modal-body">
-                    <p class="validateTips">All form fields are required.</p>
+                    <p class="validateTips" data-trans>All form fields are required.</p>
                     <fieldset>
                       <div class="control-group">
-                        <label for="new-role-title">Display Name</label>
+                        <label for="new-role-title" data-trans>Display Name</label>
                         <div class="controls">
                           <input type="text" name="title" id="new-role-title" class="input-xlarge"/>
                           <p class="help-block hide"></p>
                         </div>
                       </div>
                       <div class="control-group">
-                        <label for="new-role-name">Name</label>
+                        <label for="new-role-name" data-trans>Name</label>
                         <div class="controls">
                           <input type="text" name="name" id="new-role-name" class="input-xlarge"/>
                           <p class="help-block hide"></p>
@@ -1057,15 +1061,15 @@
               </div>
               <div id="role-panel" class="panel-buffer">
                 <div id="role-panel-tab-bar">
-                  <a class="tab-button btn" id="button-role-list" >List</a>
-                  <a class="tab-button btn active" id="button-role-settings" >Settings</a>
-                  <a class="tab-button btn" id="button-role-users" >Users</a>
-                  <a class="tab-button btn" id="button-role-groups" >Groups</a>
+                  <a class="tab-button btn" id="button-role-list" data-trans>List</a>
+                  <a class="tab-button btn active" id="button-role-settings" data-trans>Settings</a>
+                  <a class="tab-button btn" id="button-role-users" data-trans>Users</a>
+                  <a class="tab-button btn" id="button-role-groups" data-trans>Groups</a>
                 </div>
 
                 <div id="role-panel-settings" class="panel-content">
                   <div class="console-section">
-                    <div class="well thingy"> <span id="role-section-title" class="title">Role</span> </div>
+                    <div class="well thingy"> <span id="role-section-title" class="title" data-trans>Role</span> </div>
                     <div class="console-section-contents">
                       <div id="role-permissions-messages" class="alert" style="display: none"></div>
                       <div id="role-permissions">
@@ -1085,13 +1089,13 @@
                 <form id="dialog-form-add-group-to-role" class="modal hide fade">
                   <div class="modal-header">
                     <a class="close" data-dismiss="modal">&times</a>
-                    <h4>Add a Group to this Role</h4>
+                    <h4 data-trans>Add a Group to this Role</h4>
                   </div>
                   <div class="modal-body">
-                    <p class="validateTips">Search for the group you want to add to this role.</p>
+                    <p class="validateTips" data-trans>Search for the group you want to add to this role.</p>
                     <fieldset>
                       <div class="control-group">
-                        <label for="search-roles-group-name-input">Group</label>
+                        <label for="search-roles-group-name-input" data-trans>Group</label>
                         <div class="controls">
                           <input type="text" name="search-roles-group-name-input" id="search-roles-group-name-input" class="input-xlarge" autocomplete="off"/>
                           <p class="help-block hide"></p>
@@ -1107,13 +1111,13 @@
                 <form id="dialog-form-add-role-to-user" class="modal hide fade">
                   <div class="modal-header">
                 <a class="close" data-dismiss="modal">&times</a>
-                <h4>Add a user to this Role</h4>
+                <h4 data-trans>Add a user to this Role</h4>
               </div>
                 <div class="modal-body">
-                  <p class="validateTips">Search for the user you want to add to this role.</p>
+                  <p class="validateTips" data-trans>Search for the user you want to add to this role.</p>
                   <fieldset>
                     <div class="control-group">
-                      <label for="search-roles-user-name-input">User</label>
+                      <label for="search-roles-user-name-input" data-trans>User</label>
                       <div class="controls">
                         <input type="text" name="search-roles-user-name-input" id="search-roles-user-name-input" class="input-xlarge"/>
                         <p class="help-block hide"></p>
@@ -1130,23 +1134,23 @@
               <div id="activities-panel" style="display: none">
                 <div id="activities-panel-list" class="panel-content">
                   <div class="console-section">
-                    <span class="title"> Activities </span>
+                    <span class="title" data-trans>Activities</span>
                     <div class="well thingy">
                       <div class="bar" style="margin-bottom: 25px;">
                         <input onkeyup="Usergrid.console.searchActivities();" type="text" name="search-activities" id="search-activities" class="input-small search" placeholder="Search"/>
                         <select id="search-activities-type" onChange="Usergrid.console.searchActivities();" class="input-medium search">
-                          <option value="content">Content</option>
-                          <option value="actor">Actor</option>
+                          <option value="content" data-trans>Content</option>
+                          <option value="actor" data-trans>Actor</option>
                         </select>
-                        <a class="btn" onclick="Usergrid.console.requestActivities(); return false;">Update Activities</a>
+                        <a class="btn" onclick="Usergrid.console.requestActivities(); return false;" data-trans>Update Activities</a>
                       </div>
                     </div>
                     <table id="activities-table" class="table">
                       <tbody></tbody>
                     </table>
                     <ul id="activities-pagination" class="pager">
-                      <li id="activities-previous" class="previous"><a >&larr; Previous</a></li>
-                      <li id="activities-next" class="next"><a >Next &rarr;</a></li>
+                      <li id="activities-previous" class="previous"><a data-trans>&larr; Previous</a></li>
+                      <li id="activities-next" class="next"><a data-trans>Next &rarr;</a></li>
                     </ul>
                   </div>
                 </div>
@@ -1154,40 +1158,40 @@
               <div id="analytics-panel" style="display: none">
                 <div class="panel-content">
                   <div class="console-section">
-                    <div class="well thingy"><span class="title"> Analytics </span></div>
+                    <div class="well thingy"><span class="title" data-trans>Analytics</span></div>
                     <div class="console-section-contents">
                       <div id="analytics-time">
                         <form id="resolutionSelectForm" action="" class="form-horizontal">
                           <div class="row">
                             <fieldset class="span">
                               <div id="analytics-start-time-span" class="control-group">
-                                <label class="control-label" for="start-date">Start:</label>
+                                <label class="control-label" for="start-date" data-trans>Start:</label>
                                 <div class="controls">
                                   <input type="text" id="start-date" class="fixSpan2"/>
                                   <input type="text" id="start-time" value="12:00 AM" class="fixSpan2"/>
                                 </div>
                               </div>
                               <div id="analytics-end-time-span" class="control-group">
-                                <label class="control-label" for="end-date">End:</label>
+                                <label class="control-label" for="end-date" data-trans>End:</label>
                                 <div class="controls">
                                   <input type="text" id="end-date" class="fixSpan2"/>
                                   <input type="text" id="end-time" value="12:00 AM" class="fixSpan2"/>
                                 </div>
                               </div>
                               <div class="control-group">
-                                <label class="control-label" for="resolutionSelect">Resolution</label>
+                                <label class="control-label" for="resolutionSelect" data-trans>Resolution</label>
                                 <div class="controls">
                                   <select name="resolutionSelect" id="resolutionSelect">
-                                    <option value="all">All</option>
-                                    <option value="minute">Minute</option>
-                                    <option value="five_minutes">5 Minutes</option>
-                                    <option value="half_hour">30 Minutes</option>
-                                    <option value="hour">Hour</option>
-                                    <option value="six_hour">6 Hours</option>
-                                    <option value="half_day">Half Day</option>
-                                    <option value="day" selected="selected">Day</option>
-                                    <option value="week">Week</option>
-                                    <option value="month">Month</option>
+                                    <option value="all" data-trans>All</option>
+                                    <option value="minute" data-trans>Minute</option>
+                                    <option value="five_minutes" data-trans>5 Minutes</option>
+                                    <option value="half_hour" data-trans>30 Minutes</option>
+                                    <option value="hour" data-trans>Hour</option>
+                                    <option value="six_hour" data-trans>6 Hours</option>
+                                    <option value="half_day" data-trans>Half Day</option>
+                                    <option value="day" selected="selected" data-trans>Day</option>
+                                    <option value="week" data-trans>Week</option>
+                                    <option value="month" data-trans>Month</option>
                                   </select>
                                 </div>
                               </div>
@@ -1197,14 +1201,14 @@
                             </fieldset>
                           </div>
                           <div class="form-actions">
-                            <button class="btn btn-primary" id="button-analytics-generate">Generate</button>
+                            <button class="btn btn-primary" id="button-analytics-generate" data-trans>Generate</button>
                           </div>
                         </form>
                       </div>
                     </div>
                   </div>
                   <div class="console-section">
-                    <div class="well thingy"><span class="title"> Result Analytics <span class="app_title"></span></span></div>
+                    <div class="well thingy"><span class="title"><span data-trans>Result Analytics</span> <span class="app_title"></span></span></div>
                     <div class="console-section-contents">
                       <div id="analytics-graph"></div>
                       <div id="analytics-graph-area" style="overflow-x: auto;"></div>
@@ -1214,16 +1218,16 @@
               </div>
               <div id="properties-panel" style="display: none">
                 <div class="console-section">
-                  <div class="well thingy"><span class="title"> Application Properties: <span class="app_title"></span></span>
+                  <div class="well thingy"><span class="title"><span data-trans>Application Properties</span>: <span class="app_title"></span></span>
                     <div class="bar" style="margin-bottom: 25px;">
-                      <a class="btn"  onclick="Usergrid.console.newApplicationCredentials(); return false;">Regenerate Credentials</a>
+                      <a class="btn"  onclick="Usergrid.console.newApplicationCredentials(); return false;" data-trans>Regenerate Credentials</a>
                     </div>
                   </div>
                   <div class="console-section-contents">
                     <table id="application-panel-key-table" class="table">
                       <tr>
                         <td>
-                          <span class="span3">Client ID</span>
+                          <span class="span3" data-trans>Client ID</span>
                         </td>
                         <td>
                           <span id="application-panel-key">...</span>
@@ -1231,7 +1235,7 @@
                       </tr>
                       <tr>
                         <td>
-                          <span class="span3">Client Secret</span>
+                          <span class="span3" data-trans>Client Secret</span>
                         </td>
                         <td>
                           <span id="application-panel-secret">...</span>
@@ -1243,15 +1247,15 @@
               </div>
               <div id="shell-panel" style="display: none">
                 <div id="shell-content" class="console-section">
-                  <div class="well thingy"> <span class="title"> Interactive Shell </span></div>
+                  <div class="well thingy"> <span class="title" data-trans>Interactive Shell</span></div>
                   <div class="console-section-contents">
                     <div id="shell-input-div">
-                      <p>   Type "help" to view a list of the available commands.</p><hr />
+                      <p data-trans>Type "help" to view a list of the available commands.</p><hr />
                       <span>&nbsp;&gt&gt; </span>
                       <textarea id="shell-input" rows="2" autofocus="autofocus"></textarea>
                     </div>
                     <pre id="shell-output" class="prettyprint lang-js" style="overflow-x: auto; height: 400px;">
-                      <p>  Response:</p><hr />
+                      <p data-trans>Response:</p><hr />
                     </pre>
                   </div>
                 </div>
@@ -1264,13 +1268,13 @@
                   <form id="dialog-form-new-collection" class="modal hide fade">
                     <div class="modal-header">
                       <a class="close" data-dismiss="modal">&times</a>
-                      <h4>Create new collection</h4>
+                      <h4 data-trans>Create new collection</h4>
                     </div>
                     <div class="modal-body">
-                      <p class="validateTips">All form fields are required.</p>
+                      <p class="validateTips" data-trans>All form fields are required.</p>
                       <fieldset>
                         <div class="control-group">
-                          <label for="new-collection-name">Name</label>
+                          <label for="new-collection-name" data-trans>Name</label>
                           <div class="controls">
                             <input type="text" name="name" id="new-collection-name" value="" class="input-xlarge"/>
                             <p class="help-block hide"></p>
@@ -1285,21 +1289,21 @@
                   </form>
 
 
-                    <!--a class="data-explorer-link"  style="float: right" onclick="$('#data-explorer').toggle(); return false;">Data Explorer</a -->
+                    <!--a class="data-explorer-link"  style="float: right" onclick="$('#data-explorer').toggle(); return false;" data-trans>Data Explorer</a -->
 
 
                   <div id="data-explorer" class="">
                     <div class="well thingy">
-                      <span class="title">Data Explorer</span>
+                      <span class="title" data-trans>Data Explorer</span>
                     </div>
 
 
                     <form id="query-inputs" class="">
                       <div class="control-group">
                         <div class="" data-toggle="buttons-radio">
-                          <!--a class="btn" id="button-query-back">&#9664; Back</a-->
+                          <!--a class="btn" id="button-query-back" data-trans>&#9664; Back</a-->
                           <!--Added disabled class to change the way button looks but their functionality is as usual -->
-                          <label class="control-label"><strong>Method </strong></label>
+                          <label class="control-label"><strong data-trans>Method</strong></label>
                           <input type="radio" name="query-action" value="get" style="margin-top: -2px;" id="button-query-get" checked> GET &nbsp; &nbsp;
                           <input type="radio" name="query-action" value="post" style="margin-top: -2px;" id="button-query-post"> POST &nbsp; &nbsp;
                           <input type="radio" name="query-action" value="put" style="margin-top: -2px;" id="button-query-put"> PUT &nbsp; &nbsp;
@@ -1307,7 +1311,7 @@
                         </div>
                       </div>
                       <div class="control-group">
-                        <label class="control-label" for="query-path"><strong>Path </strong></label>
+                        <label class="control-label" for="query-path"><strong data-trans>Path</strong></label>
                         <div class="controls">
                           <div class="input-append">
                             <input id="query-path" type="text" name="path" class="span6" autocomplete="off" placeholder="ex: /users"/>
@@ -1315,10 +1319,10 @@
                         </div>
                       </div>
                       <div class="control-group">
-                          <a id="back-to-collection" class="outside-link" style="display:none">Back to collection</a>
+                          <a id="back-to-collection" class="outside-link" style="display:none" data-trans>Back to collection</a>
                       </div>
                       <div class="control-group" id="query-ql-box">
-                        <label class="control-label" for="query-ql"><strong>Query String</strong></label>
+                        <label class="control-label" for="query-ql"><strong data-trans>Query String</strong></label>
                         <div class="controls">
                           <div class="input-append">
                             <input id="query-ql" type="text" name="query" class="span5" placeholder="ex: select * where name='fred'"/>
@@ -1333,7 +1337,7 @@
                         </div>
                       </div>
                       <div class="control-group" id="query-limit-box">
-                        <label class="control-label" for="query-limit"><strong>Limit</strong></label>
+                        <label class="control-label" for="query-limit"><strong data-trans>Limit</strong></label>
                         <div class="controls">
                           <div class="input-append">
                             <input id="query-limit" type="text" name="query-limit" class="span5" placeholder="ex: 10"/>
@@ -1341,19 +1345,19 @@
                         </div>
                       </div>
                       <div class="control-group" id="query-json-box" style="display:none">
-                        <label class="control-label" for="query-source"><strong>Json Body </strong></label>
+                        <label class="control-label" for="query-source"><strong data-trans>Json Body</strong></label>
                         <div class="controls">
                           <div class="input-append">
                             <textarea id="query-source" class="span6 pull-left" rows="4"
                                placeholder="{  &quot;name&quot;  :  &quot;value&quot;  }"></textarea>
-                            <a class="btn pull-left disabled" id="button-query-validate" >Validate Json</a>
+                            <a class="btn pull-left disabled" id="button-query-validate" data-trans>Validate Json</a>
                             <div id="statusbar-placeholder" class=" pull-left span4"></div>
                           </div>
                         </div>
                       </div>
 
                       <div class="control-group">
-                         <button type="button" class="btn btn-primary" id="button-query">Run Query</button>
+                         <button type="button" class="btn btn-primary" id="button-query" data-trans>Run Query</button>
                       </div>
                     </form>
                   </div>
@@ -1366,7 +1370,7 @@
                   <div id="query-response-area" class="console-section" style="display: none;">
                     <div class="well thingy" id="query-received-header">
                       <div class="bar">
-                        <a class="btn " data-toggle="modal" id="delete-entity-link" > Delete</a>
+                        <a class="btn " data-toggle="modal" id="delete-entity-link" data-trans>Delete</a>
                       </div>
                     </div>
                     <div class="console-section-contents">
@@ -1375,8 +1379,8 @@
 
                       </table>
                       <ul id="query-response-pagination" class="pager">
-                        <li style="display: none" id="query-response-previous" class="previous"><a >&larr; Previous</a></li>
-                        <li style="display: none" id="query-response-next" class="next"><a >Next &rarr;</a></li>
+                        <li style="display: none" id="query-response-previous" class="previous"><a data-trans>&larr; Previous</a></li>
+                        <li style="display: none" id="query-response-next" class="next"><a data-trans>Next &rarr;</a></li>
                       </ul>
                     </div>
                   </div>
