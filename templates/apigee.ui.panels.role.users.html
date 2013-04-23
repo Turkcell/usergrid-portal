@@ -1,8 +1,8 @@
 <div class="well thingy">
-  <span id="role-section-title" class="title">Users</span>
+  <span id="role-section-title" class="title" data-trans>Users</span>
   <div class="bar">
-    <a class="btn" data-toggle="modal" href="#" onclick="Usergrid.console.deleteRoleFromUser('${data.roleName}', '${data.roleTitle}'); return false;"> Remove </a>
-    <a style="margin-right: 15px;" class="btn btn-primary" data-toggle="modal" href="#dialog-form-add-role-to-user"> Add </a>
+    <a class="btn" data-toggle="modal" href="#" onclick="Usergrid.console.deleteRoleFromUser('${data.roleName}', '${data.roleTitle}'); return false;" data-trans> Remove </a>
+    <a style="margin-right: 15px;" class="btn btn-primary" data-toggle="modal" href="#dialog-form-add-role-to-user" data-trans> Add </a>
   </div>
 </div>
 {{if data.users.length > 0}}
@@ -13,10 +13,10 @@
         <input type="checkbox" onclick="Usergrid.console.selectAllEntities(this);" />
       </td>
       <td class="user-details bold-header"></td>
-      <td class="user-details bold-header">
+      <td class="user-details bold-header" data-trans>
         Username
       </td>
-      <td class="user-details bold-header">
+      <td class="user-details bold-header" data-trans>
         Name
       </td>
     </tr>
@@ -33,6 +33,6 @@
   </tbody>
 </table>
 {{else}}
-<div class="panel-section-message">No Users have this Role</div>
+<div class="panel-section-message" data-trans>No Users have this Role</div>
 {{/if}}
 

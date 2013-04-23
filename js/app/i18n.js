@@ -94,6 +94,16 @@
         });
     };
 
+    var _appendTo = $.fn.appendTo;
+
+    $.fn.appendTo = function() {
+        $(this).translate()
+            .find('[data-trans]').translate().end()
+            .find('[placeholder]').translateAttr('placeholder').end()
+            .find('input[type="button"], input[type="submit"], input[type="reset"]').translateAttr('value').end();
+
+        return _appendTo.apply(this, arguments);
+    };
 
     $(function() {
         Usergrid.i18n.init();

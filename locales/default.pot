@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Usergrid Portal\n"
 "POT-Creation-Date: 2013-04-10 11:31+0200\n"
-"PO-Revision-Date: 2013-04-13 08:06+0000\n"
+"PO-Revision-Date: 2013-04-23 09:57+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -443,7 +443,7 @@ msgstr ""
 
 #. FRAGMENT <label class="control-label" for="update-account-picture-img" data-trans="">Picture <br>(from <a href="http://gravatar.com">gravatar.com</a>) </label>
 #: index.html
-msgid "Picture <br>(from <a href=\"http://gravatar.com\">gravatar.com</a>) "
+msgid "Picture <br>(from <a href=\"http://gravatar.com\">gravatar.com</a>)"
 msgstr ""
 
 #. FRAGMENT <span class="help-block" data-trans="">Leave blank any of the following to keep the current password unchanged</span>
@@ -929,5 +929,210 @@ msgstr ""
 #. FRAGMENT <input type="submit" class="btn btn-usergrid" value="Follow">
 #: index.html
 msgid "Follow"
+msgstr ""
+
+#. FRAGMENT <a href="" onclick="$('#query-row-${r.uuid}').show(); $('#data-explorer').show(); return false;" class="view-details" data-trans="">View Details</a>
+#: templates/apigee.ui.collection.table_rows.html
+msgid "View Details"
+msgstr ""
+
+#. FRAGMENT <div class="curl-info" data-trans="">  Want to get the data above programmatically? You can retrieve it with <a style="color: #007CDC;" href="http://curl.haxx.se/" target="_blank">curl</a>. Copy-paste the command in a terminal window and you should see the same data come back as JSON.</div>
+#: templates/apigee.ui.curl.detail.html
+msgid "Want to get the data above programmatically? You can retrieve it with <a style=\"color: #007CDC;\" href=\"http://curl.haxx.se/\" target=\"_blank\">curl</a>. Copy-paste the command in a terminal window and you should see the same data come back as JSON."
+msgstr ""
+
+#. FRAGMENT <div id="${sectionName}-curl-token" class="curl-token" data-trans="">  Not sure what "Authorization: Bearer” is, or how to get a token? We have a  <a style="color: #007CDC;" href="http://apigee.com/docs/usergrid/content/authentication-and-access-usergrid">documentation article about that</a></div>
+#: templates/apigee.ui.curl.detail.html
+msgid "Not sure what \"Authorization: Bearer” is, or how to get a token? We have a  <a style=\"color: #007CDC;\" href=\"http://apigee.com/docs/usergrid/content/authentication-and-access-usergrid\">documentation article about that</a>"
+msgstr ""
+
+#. FRAGMENT <div class="panel-section-message" data-trans="">No Group Activities</div>
+#: templates/apigee.ui.panels.group.activities.html
+msgid "No Group Activities"
+msgstr ""
+
+#. FRAGMENT <a class="btn btn-primary" onclick="Usergrid.console.saveGroupProfile('${uuid}'); return false;" data-trans=""> Save Group </a>
+#: templates/apigee.ui.panels.group.details.html
+msgid "Save Group"
+msgstr ""
+
+#. FRAGMENT <h3 data-trans="">Edit</h3>
+#: templates/apigee.ui.panels.group.details.html
+msgid "Edit"
+msgstr ""
+
+#. FRAGMENT <h3 data-trans="">Contents</h3>
+#: templates/apigee.ui.panels.group.details.html
+msgid "Contents"
+msgstr ""
+
+#. FRAGMENT <td data-trans="">            Created          </td>
+#: templates/apigee.ui.panels.group.details.html
+msgid "Created"
+msgstr ""
+
+#. FRAGMENT <td data-trans="">            Modified          </td>
+#: templates/apigee.ui.panels.group.details.html
+msgid "Modified"
+msgstr ""
+
+#. FRAGMENT <td data-trans="">Title</td>
+#: templates/apigee.ui.panels.group.details.html
+msgid "Title"
+msgstr ""
+
+#. FRAGMENT <td data-trans="">Sets</td>
+#: templates/apigee.ui.panels.group.details.html
+msgid "Sets"
+msgstr ""
+
+#. FRAGMENT <td data-trans="">Collections</td>
+#: templates/apigee.ui.panels.group.details.html
+msgid "Collections"
+msgstr ""
+
+#. FRAGMENT <a class="btn " data-toggle="modal" onclick="Usergrid.console.removeGroupFromUser('${uuid}'); return false;" data-trans="">Remove</a>
+#: templates/apigee.ui.panels.group.memberships.html
+msgid "Remove"
+msgstr ""
+
+#. FRAGMENT <a style="margin-right: 15px;" class="btn btn-primary" data-toggle="modal" href="#dialog-form-add-user-to-group" data-trans="">Add user</a>
+#: templates/apigee.ui.panels.group.memberships.html
+msgid "Add user"
+msgstr ""
+
+#. FRAGMENT <td class="user-details bold-header" data-trans="">          User Name        </td>
+#: templates/apigee.ui.panels.group.memberships.html
+msgid "User Name"
+msgstr ""
+
+#. FRAGMENT <div class="panel-section-message" data-trans="">No Group Memberships</div>
+#: templates/apigee.ui.panels.group.memberships.html
+msgid "No Group Memberships"
+msgstr ""
+
+#. FRAGMENT <a style="margin-right: 15px;" class="btn btn-primary" data-toggle="modal" href="#dialog-form-add-role-to-group" data-trans=""> Add role </a>
+#: templates/apigee.ui.panels.group.permissions.html
+msgid "Add role"
+msgstr ""
+
+#. FRAGMENT <div class="user-roles-title" data-trans="">Roles </div>
+#: templates/apigee.ui.panels.group.permissions.html
+msgid "Roles"
+msgstr ""
+
+#. FRAGMENT <div class="panel-section-message" data-trans="">No Roles</div>
+#: templates/apigee.ui.panels.group.permissions.html
+msgid "No Roles"
+msgstr ""
+
+#. FRAGMENT <div class="user-roles-title" data-trans="">Permissions </div>
+#: templates/apigee.ui.panels.group.permissions.html
+msgid "Permissions"
+msgstr ""
+
+#. FRAGMENT <h4 data-trans="">Add Permission Rule</h4>
+#: templates/apigee.ui.panels.group.permissions.html
+msgid "Add Permission Rule"
+msgstr ""
+
+#. FRAGMENT <h4 data-trans="">Permission Rules</h4>
+#: templates/apigee.ui.panels.group.permissions.html
+msgid "Permission Rules"
+msgstr ""
+
+#. FRAGMENT <div class="alert" data-trans="">No Permissions</div>
+#: templates/apigee.ui.panels.group.permissions.html
+msgid "No Permissions"
+msgstr ""
+
+#. FRAGMENT <h4 data-trans="">Inactivity</h4>
+#: templates/apigee.ui.panels.role.permissions.html
+msgid "Inactivity"
+msgstr ""
+
+#. FRAGMENT <span data-trans="">Seconds</span>
+#: templates/apigee.ui.panels.role.permissions.html
+msgid "Seconds"
+msgstr ""
+
+#. FRAGMENT <span data-trans="">Integer only. 0 (zero) means no expiration.</span>
+#: templates/apigee.ui.panels.role.permissions.html
+msgid "Integer only. 0 (zero) means no expiration."
+msgstr ""
+
+#. FRAGMENT <div class="alert alert-error" id="inactivity-integer-message" style="display: none;" data-trans="">  Only integers greater than 0 are accepted.</div>
+#: templates/apigee.ui.panels.role.permissions.html
+msgid "Only integers greater than 0 are accepted."
+msgstr ""
+
+#. FRAGMENT <div class="panel-section-message" data-trans="">No Users have this Role</div>
+#: templates/apigee.ui.panels.role.users.html
+msgid "No Users have this Role"
+msgstr ""
+
+#. FRAGMENT <div class="panel-section-message" data-trans="">No User Activities</div>
+#: templates/apigee.ui.panels.user.activities.html
+msgid "No User Activities"
+msgstr ""
+
+#. FRAGMENT <a class="btn btn-primary" data-toggle="modal" href="#dialog-form-follow-user" data-trans="">Follow User</a>
+#: templates/apigee.ui.panels.user.graph.html
+msgid "Follow User"
+msgstr ""
+
+#. FRAGMENT <div class="user-roles-title" data-trans="">Following </div>
+#: templates/apigee.ui.panels.user.graph.html
+msgid "Following"
+msgstr ""
+
+#. FRAGMENT <div class="panel-section-message" data-trans="">Not following anyone</div>
+#: templates/apigee.ui.panels.user.graph.html
+msgid "Not following anyone"
+msgstr ""
+
+#. FRAGMENT <div class="user-roles-title" data-trans="">Followers </div>
+#: templates/apigee.ui.panels.user.graph.html
+msgid "Followers"
+msgstr ""
+
+#. FRAGMENT <div class="panel-section-message" data-trans="">No followers</div>
+#: templates/apigee.ui.panels.user.graph.html
+msgid "No followers"
+msgstr ""
+
+#. FRAGMENT <a style="margin-right: 15px;" class="btn btn-primary" data-toggle="modal" href="#dialog-form-add-group-to-user" data-trans="">Add to a Group</a>
+#: templates/apigee.ui.panels.user.memberships.html
+msgid "Add to a Group"
+msgstr ""
+
+#. FRAGMENT <div class="panel-section-message" data-trans="">no group memberships</div>
+#: templates/apigee.ui.panels.user.memberships.html
+msgid "no group memberships"
+msgstr ""
+
+#. FRAGMENT <a style="margin-right: 15px;" class="btn btn-primary" onclick="Usergrid.console.saveUserProfile('${username}'); return false;" data-trans="">Save User</a>
+#: templates/apigee.ui.panels.user.profile.html
+msgid "Save User"
+msgstr ""
+
+#. FRAGMENT <td data-trans="">Type</td>
+#: templates/apigee.ui.panels.user.profile.html
+msgid "Type"
+msgstr ""
+
+#. FRAGMENT <td data-trans="">Activated</td>
+#: templates/apigee.ui.panels.user.profile.html
+msgid "Activated"
+msgstr ""
+
+#. FRAGMENT <td data-trans="">Picture</td>
+#: templates/apigee.ui.panels.user.profile.html
+msgid "Picture"
+msgstr ""
+
+#. FRAGMENT <td class="user-details bold-header" data-trans="">          Group Title        </td>
+#: templates/apigee.ui.role.groups.table_rows.html
+msgid "Group Title"
 msgstr ""
 

@@ -5,8 +5,8 @@
     {{if path}}</span>{{/if}}
 
     <div class="bar">
-      <a class="btn " data-toggle="modal" onclick="Usergrid.console.removeGroupFromUser('${uuid}'); return false;">Remove</a>
-      <a style="margin-right: 15px;" class="btn btn-primary" data-toggle="modal" href="#dialog-form-add-user-to-group">Add user</a>
+      <a class="btn " data-toggle="modal" onclick="Usergrid.console.removeGroupFromUser('${uuid}'); return false;" data-trans>Remove</a>
+      <a style="margin-right: 15px;" class="btn btn-primary" data-toggle="modal" href="#dialog-form-add-user-to-group" data-trans>Add user</a>
       <input type="hidden" value="${uuid}" id="search-user-groupid" name="search-user-groupid">
     </div>
   </div>
@@ -18,7 +18,7 @@
         <td class="checkboxo">
           <input type="checkbox" onclick="Usergrid.console.selectAllEntities(this);" />
         </td>
-        <td class="user-details bold-header">
+        <td class="user-details bold-header" data-trans>
           User Name
         </td>
       </tr>
@@ -33,7 +33,7 @@
     </tbody>
   </table>
   {{else}}
-  <div class="panel-section-message">No Group Memberships</div>
+  <div class="panel-section-message" data-trans>No Group Memberships</div>
   {{/if}}
 </div>
 <div id="group-panel-memberships-curl-container" class="curl-container">

@@ -6,13 +6,13 @@
       {{if path}}<a href="" onclick="Usergrid.console.pageOpenQueryExplorer('${path}'); return false;">{{/if}}${name}{{if path}}</a>{{/if}}
     </div>
     <div class="bar">
-      <a style="margin-right: 15px;" class="btn btn-primary" onclick="Usergrid.console.saveUserProfile('${username}'); return false;">Save User</a>
+      <a style="margin-right: 15px;" class="btn btn-primary" onclick="Usergrid.console.saveUserProfile('${username}'); return false;" data-trans>Save User</a>
     </div>
   </div>
-  <h3>Edit</h3>
+  <h3 data-trans>Edit</h3>
   <div class="query-result-form"></div>
   <div class="content-container">
-    <h3>Contents</h3>
+    <h3 data-trans>Contents</h3>
     <table class="table">
       <tbody>
         <tr class="zebraRows">
@@ -20,11 +20,11 @@
           <td>${entity.uuid}</td>
         </tr>
         <tr class="zebraRows">
-          <td>Type</td>
+          <td data-trans>Type</td>
           <td>${entity.type}</td>
         </tr>
         <tr class="zebraRows">
-          <td>
+          <td data-trans>
             Created
           </td>
           <td>
@@ -33,7 +33,7 @@
           </td>
         </tr>
         <tr class="zebraRows">
-          <td>
+          <td data-trans>
             Modified
           </td>
           <td>
@@ -42,31 +42,31 @@
           </td>
         </tr>
         <tr class="zebraRows">
-          <td>Activated</td>
+          <td data-trans>Activated</td>
           <td>${entity.activated}</td>
         </tr>
         <tr class="zebraRows">
-          <td>Email</td>
+          <td data-trans>Email</td>
           <td>${entity.email}</td>
         </tr>
         <tr class="zebraRows">
-          <td>Name</td>
+          <td data-trans>Name</td>
           <td>${entity.name}</td>
         </tr>
         <tr class="zebraRows">
-          <td>Picture</td>
+          <td data-trans>Picture</td>
           <td>${entity.picture}</td>
         </tr>
         <tr class="zebraRows">
-          <td>Username</td>
+          <td data-trans>Username</td>
           <td>${entity.username}</td>
         </tr>
         <tr class="zebraRows">
-          <td>Path</td>
+          <td data-trans>Path</td>
           <td><a href="#" onclick="Usergrid.console.pageOpenQueryExplorer('${path}'); return false;">${path}</a></td>
         </tr>
         <tr class="zebraRows">
-          <td>Sets</td>
+          <td data-trans>Sets</td>
           <td>
             <table class="table table-striped">
               <tbody>
@@ -85,7 +85,7 @@
           </td>
         </tr>
         <tr class="zebraRows">
-          <td>Collections</td>
+          <td data-trans>Collections</td>
           <td>
             <table class="table table-striped">
               <tbody>

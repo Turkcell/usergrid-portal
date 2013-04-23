@@ -5,13 +5,13 @@
       {{if path}}<a href="" onclick="Usergrid.console.pageOpenQueryExplorer('${path}'); return false;">{{/if}}${name}{{if path}}</a>{{/if}}
     </div>
     <div class="bar">
-      <a class="btn btn-primary" data-toggle="modal" href="#dialog-form-follow-user">Follow User</a>
+      <a class="btn btn-primary" data-toggle="modal" href="#dialog-form-follow-user" data-trans>Follow User</a>
       <input type="hidden" value="${username}" id="search-follow-username" name="search-follow-userid">
     </div>
   </div>
 
   <div class="console-section-contents">
-    <div class="user-roles-title">Following </div>
+    <div class="user-roles-title" data-trans>Following </div>
     <div class="user-panel-section">
       {{if following}}
       {{if following.length > 0}}
@@ -37,14 +37,14 @@
       </div>
       {{/if}}
       {{else}}
-      <div class="panel-section-message">Not following anyone</div>
+      <div class="panel-section-message" data-trans>Not following anyone</div>
       {{/if}}
       <br/>
     </div>
     <div id="user-panel-following-curl-container" class="curl-container">
     </div>
     <br/>
-    <div class="user-roles-title">Followers </div>
+    <div class="user-roles-title" data-trans>Followers </div>
     <div class="user-panel-section">
       {{if followers}}
       {{if followers.length > 0}}
@@ -70,7 +70,7 @@
       </div>
       {{/if}}
       {{else}}
-      <div class="panel-section-message">No followers</div>
+      <div class="panel-section-message" data-trans>No followers</div>
       {{/if}}
       <br/>
     </div>

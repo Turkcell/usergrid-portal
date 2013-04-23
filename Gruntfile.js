@@ -28,7 +28,7 @@ module.exports = function(grunt) {
         },
         'i18n-extract': {
             html: {
-                src: ['index.html']
+                src: ['index.html', 'templates/*.html']
             }
         }
     });
