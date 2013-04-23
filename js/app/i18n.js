@@ -79,7 +79,7 @@
                 return;
             }
 
-            el.html(Usergrid.i18n._(msg.message, msg.context));
+            el.html(Usergrid.i18n._($.trim(msg.message), msg.context));
         });
     };
 

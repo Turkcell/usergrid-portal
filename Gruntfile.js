@@ -49,6 +49,8 @@ module.exports = function(grunt) {
             });
 
         function addToMessages(msg) {
+            msg.message = _.trim(msg.message);
+
             var msgInStrings = _.find(messages, function(message) {
                 return message.message === msg.message;
             });
@@ -159,8 +161,15 @@ module.exports = function(grunt) {
             } else {
                 grunt.log.writeln('Found %s total unique strings', messages.length.toString().cyan);
 
-                var swig = require('swig'),
-                    tpl  = swig.compile(grunt.file.read(options.template), {filename: options.template});
+                var swig = require('swig');
+
+                swig.init({ filters: {
+                    trim: function(input) {
+                        return _.trim(input.toString());
+                    }
+                }});
+
+                var tpl = swig.compile(grunt.file.read(options.template), {filename: options.template});
 
                 grunt.file.write(options.output, tpl({
                     messages: messages,
