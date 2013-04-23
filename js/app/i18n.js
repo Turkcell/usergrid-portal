@@ -65,7 +65,7 @@
 
             if (_.isString(transData)) {
                 msg.message = transData || el.html();
-            } else if (_.isPlainObject(transData)) {
+            } else if ($.isPlainObject(transData)) {
                 msg = _.extend(msg, _.pick(transData, 'message', 'plural', 'context'));
 
                 if (!msg.message) {
