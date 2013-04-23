@@ -81,6 +81,8 @@ module.exports = function(grunt) {
             if (translatableNodes.length === 0 && nodesWithPlaceholder.length === 0 && buttonNodes.length === 0) {
                 grunt.verbose.writeln('No strings found'.red);
 
+                callback(null);
+
                 return;
             }
 
