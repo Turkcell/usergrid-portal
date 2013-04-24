@@ -29,7 +29,8 @@ module.exports = function(grunt) {
         'i18n-extract': {
             main: {
                 files: [
-                    {src: ['index.html', 'templates/*.html'], filter: 'isFile', parser: 'html'}
+                    {src: ['index.html', 'templates/*.html'], filter: 'isFile', parser: 'html'},
+                    {src: ['js/app/**/*.js'], filter: 'isFile', parser: 'js'}
                 ]
             }
         }

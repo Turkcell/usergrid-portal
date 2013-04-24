@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: usergrid-portal\n"
 "POT-Creation-Date: 2013-04-10 11:31+0200\n"
-"PO-Revision-Date: 2013-04-23 10:12+0000\n"
+"PO-Revision-Date: 2013-04-24 21:02+0000\n"
 "Last-Translator: eabay <erhanabay@gmail.com>\n"
 "Language-Team: Turkish (http://www.transifex.com/projects/p/usergrid-portal/language/tr/)\n"
 "MIME-Version: 1.0\n"
@@ -57,6 +57,8 @@ msgid "Dashboard"
 msgstr "Gösterge Tablosu"
 
 #. FRAGMENT <span data-trans="">Profile</span>
+#. FRAGMENT <a class="tab-button btn active" id="button-user-profile" data-
+#. trans="">Profile</a>
 #: index.html
 msgid "Profile"
 msgstr "Profil"
@@ -68,11 +70,12 @@ msgstr "Çıkış"
 
 #. FRAGMENT <div id="api-activity" class="alert" data-
 #. trans="">Loading...</div>
-#: index.html
+#: index.html js/app/console.js
 msgid "Loading..."
 msgstr "Yükleniyor..."
 
 #. FRAGMENT <span data-trans="">Organizations</span>
+#. FRAGMENT <span class="title" data-trans="">Organizations</span>
 #: index.html
 msgid "Organizations"
 msgstr "Organizasyonlar"
@@ -150,12 +153,12 @@ msgid "Refresh"
 msgstr "Yenile"
 
 #. FRAGMENT <strong data-trans="">ERROR</strong>
-#: index.html
+#: index.html js/app/console.js
 msgid "ERROR"
 msgstr "HATA"
 
 #. FRAGMENT <span data-trans="">Your details were incorrect.</span>
-#: index.html
+#: index.html js/app/console.js
 msgid "Your details were incorrect."
 msgstr "Ayrıntılarınız hatalı."
 
@@ -214,24 +217,49 @@ msgstr "Organizasyon Hesabı"
 
 #. FRAGMENT <label class="control-label" for="signup-username" data-
 #. trans="">Username</label>
-#: index.html
+#. FRAGMENT <label class="control-label" for="update-account-username" data-
+#. trans="">Username</label>
+#. FRAGMENT <option value="username" data-trans="">Username</option>
+#. FRAGMENT <label for="new-user-username" data-trans="">Username</label>
+#. FRAGMENT <td class="user-details bold-header" data-trans="">
+#. Username      </td>
+#. FRAGMENT <td data-trans="">Username</td>
+#: index.html templates/apigee.ui.panels.role.users.html
+#: templates/apigee.ui.panels.user.profile.html js/app/ui/collections.user.js
 msgid "Username"
 msgstr "Kullanıcı Adı"
 
 #. FRAGMENT <label class="control-label" for="signup-name" data-
 #. trans="">Name</label>
-#: index.html
+#. FRAGMENT <label for="new-application-name" data-trans="">Name</label>
+#. FRAGMENT <label class="control-label" for="update-account-name" data-
+#. trans="">Name</label>
+#. FRAGMENT <label for="new-organization-name" data-trans="">Name</label>
+#. FRAGMENT <label for="new-role-name" data-trans="">Name</label>
+#. FRAGMENT <label for="new-collection-name" data-trans="">Name</label>
+#. FRAGMENT <td class="user-details bold-header" data-trans="">        Name
+#. </td>
+#. FRAGMENT <td data-trans="">Name</td>
+#: index.html templates/apigee.ui.panels.role.users.html
+#: templates/apigee.ui.panels.user.profile.html js/app/console.js
 msgid "Name"
 msgstr "İsim"
 
 #. FRAGMENT <label class="control-label" for="signup-email" data-
 #. trans="">Email</label>
-#: index.html
+#. FRAGMENT <label for="new-admin-email" data-trans="">Email</label>
+#. FRAGMENT <label class="control-label" for="update-account-email" data-
+#. trans="">Email</label>
+#. FRAGMENT <label for="new-user-email" data-trans="">Email</label>
+#. FRAGMENT <td data-trans="">Email</td>
+#: index.html templates/apigee.ui.panels.user.profile.html
+#: js/app/ui/collections.user.js
 msgid "Email"
 msgstr "E-posta"
 
 #. FRAGMENT <label class="control-label" for="signup-password" data-
 #. trans="">Password</label>
+#. FRAGMENT <label for="new-user-password" data-trans="">Password</label>
 #: index.html
 msgid "Password"
 msgstr "Şifre"
@@ -285,11 +313,17 @@ msgid "App Data"
 msgstr "Uygulama Verisi"
 
 #. FRAGMENT <span class="nav-menu-text" data-trans="">Activities</span>
+#. FRAGMENT <span class="title" data-trans="">Activities</span>
+#. FRAGMENT <a class="tab-button btn" id="button-user-activities" data-
+#. trans="">Activities</a>
+#. FRAGMENT <a class="tab-button btn" id="button-group-activities" data-
+#. trans="">Activities</a>
 #: index.html
 msgid "Activities"
 msgstr "Etkinlikler"
 
 #. FRAGMENT <span class="nav-menu-text" data-trans="">Analytics</span>
+#. FRAGMENT <span class="title" data-trans="">Analytics</span>
 #: index.html
 msgid "Analytics"
 msgstr "İstatistikler"
@@ -327,6 +361,7 @@ msgid "Explore your application's data collections."
 msgstr "Uygulanın veri koleksiyonlarını görüntüleyin."
 
 #. FRAGMENT <span class="nav-menu-text" data-trans="">Data Explorer</span>
+#. FRAGMENT <span class="title" data-trans="">Data Explorer</span>
 #: index.html
 msgid "Data Explorer"
 msgstr "Veri Gezgini"
@@ -414,7 +449,7 @@ msgstr "Uygulamalar"
 
 #. FRAGMENT <a class="btn button bottom-space" data-toggle="modal" href
 #. ="#dialog-form-new-application" data-trans="">New Application</a>
-#: index.html
+#: index.html js/app/console.js
 msgid "New Application"
 msgstr "Yeni Uygulama"
 
@@ -439,16 +474,21 @@ msgstr "Organizasyon API Oturum Bilgileri"
 #. FRAGMENT <a class="btn button bottom-space"
 #. onclick="Usergrid.console.newOrganizationCredentials(); return false;"
 #. data-trans="">Regenerate Credentials</a>
+#. FRAGMENT <a class="btn"
+#. onclick="Usergrid.console.newApplicationCredentials(); return false;" data-
+#. trans="">Regenerate Credentials</a>
 #: index.html
 msgid "Regenerate Credentials"
 msgstr "Oturum Bilgilerini Tekrar Oluştur"
 
 #. FRAGMENT <span class="span2" data-trans="">Client ID</span>
+#. FRAGMENT <span class="span3" data-trans="">Client ID</span>
 #: index.html
 msgid "Client ID"
 msgstr "Uygulama Kodu"
 
 #. FRAGMENT <span class="span2" data-trans="">Client Secret</span>
+#. FRAGMENT <span class="span3" data-trans="">Client Secret</span>
 #: index.html
 msgid "Client Secret"
 msgstr "Uygulama Parolası"
@@ -481,6 +521,7 @@ msgid "Application Dashboard"
 msgstr "Uygulama Gösterge Tablosu"
 
 #. FRAGMENT <h4 data-trans="">Account Settings</h4>
+#. FRAGMENT <h2 data-trans="">Account Settings</h2>
 #: index.html
 msgid "Account Settings"
 msgstr "Hesap Ayarları"
@@ -492,6 +533,8 @@ msgstr "Hesap bilgileri güncellendi."
 
 #. FRAGMENT <button class="btn btn-usergrid" data-dismiss="modal" data-
 #. trans="">OK</button>
+#. FRAGMENT <input type="reset" class="btn btn-usergrid" value="OK" data-
+#. dismiss="modal">
 #: index.html
 msgid "OK"
 msgstr "Tamam"
@@ -535,7 +578,18 @@ msgstr "Yeni Şifreyi Doğrula"
 
 #. FRAGMENT <a class="" data-toggle="modal" href="#dialog-form-new-
 #. organization" data-trans="">Add</a>
-#: index.html
+#. FRAGMENT <input type="submit" class="btn btn-usergrid" value="Add">
+#. FRAGMENT <span data-trans="">Add</span>
+#. FRAGMENT <a style="margin-right: 15px;" class="btn btn-primary" data-
+#. toggle="modal" href="#dialog-form-add-role-to-user" data-trans=""> Add </a>
+#. FRAGMENT <a style="margin-right: 15px;" class="btn btn-primary" data-
+#. toggle="modal" href="#dialog-form-add-group-to-role" data-trans=""> Add
+#. </a>
+#: index.html templates/apigee.ui.panels.group.permissions.html
+#: templates/apigee.ui.panels.role.permissions.html
+#: templates/apigee.ui.panels.role.users.html
+#: templates/apigee.ui.panels.user.permissions.html
+#: templates/apigee.ui.role.groups.table_rows.html
 msgid "Add"
 msgstr "Ekle"
 
@@ -556,11 +610,15 @@ msgid "Collection: /users"
 msgstr "Koleksiyonlar: /users"
 
 #. FRAGMENT <option value="name" data-trans="">Full Name</option>
-#: index.html
+#: index.html js/app/ui/collections.user.js
 msgid "Full Name"
 msgstr "Tam İsim"
 
 #. FRAGMENT <a class="btn " data-toggle="modal" id="delete-users-link" data-
+#. trans="">Delete</a>
+#. FRAGMENT <a class="btn" id="delete-groups-link" data-trans=""> Delete</a>
+#. FRAGMENT <a class="btn" id="delete-roles-link" data-trans="">Delete</a>
+#. FRAGMENT <a class="btn " data-toggle="modal" id="delete-entity-link" data-
 #. trans="">Delete</a>
 #: index.html
 msgid "Delete"
@@ -569,6 +627,7 @@ msgstr "Sil"
 #. FRAGMENT <a style="margin-right: 15px;" class="btn btn-primary" data-
 #. toggle="modal" href="#dialog-form-new-user" data-trans="">Create new
 #. user</a>
+#. FRAGMENT <h4 data-trans="">Create new user</h4>
 #: index.html
 msgid "Create new user"
 msgstr "Yeni kullanıcı oluştur"
@@ -611,11 +670,17 @@ msgstr "Yeni uygulama oluştur"
 
 #. FRAGMENT <a class="tab-button btn" id="button-user-list" data-
 #. trans="">List</a>
+#. FRAGMENT <a class="tab-button btn" id="button-group-list" data-
+#. trans="">List</a>
+#. FRAGMENT <a class="tab-button btn" id="button-role-list" data-
+#. trans="">List</a>
 #: index.html
 msgid "List"
 msgstr "Liste"
 
 #. FRAGMENT <a class="tab-button btn" id="button-user-memberships" data-
+#. trans="">Groups</a>
+#. FRAGMENT <a class="tab-button btn" id="button-role-groups" data-
 #. trans="">Groups</a>
 #: index.html
 msgid "Groups"
@@ -628,6 +693,8 @@ msgid "Graph"
 msgstr "Grafik"
 
 #. FRAGMENT <a class="tab-button btn" id="button-user-permissions" data-
+#. trans="">Roles & Permissions</a>
+#. FRAGMENT <a class="tab-button btn" id="button-group-permissions" data-
 #. trans="">Roles & Permissions</a>
 #: index.html
 msgid "Roles & Permissions"
@@ -645,6 +712,10 @@ msgid "Search for the role you want to add to this user."
 msgstr "Bu kullanıcıyı eklemek istediğiniz rol için arama yapın."
 
 #. FRAGMENT <label for="search-role-name-input" data-trans="">Role</label>
+#. FRAGMENT <label for="search-groups-role-name-input" data-
+#. trans="">Role</label>
+#. FRAGMENT <span id="role-section-title" class="title" data-
+#. trans="">Role</span>
 #: index.html
 msgid "Role"
 msgstr "Rol"
@@ -661,6 +732,8 @@ msgid "Search for the group you want to add this user to."
 msgstr "Bu kullanıcıyı eklemek istediğiniz grup için arama yapın."
 
 #. FRAGMENT <label for="search-group-name-input" data-trans="">Group</label>
+#. FRAGMENT <label for="search-roles-group-name-input" data-
+#. trans="">Group</label>
 #: index.html
 msgid "Group"
 msgstr "Grup"
@@ -678,6 +751,9 @@ msgstr "Takip etmek istediğiniz kullanıcı için arama yapın."
 
 #. FRAGMENT <label for="search-follow-username-input" data-
 #. trans="">User</label>
+#. FRAGMENT <label for="search-user-name-input" data-trans="">User</label>
+#. FRAGMENT <label for="search-roles-user-name-input" data-
+#. trans="">User</label>
 #: index.html
 msgid "User"
 msgstr "Kullanıcı"
@@ -688,29 +764,48 @@ msgid "Collection: /groups"
 msgstr "Koleksiyon: /groups"
 
 #. FRAGMENT <option value="path" data-trans="">Path</option>
-#: index.html
+#. FRAGMENT <strong data-trans="">Path</strong>
+#. FRAGMENT <td data-trans="">Path</td>
+#. FRAGMENT <span data-trans="">Path</span>
+#. FRAGMENT <th data-trans="">Path</th>
+#: index.html templates/apigee.ui.panels.group.details.html
+#: templates/apigee.ui.panels.group.permissions.html
+#: templates/apigee.ui.panels.role.permissions.html
+#: templates/apigee.ui.panels.user.permissions.html
+#: templates/apigee.ui.panels.user.profile.html js/app/console.js
 msgid "Path"
 msgstr "Yol"
 
 #. FRAGMENT <option value="title" data-trans="">Group Name</option>
-#: index.html
+#. FRAGMENT <td class="user-details bold-header" data-trans="">
+#. Group Name            </td>
+#. FRAGMENT <td class="user-details bold-header" data-trans="">          Group
+#. Name        </td>
+#: index.html templates/apigee.ui.panels.group.permissions.html
+#: templates/apigee.ui.panels.user.memberships.html
+#: templates/apigee.ui.panels.user.permissions.html
 msgid "Group Name"
 msgstr "Grup Adı"
 
 #. FRAGMENT <a style="margin-right: 15px;" class="btn btn-primary" data-
 #. toggle="modal" href="#dialog-form-new-group" data-trans="">Create new
 #. group</a>
+#. FRAGMENT <h4 data-trans="">Create new group</h4>
 #: index.html
 msgid "Create new group"
 msgstr "Yeni grup oluştur"
 
 #. FRAGMENT <label for="new-group-title" data-trans="">Display Name</label>
-#: index.html
+#. FRAGMENT <label for="new-role-title" data-trans="">Display Name</label>
+#: index.html js/app/console.js js/app/ui/collections.user.js
 msgid "Display Name"
 msgstr "Görüntülenecek İsim"
 
 #. FRAGMENT <label for="new-group-path" data-trans="">Group Path</label>
-#: index.html
+#. FRAGMENT <td class="user-details bold-header" data-trans="">          Group
+#. Path        </td>
+#: index.html templates/apigee.ui.role.groups.table_rows.html
+#: js/app/ui/collections.user.js
 msgid "Group Path"
 msgstr "Grup Yolu"
 
@@ -782,7 +877,9 @@ msgstr "Ayarlar"
 
 #. FRAGMENT <a class="tab-button btn" id="button-role-users" data-
 #. trans="">Users</a>
-#: index.html
+#. FRAGMENT <span id="role-section-title" class="title" data-
+#. trans="">Users</span>
+#: index.html templates/apigee.ui.panels.role.users.html
 msgid "Users"
 msgstr "Kullanıcılar"
 
@@ -809,7 +906,12 @@ msgid "Search for the user you want to add to this role."
 msgstr "Bu role eklemek istediğiniz kullanıcı için arama yapın."
 
 #. FRAGMENT <option value="content" data-trans="">Content</option>
-#: index.html
+#. FRAGMENT <button type="button" class="btn btn-small query-button disabled"
+#. id="button-query-show-row-content"
+#. onclick="Usergrid.console.activateQueryRowContentButton();$('#query-row-
+#. content-${r.uuid}').show(); $('#query-row-JSON-${r.uuid}').hide(); return
+#. false;" data-trans="">Content</button>
+#: index.html templates/apigee.ui.collection.table_rows.html
 msgid "Content"
 msgstr "İçerik"
 
@@ -970,6 +1072,12 @@ msgstr "Sorguyu Çalıştır"
 #. FRAGMENT <input onkeyup="Usergrid.console.searchUsers();" type="text" name
 #. ="search-user-username" id="search-user-username" class="input-small
 #. search" placeholder="Search">
+#. FRAGMENT <input onkeyup="Usergrid.console.searchGroups();" type="text" name
+#. ="search-user-groupname" id="search-user-groupname" class="input-small
+#. search" placeholder="Search">
+#. FRAGMENT <input onkeyup="Usergrid.console.searchActivities();" type="text"
+#. name="search-activities" id="search-activities" class="input-small search"
+#. placeholder="Search">
 #: index.html
 msgid "Search"
 msgstr "Arama"
@@ -1045,7 +1153,19 @@ msgstr "Takip Et"
 #. FRAGMENT <a href="" onclick="$('#query-row-${r.uuid}').show(); $('#data-
 #. explorer').show(); return false;" class="view-details" data-trans="">View
 #. Details</a>
+#. FRAGMENT <a href=""
+#. onclick="Usergrid.console.pageOpenGroupProfile('${path}'); return false;"
+#. class="view-details" data-trans="">View Details</a>
+#. FRAGMENT <a href="" onclick="Usergrid.console.pageOpenRole('${name}',
+#. '${title}'); return false;" class="view-details" data-trans="">View
+#. Details</a>
+#. FRAGMENT <a href=""
+#. onclick="Usergrid.console.pageOpenUserProfile('${username}'); return
+#. false;" class="view-details" data-trans="">View Details</a>
 #: templates/apigee.ui.collection.table_rows.html
+#: templates/apigee.ui.groups.table_rows.html
+#: templates/apigee.ui.roles.table_rows.html
+#: templates/apigee.ui.users.table_rows.html
 msgid "View Details"
 msgstr "Ayrıntılar"
 
@@ -1089,44 +1209,76 @@ msgid "Save Group"
 msgstr "Grubu Kaydet"
 
 #. FRAGMENT <h3 data-trans="">Edit</h3>
+#. FRAGMENT <button type="submit" id="role-inactivity-submit" class="btn btn-
+#. primary" data-trans="">Edit</button>
 #: templates/apigee.ui.panels.group.details.html
+#: templates/apigee.ui.panels.role.permissions.html
+#: templates/apigee.ui.panels.user.profile.html
 msgid "Edit"
 msgstr "Düzenle"
 
 #. FRAGMENT <h3 data-trans="">Contents</h3>
 #: templates/apigee.ui.panels.group.details.html
+#: templates/apigee.ui.panels.user.profile.html
 msgid "Contents"
 msgstr "İçerik"
 
 #. FRAGMENT <td data-trans="">            Created          </td>
 #: templates/apigee.ui.panels.group.details.html
+#: templates/apigee.ui.panels.user.profile.html
 msgid "Created"
 msgstr "Oluşturuldu"
 
 #. FRAGMENT <td data-trans="">            Modified          </td>
 #: templates/apigee.ui.panels.group.details.html
+#: templates/apigee.ui.panels.user.profile.html
 msgid "Modified"
 msgstr "Düzenlendi"
 
 #. FRAGMENT <td data-trans="">Title</td>
-#: templates/apigee.ui.panels.group.details.html
+#: templates/apigee.ui.panels.group.details.html js/app/console.js
+#: js/app/ui/collections.user.js
 msgid "Title"
 msgstr "Başlık"
 
 #. FRAGMENT <td data-trans="">Sets</td>
 #: templates/apigee.ui.panels.group.details.html
+#: templates/apigee.ui.panels.user.profile.html
 msgid "Sets"
 msgstr "Setler"
 
 #. FRAGMENT <td data-trans="">Collections</td>
 #: templates/apigee.ui.panels.group.details.html
+#: templates/apigee.ui.panels.user.profile.html
 msgid "Collections"
 msgstr "Koleksiyonlar"
 
 #. FRAGMENT <a class="btn " data-toggle="modal"
 #. onclick="Usergrid.console.removeGroupFromUser('${uuid}'); return false;"
 #. data-trans="">Remove</a>
+#. FRAGMENT <a class="btn" data-toggle="modal" href="#"
+#. onclick="Usergrid.console.deleteRolesFromGroup(''); return false;" data-
+#. trans=""> Remove </a>
+#. FRAGMENT <span data-trans="">Remove</span>
+#. FRAGMENT <a class="btn" data-toggle="modal" href="#"
+#. onclick="Usergrid.console.deleteRoleFromUser('${data.roleName}',
+#. '${data.roleTitle}'); return false;" data-trans=""> Remove </a>
+#. FRAGMENT <a class="btn " data-toggle="modal"
+#. onclick="Usergrid.console.removeUserFromGroup('${username}'); return
+#. false;" data-trans="">Remove</a>
+#. FRAGMENT <a class="btn" data-toggle="modal" href="#"
+#. onclick="Usergrid.console.deleteUsersFromRoles('${username}'); return
+#. false;" data-trans=""> Remove </a>
+#. FRAGMENT <a class="btn" data-toggle="modal" href="#"
+#. onclick="Usergrid.console.removeGroupFromRole('${roleName}',
+#. '${roleTitle}'); return false;" data-trans=""> Remove </a>
 #: templates/apigee.ui.panels.group.memberships.html
+#: templates/apigee.ui.panels.group.permissions.html
+#: templates/apigee.ui.panels.role.permissions.html
+#: templates/apigee.ui.panels.role.users.html
+#: templates/apigee.ui.panels.user.memberships.html
+#: templates/apigee.ui.panels.user.permissions.html
+#: templates/apigee.ui.role.groups.table_rows.html
 msgid "Remove"
 msgstr "Sil"
 
@@ -1146,6 +1298,7 @@ msgstr "Kullanıcı Adı"
 #. FRAGMENT <div class="panel-section-message" data-trans="">No Group
 #. Memberships</div>
 #: templates/apigee.ui.panels.group.memberships.html
+#: templates/apigee.ui.role.groups.table_rows.html
 msgid "No Group Memberships"
 msgstr "Grup Üyeliği Yok"
 
@@ -1158,31 +1311,40 @@ msgstr "Rol ekle"
 
 #. FRAGMENT <div class="user-roles-title" data-trans="">Roles </div>
 #: templates/apigee.ui.panels.group.permissions.html
+#: templates/apigee.ui.panels.user.permissions.html
 msgid "Roles"
 msgstr "Roller"
 
 #. FRAGMENT <div class="panel-section-message" data-trans="">No Roles</div>
 #: templates/apigee.ui.panels.group.permissions.html
+#: templates/apigee.ui.panels.user.permissions.html
 msgid "No Roles"
 msgstr "Rol Yok"
 
 #. FRAGMENT <div class="user-roles-title" data-trans="">Permissions </div>
 #: templates/apigee.ui.panels.group.permissions.html
+#: templates/apigee.ui.panels.user.permissions.html
 msgid "Permissions"
 msgstr "İzinler"
 
 #. FRAGMENT <h4 data-trans="">Add Permission Rule</h4>
 #: templates/apigee.ui.panels.group.permissions.html
+#: templates/apigee.ui.panels.role.permissions.html
+#: templates/apigee.ui.panels.user.permissions.html
 msgid "Add Permission Rule"
 msgstr "İzin Kuralı Ekle"
 
 #. FRAGMENT <h4 data-trans="">Permission Rules</h4>
 #: templates/apigee.ui.panels.group.permissions.html
+#: templates/apigee.ui.panels.role.permissions.html
+#: templates/apigee.ui.panels.user.permissions.html
 msgid "Permission Rules"
 msgstr "İzin Kuralları"
 
 #. FRAGMENT <div class="alert" data-trans="">No Permissions</div>
 #: templates/apigee.ui.panels.group.permissions.html
+#: templates/apigee.ui.panels.role.permissions.html
+#: templates/apigee.ui.panels.user.permissions.html
 msgid "No Permissions"
 msgstr "Kural Yok"
 
@@ -1289,3 +1451,533 @@ msgstr "Fotoğraf"
 #: templates/apigee.ui.role.groups.table_rows.html
 msgid "Group Title"
 msgstr "Grup Adı"
+
+#: js/app/console.js
+msgid "eg. example@apigee.com"
+msgstr "ör: ornek@apigee.com"
+
+#: js/app/console.js
+msgid "Password must match"
+msgstr "Şifre uyuşmalı"
+
+#: js/app/console.js
+msgid "This field only allows : A-Z, a-z, 0-9, dot, underscore and dash"
+msgstr "Bu alanda büyük ve küçük harf, rakam, nokta, alt ve orta çizgi karakterlerine izin verilmektedir."
+
+#: js/app/console.js
+msgid "This field only allows : A-Z, a-z, 0-9, dot, and dash"
+msgstr "Bu alanda büyük ve küçük harf, rakam, nokta ve orta çizgi karakterlerine izin verilmektedir."
+
+#: js/app/console.js
+msgid "Title field only allows : space, A-Z, a-z, 0-9, dot, dash, /, !, and ?"
+msgstr "Başlık alanında boşluk, büyük ve küçük harf, rakam, nokta, orta ve eğik çizgi, ünlem ve soru işareti karakterlerine izin verilmektedir."
+
+#: js/app/console.js
+msgid "Collection name only allows : a-z A-Z 0-9"
+msgstr "Koleksiyon adında büyük ve küçük harf ile rakamlara izin verilmektedir."
+
+#: js/app/console.js
+msgid ""
+"Path only allows : /, a-z, 0-9, dot, and dash, paths of the format: /path, "
+"path/, or path//path are not allowed"
+msgstr "Yol alanında eğik çizgi, küçük harf, rakam, nokta ve orta çizgi karakterlerine izin verilmektedir. /yol, yol/ ya da yol//yol biçimlerine izin verilmez."
+
+#: js/app/console.js
+msgid "Role only allows : /, a-z, 0-9, dot, and dash"
+msgstr "Rol alanında eğik çizgi, küçük harf, rakam, nokta ve orta çizgi karakterlerine izin verilmektedir. "
+
+#: js/app/console.js
+msgid "Select an Application"
+msgstr "Bir Uygulama Seçin"
+
+#: js/app/console.js
+msgid "Error"
+msgstr "Hata"
+
+#: js/app/console.js
+msgid "There was an error getting the collections"
+msgstr "Koleksiyonlar alınırken hata oluştu"
+
+#: js/app/console.js
+msgid "No collections found."
+msgstr "Koleksiyon bulunamadı."
+
+#: js/app/console.js
+msgid "No entities found"
+msgstr "Varlık bulunamadı"
+
+#: js/app/console.js
+msgid "username"
+msgstr "kullanıcı adı"
+
+#: js/app/console.js
+msgid "Rolename"
+msgstr "Rol Adı"
+
+#: js/app/console.js
+msgid "Please, first select the entities you want to delete."
+msgstr "Lütfen öncelikle silmek istediğiniz varlıkları seçin."
+
+#: js/app/console.js
+msgid "Unable to delete: %s"
+msgstr "Silinemedi: %s"
+
+#: js/app/console.js
+msgid "No applications created."
+msgstr "Oluşturulan uygulama yok."
+
+#: js/app/console.js
+msgid "Unable to retrieve application list."
+msgstr "Uygulama listesi alınamadı."
+
+#: js/app/console.js
+msgid "No organization administrators."
+msgstr "Uygulama yöneticisi bulunmuyor."
+
+#: js/app/console.js
+msgid "Unable to retrieve admin list"
+msgstr "Yönetici listesi alınamadı."
+
+#: js/app/console.js
+msgid "No activities."
+msgstr "Etkinlik yok."
+
+#: js/app/console.js
+msgid "Unable to retrieve feed."
+msgstr "Besleme alınamadı."
+
+#: js/app/console.js
+msgid "Unable to load..."
+msgstr "Yüklenemedi..."
+
+#: js/app/console.js
+msgid "Length of %s must be between %d and %d."
+msgstr "%s uzunluğu %d ile %d arasında olmalıdır."
+
+#: js/app/console.js
+msgid "Length must be between %d and %d."
+msgstr "Uzunluk %d ile %d arasında olmalıdır."
+
+#: js/app/console.js
+msgid "Unable to create application:"
+msgstr "Uygulama oluşturulamadı:"
+
+#: js/app/console.js
+msgid "Unable to create admin"
+msgstr "Yönetici yaratılamadı"
+
+#: js/app/console.js
+msgid "Unable to get organization"
+msgstr "Organizasyon alınamadı"
+
+#: js/app/console.js
+msgid "Unable to create organization"
+msgstr "Organizasyon yaratılamadı"
+
+#: js/app/console.js
+msgid "User created successfully."
+msgstr "Kullanıcı başarıyla yaratıldı."
+
+#: js/app/console.js
+msgid "Unable to create user"
+msgstr "Kullanıcı yaratılamadı"
+
+#: js/app/console.js
+msgid "Role created successfully."
+msgstr "Rol başarıyla oluşturuldu."
+
+#: js/app/console.js
+msgid "Collection created successfully."
+msgstr "Koleksiyon başarıyla yaratıldı."
+
+#: js/app/console.js
+msgid "Group created successfully."
+msgstr "Grup başarıyla yaratıldı."
+
+#: js/app/console.js
+msgid "Unable to create group"
+msgstr "Grup yaratılamadı"
+
+#: js/app/console.js
+msgid "Unable to add group to user"
+msgstr "Grup kullanıcıya eklenemedi"
+
+#: js/app/console.js
+msgid "Unable to add user to group"
+msgstr "Kullanıcı gruba eklenemedi"
+
+#: js/app/console.js
+msgid "Unable to follow User"
+msgstr "Kullanıcı takip edilemedi"
+
+#: js/app/console.js
+msgid "Unable to add user to role"
+msgstr "Kullanıcı role eklenemedi"
+
+#: js/app/console.js
+msgid "Please, first select the roles you want to delete for this user."
+msgstr "Lütfen öncelikle bu kullanıcı için silmek istediğiniz rolleri seçin."
+
+#: js/app/console.js
+msgid "Unable to remove user from role"
+msgstr "Kullanıcı rolden çıkarılamadı"
+
+#: js/app/console.js
+msgid "Please, first select the users you want to delete from this role."
+msgstr "Lütfen öncelikle bu rolden silmek istediğiniz kullanıcıları seçin."
+
+#: js/app/console.js
+msgid "Please, first select the groups you want to delete for this user."
+msgstr "Lütfen öncelikle bu kullanıcı için silmek istediğiniz grupları seçin."
+
+#: js/app/console.js
+msgid "Unable to remove user from group"
+msgstr "Kullanıcı gruptan çıkarılamadı"
+
+#: js/app/console.js
+msgid "Please, first select the users you want to remove from this group."
+msgstr "Lütfen öncelikle gruptan kaldırmak istediğiniz kullanıcıları seçin."
+
+#: js/app/console.js
+msgid "Please, first select the roles you want to delete from this group."
+msgstr "Lütfen öncelikle bu gruptan silmek istediğiniz rolleri seçin."
+
+#: js/app/console.js
+msgid "Unable to remove role from group"
+msgstr "Rol gruptan kaldırılamadı"
+
+#: js/app/console.js
+msgid "Entity"
+msgstr "Varlık"
+
+#: js/app/console.js
+msgid "Count"
+msgstr "Toplam"
+
+#: js/app/console.js
+msgid "entities total"
+msgstr "toplam varlık"
+
+#: js/app/console.js
+msgid "Time"
+msgstr "Zaman"
+
+#: js/app/console.js
+msgid "Entities"
+msgstr "Varlıklar"
+
+#: js/app/console.js
+msgid "CPU"
+msgstr "CPU"
+
+#: js/app/console.js
+msgid "CPU Time Used"
+msgstr "Kullanılan CPU Saati"
+
+#: js/app/console.js
+msgid "Uploaded"
+msgstr "Yüklenen"
+
+#: js/app/console.js
+msgid "Bytes Uploaded"
+msgstr "Yüklenen (byte)"
+
+#: js/app/console.js
+msgid "Downloaded"
+msgstr "İndirilen"
+
+#: js/app/console.js
+msgid "Bytes Downloaded"
+msgstr "İndirilen (byte)"
+
+#: js/app/console.js
+msgid "Unable to retrieve users."
+msgstr "Kullanıcılar alınamadı."
+
+#: js/app/console.js
+msgid "No users found."
+msgstr "Kullanıcı bulunmuyor."
+
+#: js/app/console.js
+msgid "Please, first select the users you want to delete."
+msgstr "Lütfen öncelikle silmek istediğiniz kullanıcıları seçin."
+
+#: js/app/console.js
+msgid "Unable to delete user - %s"
+msgstr "Kullanıcı silinemedi - %s"
+
+#: js/app/console.js
+msgid "Unable to update User"
+msgstr "Kullanıcı güncellenemedi"
+
+#: js/app/console.js
+msgid "Unable to retrieve user's groups."
+msgstr "Kullanıcının grupları alınamadı."
+
+#: js/app/console.js
+msgid "Unable to retrieve user's activities."
+msgstr "Kullanıcının etkinlikleri alınamadı."
+
+#: js/app/console.js
+msgid "Unable to retrieve user's permissions."
+msgstr "Kullanıcının izinleri alınamadı."
+
+#: js/app/console.js
+msgid "Unable to retrieve user's roles."
+msgstr "Kullanıcının rolleri alınamadı."
+
+#: js/app/console.js
+msgid "Unable to retrieve user's followers."
+msgstr "Kullanıcının takipçileri alınamadı."
+
+#: js/app/console.js
+msgid "Unable to retrieve user's following."
+msgstr "Kullanıcının takip ettikleri alınamadı."
+
+#: js/app/console.js
+msgid "Unable to retrieve user's profile."
+msgstr "Kullanıcının profili alınamadı."
+
+#: js/app/console.js
+msgid "Unable to retrieve groups."
+msgstr "Grupları alınamadı."
+
+#: js/app/console.js
+msgid "No groups found."
+msgstr "Grup bulunmuyor."
+
+#: js/app/console.js
+msgid "Please, first select the groups you want to delete."
+msgstr "Lütfen öncelikle silmek istediğiniz grupları seçin."
+
+#: js/app/console.js
+msgid "Unable to delete group"
+msgstr "Grup silinemedi"
+
+#: js/app/console.js
+msgid "Unable to retrieve group's users."
+msgstr "Grup kullanıcıları alınamadı."
+
+#: js/app/console.js
+msgid "Unable to retrieve group's activities."
+msgstr "Grup etkinlikleri alınamadı."
+
+#: js/app/console.js
+msgid "Unable to retrieve group's permissions."
+msgstr "Grup izinleri alınamadı."
+
+#: js/app/console.js
+msgid "Unable to retrieve group's roles."
+msgstr "Grup rolleri alınamadı."
+
+#: js/app/console.js
+msgid "Unable to retrieve group details."
+msgstr "Grup ayrıntıları alınamadı."
+
+#: js/app/console.js
+msgid "Unable to retrieve roles."
+msgstr "Roller alınamadı."
+
+#: js/app/console.js
+msgid "No roles found."
+msgstr "Rol bulunmuyor."
+
+#: js/app/console.js
+msgid "Role Name"
+msgstr "Rol Adı"
+
+#: js/app/console.js
+msgid "Please, first select the roles you want to delete."
+msgstr "Lütfen öncelikle silmek istediğiniz rolleri seçin."
+
+#: js/app/console.js
+msgid "Unable to delete role"
+msgstr "Rol silinemedi"
+
+#: js/app/console.js
+msgid "No permission information retrieved."
+msgstr "İzin bilgisi bulunmuyor."
+
+#: js/app/console.js
+msgid "Unable to load role's inactivity value."
+msgstr "Rolün durgunluk değeri yüklenemedi."
+
+#: js/app/console.js
+msgid "Loading %s permissions..."
+msgstr "%s izinleri yükleniyor..."
+
+#: js/app/console.js
+msgid "Unable to retrieve %s role permissions."
+msgstr "%s rolü için izinler alınamadı."
+
+#: js/app/console.js
+msgid "Unable to delete permission"
+msgstr "İzin silinemedi"
+
+#: js/app/console.js
+msgid "Unable to add permission"
+msgstr "İzin eklenemedi"
+
+#: js/app/console.js
+msgid "Please select a verb"
+msgstr "Lütfen bir eylem seçin"
+
+#: js/app/console.js
+msgid "Unable to remove Permission"
+msgstr "İzin kaldırılamadı"
+
+#: js/app/console.js
+msgid "Unable to add group to role"
+msgstr "Grup role eklenemedi"
+
+#: js/app/console.js
+msgid "Please, first select the groups you want to delete for this role."
+msgstr "Lütfen öncelikle bu rol için silmek istediğiniz grupları seçin."
+
+#: js/app/console.js
+msgid "Unable to remove group from role:"
+msgstr "Grup rolden kaldırılamadı:"
+
+#: js/app/console.js
+msgid "Unable to retrieve activities."
+msgstr "Etkinlikler alınamadı."
+
+#: js/app/console.js
+msgid "No activities found."
+msgstr "Etkinlik bulunmuyor."
+
+#: js/app/console.js
+msgid "No counter data."
+msgstr "Sayaç verisi bulunmuyor."
+
+#: js/app/console.js
+msgid "No counter data"
+msgstr "Sayaç verisi bulunmuyor"
+
+#: js/app/console.js
+msgid "Unable to retrieve Users."
+msgstr "Kullanıcılar alınamadı."
+
+#: js/app/console.js
+msgid "Unable to retrieve Groups."
+msgstr "Gruplar alınamadı."
+
+#: js/app/console.js
+msgid "Unable to retrieve Roles."
+msgstr "Roller alınamadı."
+
+#: js/app/console.js
+msgid "No Logged In User"
+msgstr "Giriş Yapmış Kullanıcı Yok"
+
+#: js/app/console.js
+msgid "Invalid organization name: %s"
+msgstr "Geçersiz organizasyon adı: %s"
+
+#: js/app/console.js
+msgid "Invalid username: %s"
+msgstr "Geçersiz kullanıcı adı: %s"
+
+#: js/app/console.js
+msgid "Name cannot be blank."
+msgstr "İsim boş bırakılamaz."
+
+#: js/app/console.js
+msgid "Invalid email: %s"
+msgstr "Geçersiz e-posta: %s"
+
+#: js/app/console.js
+msgid "Passwords must match."
+msgstr "Şifreler eşleşmeli."
+
+#: js/app/console.js
+msgid "Unable to create new organization at this time"
+msgstr "Şu anda organizasyon oluşturulamıyor"
+
+#: js/app/console.js
+msgid "Leave"
+msgstr "Ayrıl"
+
+#: js/app/console.js
+msgid "New passwords don't match"
+msgstr "Yeni şifreler eşleşmiyor"
+
+#: js/app/console.js
+msgid "Unable to update account settings"
+msgstr "Hesap ayarları güncellenemedi"
+
+#: js/app/console.js
+msgid "No organizations created."
+msgstr "Organizasyon bulunmuyor."
+
+#: js/app/console.js
+msgid "Are you sure you want to leave this Organization?"
+msgstr "Bu organizasyondan ayrılmak istediğinize emin misiniz?"
+
+#: js/app/console.js
+msgid "You will lose all access to it."
+msgstr "Tüm erişiminizi kaybedeceksiniz."
+
+#: js/app/console.js
+msgid "Unable to leave organization"
+msgstr "Organizasyondan ayrılınamadı"
+
+#: js/app/ui/collections.user.js
+msgid "A representation of a person, company, organization, or place"
+msgstr "Bir kişi, şirket, organizasyon ya da yerin temsili"
+
+#: js/app/ui/collections.user.js
+msgid "Formatted Name"
+msgstr "Biçimlendirilmiş İsim"
+
+#: js/app/ui/collections.user.js
+msgid "User Title"
+msgstr "Kullanıcı Başlığı"
+
+#: js/app/ui/collections.user.js
+msgid "Home Page"
+msgstr "Ana Sayfa"
+
+#: js/app/ui/collections.user.js
+msgid "Telephone"
+msgstr "Telefon"
+
+#: js/app/ui/collections.user.js
+msgid "Picture URL"
+msgstr "Fotoğraf URL"
+
+#: js/app/ui/collections.user.js
+msgid "Birthday"
+msgstr "Doğum Tarihi"
+
+#: js/app/ui/collections.user.js
+msgid "Street 1"
+msgstr "Sokak 1"
+
+#: js/app/ui/collections.user.js
+msgid "Street 2"
+msgstr "Sokak 2"
+
+#: js/app/ui/collections.user.js
+msgid "City"
+msgstr "Şehir"
+
+#: js/app/ui/collections.user.js
+msgid "State"
+msgstr "Eyalet"
+
+#: js/app/ui/collections.user.js
+msgid "Zip"
+msgstr "Posta Kodu"
+
+#: js/app/ui/collections.user.js
+msgid "Country"
+msgstr "Ülke"
+
+#: js/app/ui/collections.user.js
+msgid "Address"
+msgstr "Adres"
+
+#: js/app/ui/collections.user.js
+msgid "A representation of a group"
+msgstr "Bir grubun temsili"

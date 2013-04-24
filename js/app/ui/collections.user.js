@@ -11,55 +11,55 @@ Usergrid.console.ui.collections = Usergrid.console.ui.collections || { };
   // Empty collections will have a minimal schema that only contains the basic required entity properties
   // Developers will be able to upload schemas to collections as well
   var vcard_schema = {
-    "description":"A representation of a person, company, organization, or place",
+    "description": __("A representation of a person, company, organization, or place"),
     "type":"object",
     "properties":{
       "username":{
         "type":"string",
         "optional": true,
-        "title" : "Username"
+        "title" : __("Username")
       },
       "name":{
-        "description":"Formatted Name",
+        "description": __("Formatted Name"),
         "type":"string",
         "optional":true,
-        "title" : "Full Name"
+        "title" : __("Full Name")
       },
       "title":{
-        "description":"User Title",
+        "description": __("User Title"),
         "type":"string",
         "optional": true,
-        "title":"Title"
+        "title": __("Title")
       },
       "url":{
         "type":"string",
         "format":"url",
         "optional":true,
-        "title" : "Home Page"
+        "title" : __("Home Page")
       },
       "email":{
         "type":"string",
         "format":"email",
         "optional":true,
-        "title" : "Email"
+        "title" : __("Email")
       },
       "tel":{
         "type":"string",
         "format":"phone",
         "optional":true,
-        "title" : "Telephone"
+        "title" : __("Telephone")
       },
       "picture":{
         "type":"string",
         "format":"image",
         "optional":true,
-        "title" : "Picture URL"
+        "title" : __("Picture URL")
       },
       "bday":{
         "type":"string",
         "format":"date",
         "optional":true,
-        "title" : "Birthday"
+        "title" : __("Birthday")
       },
       "adr":{
         "type":"object",
@@ -69,49 +69,49 @@ Usergrid.console.ui.collections = Usergrid.console.ui.collections || { };
           },
           "addr1":{
             "type":"string",
-            "title" : "Street 1"
+            "title" : __("Street 1")
           },
           "addr2":{
             "type":"string",
-            "title" : "Street 2"
+            "title" : __("Street 2")
           },
           "city":{
             "type":"string",
-            "title" : "City"
+            "title" : __("City")
           },
           "state":{
             "type":"string",
-            "title" : "State"
+            "title" : __("State")
           },
           "zip":{
             "type":"string",
-            "title" : "Zip"
+            "title" : __("Zip")
           },
           "country":{
             "type":"string",
-            "title" : "Country"
+            "title" : __("Country")
           }
         },
         "optional":true,
-        "title" : "Address"
+        "title" : __("Address")
       }
     }
   };
   Usergrid.console.ui.collections.vcard_schema = vcard_schema;
 
   var group_schema = {
-    "description":"A representation of a group",
+    "description": __("A representation of a group"),
     "type":"object",
     "properties":{
       "path":{
         "type":"string",
         "optional": true,
-        "title" : "Group Path"
+        "title" : __("Group Path")
       },
       "title":{
         "type":"string",
         "optional":true,
-        "title" : "Display Name"
+        "title" : __("Display Name")
       }
     }
   };
