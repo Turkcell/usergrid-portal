@@ -15,8 +15,12 @@ msgstr ""
 {%- endmacro %}
 
 {% for msg in messages -%}
-#. FRAGMENT {{ msg._fragment|raw|replace("\n", '', 'g') }}
-#: {{ msg._file }}
+{% for fragment in msg._fragment -%}
+#. FRAGMENT {{ fragment|raw|replace("\n", '', 'g') }}
+{% endfor -%}
+{% for file in msg._file -%}
+#: {{ file }}
+{% endfor -%}
 {% if msg.context -%}
 msgctxt "{{ print(msg.context) }}"
 {% endif -%}
