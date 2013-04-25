@@ -2,6 +2,7 @@ module.exports = function(grunt) {
     var ignoredFilesRegex = new RegExp([
         'js/spec',
         'js/unit-tests',
+        'locales/default.(.*)',
         'node_modules',
         'sass',
         'templates/test',
