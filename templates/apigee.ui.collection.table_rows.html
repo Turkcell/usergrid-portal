@@ -35,7 +35,7 @@
   {{/if}}
 
   <td class="view-details">
-    <a href="" onclick="$('#query-row-${r.uuid}').show(); $('#data-explorer').show(); return false;" class="view-details">View Details</a>
+    <a href="" onclick="$('#query-row-${r.uuid}').show(); $('#data-explorer').show(); return false;" class="view-details" data-trans>View Details</a>
   </td>
 </tr>
 
@@ -52,7 +52,7 @@
     <div>
         <div style="padding-bottom: 10px;">
           <button type="button" class="btn btn-small query-button active" id="button-query-show-row-JSON" onclick="Usergrid.console.activateQueryRowJSONButton(); $('#query-row-JSON-${r.uuid}').show(); $('#query-row-content-${r.uuid}').hide(); return false;">JSON</button>
-          <button type="button" class="btn btn-small query-button disabled" id="button-query-show-row-content" onclick="Usergrid.console.activateQueryRowContentButton();$('#query-row-content-${r.uuid}').show(); $('#query-row-JSON-${r.uuid}').hide(); return false;">Content</button>
+          <button type="button" class="btn btn-small query-button disabled" id="button-query-show-row-content" onclick="Usergrid.console.activateQueryRowContentButton();$('#query-row-content-${r.uuid}').show(); $('#query-row-JSON-${r.uuid}').hide(); return false;" data-trans>Content</button>
         </div>
         <div id="query-row-JSON-${r.uuid}">
           <pre>${json}</pre>

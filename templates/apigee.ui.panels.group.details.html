@@ -6,13 +6,13 @@
       ${name}
     {{if path}}</span>{{/if}}
     <div class="bar">
-      <a class="btn btn-primary" onclick="Usergrid.console.saveGroupProfile('${uuid}'); return false;"> Save Group </a>
+      <a class="btn btn-primary" onclick="Usergrid.console.saveGroupProfile('${uuid}'); return false;" data-trans> Save Group </a>
     </div>
   </div>
-  <h3>Edit</h3>
+  <h3 data-trans>Edit</h3>
   <div class="query-result-form"></div>
   <div class="content-container">
-    <h3>Contents</h3>
+    <h3 data-trans>Contents</h3>
     <table class="table">
       <tbody>
         <tr class="zebraRows">
@@ -24,7 +24,7 @@
           <td>${entity.type}</td>
         </tr>
         <tr class="zebraRows">
-          <td>
+          <td data-trans>
             Created
           </td>
           <td>
@@ -33,7 +33,7 @@
           </td>
         </tr>
         <tr class="zebraRows">
-          <td>
+          <td data-trans>
             Modified
           </td>
           <td>
@@ -42,15 +42,15 @@
           </td>
         </tr>
         <tr class="zebraRows">
-          <td>Title</td>
+          <td data-trans>Title</td>
           <td>${entity.title}</td>
         </tr>
         <tr class="zebraRows">
-          <td>Path</td>
+          <td data-trans>Path</td>
           <td>${name}</td>
         </tr>
         <tr class="zebraRows">
-          <td>Sets</td>
+          <td data-trans>Sets</td>
           <td>
             <table class="table table-striped">
               <tbody>
@@ -69,7 +69,7 @@
           </td>
         </tr>
         <tr class="zebraRows">
-          <td>Collections</td>
+          <td data-trans>Collections</td>
           <td>
             <table class="table table-striped">
               <tbody>

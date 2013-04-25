@@ -1,11 +1,15 @@
-/*global _, Gettext */
+/*global _, Gettext, sprintf */
 
-(function($, _, Gettext) {
+(function($, _, Gettext, sprintf) {
     var i18n = function() {
         var gt = this.gt = new Gettext();
 
-        this._ = function(msgid, msgctx) {
+        this.__ = function(msgid, msgctx) {
             return gt.pgettext(msgctx || null, msgid);
+        };
+
+        this._f = function(msgid) {
+            return sprintf.apply(gt.gettext(msgid), Array.prototype.slice.call(arguments));
         };
     };
 
@@ -65,7 +69,7 @@
 
             if (_.isString(transData)) {
                 msg.message = transData || el.html();
-            } else if (_.isPlainObject(transData)) {
+            } else if ($.isPlainObject(transData)) {
                 msg = _.extend(msg, _.pick(transData, 'message', 'plural', 'context'));
 
                 if (!msg.message) {
@@ -79,7 +83,7 @@
                 return;
             }
 
-            el.html(Usergrid.i18n._(msg.message, msg.context));
+            el.html(Usergrid.i18n.__($.trim(msg.message), msg.context));
         });
     };
 
@@ -89,11 +93,24 @@
                 msg = el.attr(attr);
 
             if (msg) {
-                el.attr(attr, Usergrid.i18n._(msg));
+                el.attr(attr, Usergrid.i18n.__(msg));
             }
         });
     };
 
+    var _appendTo = $.fn.appendTo;
+
+    $.fn.appendTo = function() {
+        $(this).translate()
+            .find('[data-trans]').translate().end()
+            .find('[placeholder]').translateAttr('placeholder').end()
+            .find('input[type="button"], input[type="submit"], input[type="reset"]').translateAttr('value').end();
+
+        return _appendTo.apply(this, arguments);
+    };
+
+    window.__ = Usergrid.i18n.__;
+    window._f = Usergrid.i18n._f;
 
     $(function() {
         Usergrid.i18n.init();
@@ -104,5 +121,5 @@
             Usergrid.i18n.changeLang($(this).data('lang'));
         });
     });
-})(jQuery, _, Gettext);
+})(jQuery, _, Gettext, sprintf);
 

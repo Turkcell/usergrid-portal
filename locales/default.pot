@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Usergrid Portal\n"
 "POT-Creation-Date: 2013-04-10 11:31+0200\n"
-"PO-Revision-Date: 2013-04-13 08:06+0000\n"
+"PO-Revision-Date: 2013-04-24 21:01+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -52,6 +52,7 @@ msgid "Dashboard"
 msgstr ""
 
 #. FRAGMENT <span data-trans="">Profile</span>
+#. FRAGMENT <a class="tab-button btn active" id="button-user-profile" data-trans="">Profile</a>
 #: index.html
 msgid "Profile"
 msgstr ""
@@ -63,10 +64,12 @@ msgstr ""
 
 #. FRAGMENT <div id="api-activity" class="alert" data-trans="">Loading...</div>
 #: index.html
+#: js/app/console.js
 msgid "Loading..."
 msgstr ""
 
 #. FRAGMENT <span data-trans="">Organizations</span>
+#. FRAGMENT <span class="title" data-trans="">Organizations</span>
 #: index.html
 msgid "Organizations"
 msgstr ""
@@ -133,11 +136,13 @@ msgstr ""
 
 #. FRAGMENT <strong data-trans="">ERROR</strong>
 #: index.html
+#: js/app/console.js
 msgid "ERROR"
 msgstr ""
 
 #. FRAGMENT <span data-trans="">Your details were incorrect.</span>
 #: index.html
+#: js/app/console.js
 msgid "Your details were incorrect."
 msgstr ""
 
@@ -182,21 +187,46 @@ msgid "Organization Account"
 msgstr ""
 
 #. FRAGMENT <label class="control-label" for="signup-username" data-trans="">Username</label>
+#. FRAGMENT <label class="control-label" for="update-account-username" data-trans="">Username</label>
+#. FRAGMENT <option value="username" data-trans="">Username</option>
+#. FRAGMENT <label for="new-user-username" data-trans="">Username</label>
+#. FRAGMENT <td class="user-details bold-header" data-trans="">        Username      </td>
+#. FRAGMENT <td data-trans="">Username</td>
 #: index.html
+#: templates/apigee.ui.panels.role.users.html
+#: templates/apigee.ui.panels.user.profile.html
+#: js/app/ui/collections.user.js
 msgid "Username"
 msgstr ""
 
 #. FRAGMENT <label class="control-label" for="signup-name" data-trans="">Name</label>
+#. FRAGMENT <label for="new-application-name" data-trans="">Name</label>
+#. FRAGMENT <label class="control-label" for="update-account-name" data-trans="">Name</label>
+#. FRAGMENT <label for="new-organization-name" data-trans="">Name</label>
+#. FRAGMENT <label for="new-role-name" data-trans="">Name</label>
+#. FRAGMENT <label for="new-collection-name" data-trans="">Name</label>
+#. FRAGMENT <td class="user-details bold-header" data-trans="">        Name      </td>
+#. FRAGMENT <td data-trans="">Name</td>
 #: index.html
+#: templates/apigee.ui.panels.role.users.html
+#: templates/apigee.ui.panels.user.profile.html
+#: js/app/console.js
 msgid "Name"
 msgstr ""
 
 #. FRAGMENT <label class="control-label" for="signup-email" data-trans="">Email</label>
+#. FRAGMENT <label for="new-admin-email" data-trans="">Email</label>
+#. FRAGMENT <label class="control-label" for="update-account-email" data-trans="">Email</label>
+#. FRAGMENT <label for="new-user-email" data-trans="">Email</label>
+#. FRAGMENT <td data-trans="">Email</td>
 #: index.html
+#: templates/apigee.ui.panels.user.profile.html
+#: js/app/ui/collections.user.js
 msgid "Email"
 msgstr ""
 
 #. FRAGMENT <label class="control-label" for="signup-password" data-trans="">Password</label>
+#. FRAGMENT <label for="new-user-password" data-trans="">Password</label>
 #: index.html
 msgid "Password"
 msgstr ""
@@ -247,11 +277,15 @@ msgid "App Data"
 msgstr ""
 
 #. FRAGMENT <span class="nav-menu-text" data-trans="">Activities</span>
+#. FRAGMENT <span class="title" data-trans="">Activities</span>
+#. FRAGMENT <a class="tab-button btn" id="button-user-activities" data-trans="">Activities</a>
+#. FRAGMENT <a class="tab-button btn" id="button-group-activities" data-trans="">Activities</a>
 #: index.html
 msgid "Activities"
 msgstr ""
 
 #. FRAGMENT <span class="nav-menu-text" data-trans="">Analytics</span>
+#. FRAGMENT <span class="title" data-trans="">Analytics</span>
 #: index.html
 msgid "Analytics"
 msgstr ""
@@ -287,6 +321,7 @@ msgid "Explore your application's data collections."
 msgstr ""
 
 #. FRAGMENT <span class="nav-menu-text" data-trans="">Data Explorer</span>
+#. FRAGMENT <span class="title" data-trans="">Data Explorer</span>
 #: index.html
 msgid "Data Explorer"
 msgstr ""
@@ -363,6 +398,7 @@ msgstr ""
 
 #. FRAGMENT <a class="btn button bottom-space" data-toggle="modal" href="#dialog-form-new-application" data-trans="">New Application</a>
 #: index.html
+#: js/app/console.js
 msgid "New Application"
 msgstr ""
 
@@ -382,16 +418,19 @@ msgid "Organization API Credentials"
 msgstr ""
 
 #. FRAGMENT <a class="btn button bottom-space" onclick="Usergrid.console.newOrganizationCredentials(); return false;" data-trans="">Regenerate Credentials</a>
+#. FRAGMENT <a class="btn" onclick="Usergrid.console.newApplicationCredentials(); return false;" data-trans="">Regenerate Credentials</a>
 #: index.html
 msgid "Regenerate Credentials"
 msgstr ""
 
 #. FRAGMENT <span class="span2" data-trans="">Client ID</span>
+#. FRAGMENT <span class="span3" data-trans="">Client ID</span>
 #: index.html
 msgid "Client ID"
 msgstr ""
 
 #. FRAGMENT <span class="span2" data-trans="">Client Secret</span>
+#. FRAGMENT <span class="span3" data-trans="">Client Secret</span>
 #: index.html
 msgid "Client Secret"
 msgstr ""
@@ -422,6 +461,7 @@ msgid "Application Dashboard"
 msgstr ""
 
 #. FRAGMENT <h4 data-trans="">Account Settings</h4>
+#. FRAGMENT <h2 data-trans="">Account Settings</h2>
 #: index.html
 msgid "Account Settings"
 msgstr ""
@@ -432,6 +472,7 @@ msgid "Account settings updated."
 msgstr ""
 
 #. FRAGMENT <button class="btn btn-usergrid" data-dismiss="modal" data-trans="">OK</button>
+#. FRAGMENT <input type="reset" class="btn btn-usergrid" value="OK" data-dismiss="modal">
 #: index.html
 msgid "OK"
 msgstr ""
@@ -443,7 +484,7 @@ msgstr ""
 
 #. FRAGMENT <label class="control-label" for="update-account-picture-img" data-trans="">Picture <br>(from <a href="http://gravatar.com">gravatar.com</a>) </label>
 #: index.html
-msgid "Picture <br>(from <a href=\"http://gravatar.com\">gravatar.com</a>) "
+msgid "Picture <br>(from <a href=\"http://gravatar.com\">gravatar.com</a>)"
 msgstr ""
 
 #. FRAGMENT <span class="help-block" data-trans="">Leave blank any of the following to keep the current password unchanged</span>
@@ -467,7 +508,16 @@ msgid "Confirm New Password"
 msgstr ""
 
 #. FRAGMENT <a class="" data-toggle="modal" href="#dialog-form-new-organization" data-trans="">Add</a>
+#. FRAGMENT <input type="submit" class="btn btn-usergrid" value="Add">
+#. FRAGMENT <span data-trans="">Add</span>
+#. FRAGMENT <a style="margin-right: 15px;" class="btn btn-primary" data-toggle="modal" href="#dialog-form-add-role-to-user" data-trans=""> Add </a>
+#. FRAGMENT <a style="margin-right: 15px;" class="btn btn-primary" data-toggle="modal" href="#dialog-form-add-group-to-role" data-trans=""> Add </a>
 #: index.html
+#: templates/apigee.ui.panels.group.permissions.html
+#: templates/apigee.ui.panels.role.permissions.html
+#: templates/apigee.ui.panels.role.users.html
+#: templates/apigee.ui.panels.user.permissions.html
+#: templates/apigee.ui.role.groups.table_rows.html
 msgid "Add"
 msgstr ""
 
@@ -488,15 +538,20 @@ msgstr ""
 
 #. FRAGMENT <option value="name" data-trans="">Full Name</option>
 #: index.html
+#: js/app/ui/collections.user.js
 msgid "Full Name"
 msgstr ""
 
 #. FRAGMENT <a class="btn " data-toggle="modal" id="delete-users-link" data-trans="">Delete</a>
+#. FRAGMENT <a class="btn" id="delete-groups-link" data-trans=""> Delete</a>
+#. FRAGMENT <a class="btn" id="delete-roles-link" data-trans="">Delete</a>
+#. FRAGMENT <a class="btn " data-toggle="modal" id="delete-entity-link" data-trans="">Delete</a>
 #: index.html
 msgid "Delete"
 msgstr ""
 
 #. FRAGMENT <a style="margin-right: 15px;" class="btn btn-primary" data-toggle="modal" href="#dialog-form-new-user" data-trans="">Create new user</a>
+#. FRAGMENT <h4 data-trans="">Create new user</h4>
 #: index.html
 msgid "Create new user"
 msgstr ""
@@ -537,11 +592,14 @@ msgid "Create new application"
 msgstr ""
 
 #. FRAGMENT <a class="tab-button btn" id="button-user-list" data-trans="">List</a>
+#. FRAGMENT <a class="tab-button btn" id="button-group-list" data-trans="">List</a>
+#. FRAGMENT <a class="tab-button btn" id="button-role-list" data-trans="">List</a>
 #: index.html
 msgid "List"
 msgstr ""
 
 #. FRAGMENT <a class="tab-button btn" id="button-user-memberships" data-trans="">Groups</a>
+#. FRAGMENT <a class="tab-button btn" id="button-role-groups" data-trans="">Groups</a>
 #: index.html
 msgid "Groups"
 msgstr ""
@@ -552,6 +610,7 @@ msgid "Graph"
 msgstr ""
 
 #. FRAGMENT <a class="tab-button btn" id="button-user-permissions" data-trans="">Roles & Permissions</a>
+#. FRAGMENT <a class="tab-button btn" id="button-group-permissions" data-trans="">Roles & Permissions</a>
 #: index.html
 msgid "Roles & Permissions"
 msgstr ""
@@ -567,6 +626,8 @@ msgid "Search for the role you want to add to this user."
 msgstr ""
 
 #. FRAGMENT <label for="search-role-name-input" data-trans="">Role</label>
+#. FRAGMENT <label for="search-groups-role-name-input" data-trans="">Role</label>
+#. FRAGMENT <span id="role-section-title" class="title" data-trans="">Role</span>
 #: index.html
 msgid "Role"
 msgstr ""
@@ -582,6 +643,7 @@ msgid "Search for the group you want to add this user to."
 msgstr ""
 
 #. FRAGMENT <label for="search-group-name-input" data-trans="">Group</label>
+#. FRAGMENT <label for="search-roles-group-name-input" data-trans="">Group</label>
 #: index.html
 msgid "Group"
 msgstr ""
@@ -597,6 +659,8 @@ msgid "Search for the user you want to Follow."
 msgstr ""
 
 #. FRAGMENT <label for="search-follow-username-input" data-trans="">User</label>
+#. FRAGMENT <label for="search-user-name-input" data-trans="">User</label>
+#. FRAGMENT <label for="search-roles-user-name-input" data-trans="">User</label>
 #: index.html
 msgid "User"
 msgstr ""
@@ -607,27 +671,49 @@ msgid "Collection: /groups"
 msgstr ""
 
 #. FRAGMENT <option value="path" data-trans="">Path</option>
+#. FRAGMENT <strong data-trans="">Path</strong>
+#. FRAGMENT <td data-trans="">Path</td>
+#. FRAGMENT <span data-trans="">Path</span>
+#. FRAGMENT <th data-trans="">Path</th>
 #: index.html
+#: templates/apigee.ui.panels.group.details.html
+#: templates/apigee.ui.panels.group.permissions.html
+#: templates/apigee.ui.panels.role.permissions.html
+#: templates/apigee.ui.panels.user.permissions.html
+#: templates/apigee.ui.panels.user.profile.html
+#: js/app/console.js
 msgid "Path"
 msgstr ""
 
 #. FRAGMENT <option value="title" data-trans="">Group Name</option>
+#. FRAGMENT <td class="user-details bold-header" data-trans="">              Group Name            </td>
+#. FRAGMENT <td class="user-details bold-header" data-trans="">          Group Name        </td>
 #: index.html
+#: templates/apigee.ui.panels.group.permissions.html
+#: templates/apigee.ui.panels.user.memberships.html
+#: templates/apigee.ui.panels.user.permissions.html
 msgid "Group Name"
 msgstr ""
 
 #. FRAGMENT <a style="margin-right: 15px;" class="btn btn-primary" data-toggle="modal" href="#dialog-form-new-group" data-trans="">Create new group</a>
+#. FRAGMENT <h4 data-trans="">Create new group</h4>
 #: index.html
 msgid "Create new group"
 msgstr ""
 
 #. FRAGMENT <label for="new-group-title" data-trans="">Display Name</label>
+#. FRAGMENT <label for="new-role-title" data-trans="">Display Name</label>
 #: index.html
+#: js/app/console.js
+#: js/app/ui/collections.user.js
 msgid "Display Name"
 msgstr ""
 
 #. FRAGMENT <label for="new-group-path" data-trans="">Group Path</label>
+#. FRAGMENT <td class="user-details bold-header" data-trans="">          Group Path        </td>
 #: index.html
+#: templates/apigee.ui.role.groups.table_rows.html
+#: js/app/ui/collections.user.js
 msgid "Group Path"
 msgstr ""
 
@@ -692,7 +778,9 @@ msgid "Settings"
 msgstr ""
 
 #. FRAGMENT <a class="tab-button btn" id="button-role-users" data-trans="">Users</a>
+#. FRAGMENT <span id="role-section-title" class="title" data-trans="">Users</span>
 #: index.html
+#: templates/apigee.ui.panels.role.users.html
 msgid "Users"
 msgstr ""
 
@@ -717,7 +805,9 @@ msgid "Search for the user you want to add to this role."
 msgstr ""
 
 #. FRAGMENT <option value="content" data-trans="">Content</option>
+#. FRAGMENT <button type="button" class="btn btn-small query-button disabled" id="button-query-show-row-content" onclick="Usergrid.console.activateQueryRowContentButton();$('#query-row-content-${r.uuid}').show(); $('#query-row-JSON-${r.uuid}').hide(); return false;" data-trans="">Content</button>
 #: index.html
+#: templates/apigee.ui.collection.table_rows.html
 msgid "Content"
 msgstr ""
 
@@ -867,6 +957,8 @@ msgid "Run Query"
 msgstr ""
 
 #. FRAGMENT <input onkeyup="Usergrid.console.searchUsers();" type="text" name="search-user-username" id="search-user-username" class="input-small search" placeholder="Search">
+#. FRAGMENT <input onkeyup="Usergrid.console.searchGroups();" type="text" name="search-user-groupname" id="search-user-groupname" class="input-small search" placeholder="Search">
+#. FRAGMENT <input onkeyup="Usergrid.console.searchActivities();" type="text" name="search-activities" id="search-activities" class="input-small search" placeholder="Search">
 #: index.html
 msgid "Search"
 msgstr ""
@@ -929,5 +1021,776 @@ msgstr ""
 #. FRAGMENT <input type="submit" class="btn btn-usergrid" value="Follow">
 #: index.html
 msgid "Follow"
+msgstr ""
+
+#. FRAGMENT <a href="" onclick="$('#query-row-${r.uuid}').show(); $('#data-explorer').show(); return false;" class="view-details" data-trans="">View Details</a>
+#. FRAGMENT <a href="" onclick="Usergrid.console.pageOpenGroupProfile('${path}'); return false;" class="view-details" data-trans="">View Details</a>
+#. FRAGMENT <a href="" onclick="Usergrid.console.pageOpenRole('${name}', '${title}'); return false;" class="view-details" data-trans="">View Details</a>
+#. FRAGMENT <a href="" onclick="Usergrid.console.pageOpenUserProfile('${username}'); return false;" class="view-details" data-trans="">View Details</a>
+#: templates/apigee.ui.collection.table_rows.html
+#: templates/apigee.ui.groups.table_rows.html
+#: templates/apigee.ui.roles.table_rows.html
+#: templates/apigee.ui.users.table_rows.html
+msgid "View Details"
+msgstr ""
+
+#. FRAGMENT <div class="curl-info" data-trans="">  Want to get the data above programmatically? You can retrieve it with <a style="color: #007CDC;" href="http://curl.haxx.se/" target="_blank">curl</a>. Copy-paste the command in a terminal window and you should see the same data come back as JSON.</div>
+#: templates/apigee.ui.curl.detail.html
+msgid "Want to get the data above programmatically? You can retrieve it with <a style=\"color: #007CDC;\" href=\"http://curl.haxx.se/\" target=\"_blank\">curl</a>. Copy-paste the command in a terminal window and you should see the same data come back as JSON."
+msgstr ""
+
+#. FRAGMENT <div id="${sectionName}-curl-token" class="curl-token" data-trans="">  Not sure what "Authorization: Bearer” is, or how to get a token? We have a  <a style="color: #007CDC;" href="http://apigee.com/docs/usergrid/content/authentication-and-access-usergrid">documentation article about that</a></div>
+#: templates/apigee.ui.curl.detail.html
+msgid "Not sure what \"Authorization: Bearer” is, or how to get a token? We have a  <a style=\"color: #007CDC;\" href=\"http://apigee.com/docs/usergrid/content/authentication-and-access-usergrid\">documentation article about that</a>"
+msgstr ""
+
+#. FRAGMENT <div class="panel-section-message" data-trans="">No Group Activities</div>
+#: templates/apigee.ui.panels.group.activities.html
+msgid "No Group Activities"
+msgstr ""
+
+#. FRAGMENT <a class="btn btn-primary" onclick="Usergrid.console.saveGroupProfile('${uuid}'); return false;" data-trans=""> Save Group </a>
+#: templates/apigee.ui.panels.group.details.html
+msgid "Save Group"
+msgstr ""
+
+#. FRAGMENT <h3 data-trans="">Edit</h3>
+#. FRAGMENT <button type="submit" id="role-inactivity-submit" class="btn btn-primary" data-trans="">Edit</button>
+#: templates/apigee.ui.panels.group.details.html
+#: templates/apigee.ui.panels.role.permissions.html
+#: templates/apigee.ui.panels.user.profile.html
+msgid "Edit"
+msgstr ""
+
+#. FRAGMENT <h3 data-trans="">Contents</h3>
+#: templates/apigee.ui.panels.group.details.html
+#: templates/apigee.ui.panels.user.profile.html
+msgid "Contents"
+msgstr ""
+
+#. FRAGMENT <td data-trans="">            Created          </td>
+#: templates/apigee.ui.panels.group.details.html
+#: templates/apigee.ui.panels.user.profile.html
+msgid "Created"
+msgstr ""
+
+#. FRAGMENT <td data-trans="">            Modified          </td>
+#: templates/apigee.ui.panels.group.details.html
+#: templates/apigee.ui.panels.user.profile.html
+msgid "Modified"
+msgstr ""
+
+#. FRAGMENT <td data-trans="">Title</td>
+#: templates/apigee.ui.panels.group.details.html
+#: js/app/console.js
+#: js/app/ui/collections.user.js
+msgid "Title"
+msgstr ""
+
+#. FRAGMENT <td data-trans="">Sets</td>
+#: templates/apigee.ui.panels.group.details.html
+#: templates/apigee.ui.panels.user.profile.html
+msgid "Sets"
+msgstr ""
+
+#. FRAGMENT <td data-trans="">Collections</td>
+#: templates/apigee.ui.panels.group.details.html
+#: templates/apigee.ui.panels.user.profile.html
+msgid "Collections"
+msgstr ""
+
+#. FRAGMENT <a class="btn " data-toggle="modal" onclick="Usergrid.console.removeGroupFromUser('${uuid}'); return false;" data-trans="">Remove</a>
+#. FRAGMENT <a class="btn" data-toggle="modal" href="#" onclick="Usergrid.console.deleteRolesFromGroup(''); return false;" data-trans=""> Remove </a>
+#. FRAGMENT <span data-trans="">Remove</span>
+#. FRAGMENT <a class="btn" data-toggle="modal" href="#" onclick="Usergrid.console.deleteRoleFromUser('${data.roleName}', '${data.roleTitle}'); return false;" data-trans=""> Remove </a>
+#. FRAGMENT <a class="btn " data-toggle="modal" onclick="Usergrid.console.removeUserFromGroup('${username}'); return false;" data-trans="">Remove</a>
+#. FRAGMENT <a class="btn" data-toggle="modal" href="#" onclick="Usergrid.console.deleteUsersFromRoles('${username}'); return false;" data-trans=""> Remove </a>
+#. FRAGMENT <a class="btn" data-toggle="modal" href="#" onclick="Usergrid.console.removeGroupFromRole('${roleName}', '${roleTitle}'); return false;" data-trans=""> Remove </a>
+#: templates/apigee.ui.panels.group.memberships.html
+#: templates/apigee.ui.panels.group.permissions.html
+#: templates/apigee.ui.panels.role.permissions.html
+#: templates/apigee.ui.panels.role.users.html
+#: templates/apigee.ui.panels.user.memberships.html
+#: templates/apigee.ui.panels.user.permissions.html
+#: templates/apigee.ui.role.groups.table_rows.html
+msgid "Remove"
+msgstr ""
+
+#. FRAGMENT <a style="margin-right: 15px;" class="btn btn-primary" data-toggle="modal" href="#dialog-form-add-user-to-group" data-trans="">Add user</a>
+#: templates/apigee.ui.panels.group.memberships.html
+msgid "Add user"
+msgstr ""
+
+#. FRAGMENT <td class="user-details bold-header" data-trans="">          User Name        </td>
+#: templates/apigee.ui.panels.group.memberships.html
+msgid "User Name"
+msgstr ""
+
+#. FRAGMENT <div class="panel-section-message" data-trans="">No Group Memberships</div>
+#: templates/apigee.ui.panels.group.memberships.html
+#: templates/apigee.ui.role.groups.table_rows.html
+msgid "No Group Memberships"
+msgstr ""
+
+#. FRAGMENT <a style="margin-right: 15px;" class="btn btn-primary" data-toggle="modal" href="#dialog-form-add-role-to-group" data-trans=""> Add role </a>
+#: templates/apigee.ui.panels.group.permissions.html
+msgid "Add role"
+msgstr ""
+
+#. FRAGMENT <div class="user-roles-title" data-trans="">Roles </div>
+#: templates/apigee.ui.panels.group.permissions.html
+#: templates/apigee.ui.panels.user.permissions.html
+msgid "Roles"
+msgstr ""
+
+#. FRAGMENT <div class="panel-section-message" data-trans="">No Roles</div>
+#: templates/apigee.ui.panels.group.permissions.html
+#: templates/apigee.ui.panels.user.permissions.html
+msgid "No Roles"
+msgstr ""
+
+#. FRAGMENT <div class="user-roles-title" data-trans="">Permissions </div>
+#: templates/apigee.ui.panels.group.permissions.html
+#: templates/apigee.ui.panels.user.permissions.html
+msgid "Permissions"
+msgstr ""
+
+#. FRAGMENT <h4 data-trans="">Add Permission Rule</h4>
+#: templates/apigee.ui.panels.group.permissions.html
+#: templates/apigee.ui.panels.role.permissions.html
+#: templates/apigee.ui.panels.user.permissions.html
+msgid "Add Permission Rule"
+msgstr ""
+
+#. FRAGMENT <h4 data-trans="">Permission Rules</h4>
+#: templates/apigee.ui.panels.group.permissions.html
+#: templates/apigee.ui.panels.role.permissions.html
+#: templates/apigee.ui.panels.user.permissions.html
+msgid "Permission Rules"
+msgstr ""
+
+#. FRAGMENT <div class="alert" data-trans="">No Permissions</div>
+#: templates/apigee.ui.panels.group.permissions.html
+#: templates/apigee.ui.panels.role.permissions.html
+#: templates/apigee.ui.panels.user.permissions.html
+msgid "No Permissions"
+msgstr ""
+
+#. FRAGMENT <h4 data-trans="">Inactivity</h4>
+#: templates/apigee.ui.panels.role.permissions.html
+msgid "Inactivity"
+msgstr ""
+
+#. FRAGMENT <span data-trans="">Seconds</span>
+#: templates/apigee.ui.panels.role.permissions.html
+msgid "Seconds"
+msgstr ""
+
+#. FRAGMENT <span data-trans="">Integer only. 0 (zero) means no expiration.</span>
+#: templates/apigee.ui.panels.role.permissions.html
+msgid "Integer only. 0 (zero) means no expiration."
+msgstr ""
+
+#. FRAGMENT <div class="alert alert-error" id="inactivity-integer-message" style="display: none;" data-trans="">  Only integers greater than 0 are accepted.</div>
+#: templates/apigee.ui.panels.role.permissions.html
+msgid "Only integers greater than 0 are accepted."
+msgstr ""
+
+#. FRAGMENT <div class="panel-section-message" data-trans="">No Users have this Role</div>
+#: templates/apigee.ui.panels.role.users.html
+msgid "No Users have this Role"
+msgstr ""
+
+#. FRAGMENT <div class="panel-section-message" data-trans="">No User Activities</div>
+#: templates/apigee.ui.panels.user.activities.html
+msgid "No User Activities"
+msgstr ""
+
+#. FRAGMENT <a class="btn btn-primary" data-toggle="modal" href="#dialog-form-follow-user" data-trans="">Follow User</a>
+#: templates/apigee.ui.panels.user.graph.html
+msgid "Follow User"
+msgstr ""
+
+#. FRAGMENT <div class="user-roles-title" data-trans="">Following </div>
+#: templates/apigee.ui.panels.user.graph.html
+msgid "Following"
+msgstr ""
+
+#. FRAGMENT <div class="panel-section-message" data-trans="">Not following anyone</div>
+#: templates/apigee.ui.panels.user.graph.html
+msgid "Not following anyone"
+msgstr ""
+
+#. FRAGMENT <div class="user-roles-title" data-trans="">Followers </div>
+#: templates/apigee.ui.panels.user.graph.html
+msgid "Followers"
+msgstr ""
+
+#. FRAGMENT <div class="panel-section-message" data-trans="">No followers</div>
+#: templates/apigee.ui.panels.user.graph.html
+msgid "No followers"
+msgstr ""
+
+#. FRAGMENT <a style="margin-right: 15px;" class="btn btn-primary" data-toggle="modal" href="#dialog-form-add-group-to-user" data-trans="">Add to a Group</a>
+#: templates/apigee.ui.panels.user.memberships.html
+msgid "Add to a Group"
+msgstr ""
+
+#. FRAGMENT <div class="panel-section-message" data-trans="">no group memberships</div>
+#: templates/apigee.ui.panels.user.memberships.html
+msgid "no group memberships"
+msgstr ""
+
+#. FRAGMENT <a style="margin-right: 15px;" class="btn btn-primary" onclick="Usergrid.console.saveUserProfile('${username}'); return false;" data-trans="">Save User</a>
+#: templates/apigee.ui.panels.user.profile.html
+msgid "Save User"
+msgstr ""
+
+#. FRAGMENT <td data-trans="">Type</td>
+#: templates/apigee.ui.panels.user.profile.html
+msgid "Type"
+msgstr ""
+
+#. FRAGMENT <td data-trans="">Activated</td>
+#: templates/apigee.ui.panels.user.profile.html
+msgid "Activated"
+msgstr ""
+
+#. FRAGMENT <td data-trans="">Picture</td>
+#: templates/apigee.ui.panels.user.profile.html
+msgid "Picture"
+msgstr ""
+
+#. FRAGMENT <td class="user-details bold-header" data-trans="">          Group Title        </td>
+#: templates/apigee.ui.role.groups.table_rows.html
+msgid "Group Title"
+msgstr ""
+
+#: js/app/console.js
+msgid "eg. example@apigee.com"
+msgstr ""
+
+#: js/app/console.js
+msgid "Password must match"
+msgstr ""
+
+#: js/app/console.js
+msgid "This field only allows : A-Z, a-z, 0-9, dot, underscore and dash"
+msgstr ""
+
+#: js/app/console.js
+msgid "This field only allows : A-Z, a-z, 0-9, dot, and dash"
+msgstr ""
+
+#: js/app/console.js
+msgid "Title field only allows : space, A-Z, a-z, 0-9, dot, dash, /, !, and ?"
+msgstr ""
+
+#: js/app/console.js
+msgid "Collection name only allows : a-z A-Z 0-9"
+msgstr ""
+
+#: js/app/console.js
+msgid "Path only allows : /, a-z, 0-9, dot, and dash, paths of the format: /path, path/, or path//path are not allowed"
+msgstr ""
+
+#: js/app/console.js
+msgid "Role only allows : /, a-z, 0-9, dot, and dash"
+msgstr ""
+
+#: js/app/console.js
+msgid "Select an Application"
+msgstr ""
+
+#: js/app/console.js
+msgid "Error"
+msgstr ""
+
+#: js/app/console.js
+msgid "There was an error getting the collections"
+msgstr ""
+
+#: js/app/console.js
+msgid "No collections found."
+msgstr ""
+
+#: js/app/console.js
+msgid "No entities found"
+msgstr ""
+
+#: js/app/console.js
+msgid "username"
+msgstr ""
+
+#: js/app/console.js
+msgid "Rolename"
+msgstr ""
+
+#: js/app/console.js
+msgid "Please, first select the entities you want to delete."
+msgstr ""
+
+#: js/app/console.js
+msgid "Unable to delete: %s"
+msgstr ""
+
+#: js/app/console.js
+msgid "No applications created."
+msgstr ""
+
+#: js/app/console.js
+msgid "Unable to retrieve application list."
+msgstr ""
+
+#: js/app/console.js
+msgid "No organization administrators."
+msgstr ""
+
+#: js/app/console.js
+msgid "Unable to retrieve admin list"
+msgstr ""
+
+#: js/app/console.js
+msgid "No activities."
+msgstr ""
+
+#: js/app/console.js
+msgid "Unable to retrieve feed."
+msgstr ""
+
+#: js/app/console.js
+msgid "Unable to load..."
+msgstr ""
+
+#: js/app/console.js
+msgid "Length of %s must be between %d and %d."
+msgstr ""
+
+#: js/app/console.js
+msgid "Length must be between %d and %d."
+msgstr ""
+
+#: js/app/console.js
+msgid "Unable to create application:"
+msgstr ""
+
+#: js/app/console.js
+msgid "Unable to create admin"
+msgstr ""
+
+#: js/app/console.js
+msgid "Unable to get organization"
+msgstr ""
+
+#: js/app/console.js
+msgid "Unable to create organization"
+msgstr ""
+
+#: js/app/console.js
+msgid "User created successfully."
+msgstr ""
+
+#: js/app/console.js
+msgid "Unable to create user"
+msgstr ""
+
+#: js/app/console.js
+msgid "Role created successfully."
+msgstr ""
+
+#: js/app/console.js
+msgid "Collection created successfully."
+msgstr ""
+
+#: js/app/console.js
+msgid "Group created successfully."
+msgstr ""
+
+#: js/app/console.js
+msgid "Unable to create group"
+msgstr ""
+
+#: js/app/console.js
+msgid "Unable to add group to user"
+msgstr ""
+
+#: js/app/console.js
+msgid "Unable to add user to group"
+msgstr ""
+
+#: js/app/console.js
+msgid "Unable to follow User"
+msgstr ""
+
+#: js/app/console.js
+msgid "Unable to add user to role"
+msgstr ""
+
+#: js/app/console.js
+msgid "Please, first select the roles you want to delete for this user."
+msgstr ""
+
+#: js/app/console.js
+msgid "Unable to remove user from role"
+msgstr ""
+
+#: js/app/console.js
+msgid "Please, first select the users you want to delete from this role."
+msgstr ""
+
+#: js/app/console.js
+msgid "Please, first select the groups you want to delete for this user."
+msgstr ""
+
+#: js/app/console.js
+msgid "Unable to remove user from group"
+msgstr ""
+
+#: js/app/console.js
+msgid "Please, first select the users you want to remove from this group."
+msgstr ""
+
+#: js/app/console.js
+msgid "Please, first select the roles you want to delete from this group."
+msgstr ""
+
+#: js/app/console.js
+msgid "Unable to remove role from group"
+msgstr ""
+
+#: js/app/console.js
+msgid "Entity"
+msgstr ""
+
+#: js/app/console.js
+msgid "Count"
+msgstr ""
+
+#: js/app/console.js
+msgid "entities total"
+msgstr ""
+
+#: js/app/console.js
+msgid "Time"
+msgstr ""
+
+#: js/app/console.js
+msgid "Entities"
+msgstr ""
+
+#: js/app/console.js
+msgid "CPU"
+msgstr ""
+
+#: js/app/console.js
+msgid "CPU Time Used"
+msgstr ""
+
+#: js/app/console.js
+msgid "Uploaded"
+msgstr ""
+
+#: js/app/console.js
+msgid "Bytes Uploaded"
+msgstr ""
+
+#: js/app/console.js
+msgid "Downloaded"
+msgstr ""
+
+#: js/app/console.js
+msgid "Bytes Downloaded"
+msgstr ""
+
+#: js/app/console.js
+msgid "Unable to retrieve users."
+msgstr ""
+
+#: js/app/console.js
+msgid "No users found."
+msgstr ""
+
+#: js/app/console.js
+msgid "Please, first select the users you want to delete."
+msgstr ""
+
+#: js/app/console.js
+msgid "Unable to delete user - %s"
+msgstr ""
+
+#: js/app/console.js
+msgid "Unable to update User"
+msgstr ""
+
+#: js/app/console.js
+msgid "Unable to retrieve user's groups."
+msgstr ""
+
+#: js/app/console.js
+msgid "Unable to retrieve user's activities."
+msgstr ""
+
+#: js/app/console.js
+msgid "Unable to retrieve user's permissions."
+msgstr ""
+
+#: js/app/console.js
+msgid "Unable to retrieve user's roles."
+msgstr ""
+
+#: js/app/console.js
+msgid "Unable to retrieve user's followers."
+msgstr ""
+
+#: js/app/console.js
+msgid "Unable to retrieve user's following."
+msgstr ""
+
+#: js/app/console.js
+msgid "Unable to retrieve user's profile."
+msgstr ""
+
+#: js/app/console.js
+msgid "Unable to retrieve groups."
+msgstr ""
+
+#: js/app/console.js
+msgid "No groups found."
+msgstr ""
+
+#: js/app/console.js
+msgid "Please, first select the groups you want to delete."
+msgstr ""
+
+#: js/app/console.js
+msgid "Unable to delete group"
+msgstr ""
+
+#: js/app/console.js
+msgid "Unable to retrieve group's users."
+msgstr ""
+
+#: js/app/console.js
+msgid "Unable to retrieve group's activities."
+msgstr ""
+
+#: js/app/console.js
+msgid "Unable to retrieve group's permissions."
+msgstr ""
+
+#: js/app/console.js
+msgid "Unable to retrieve group's roles."
+msgstr ""
+
+#: js/app/console.js
+msgid "Unable to retrieve group details."
+msgstr ""
+
+#: js/app/console.js
+msgid "Unable to retrieve roles."
+msgstr ""
+
+#: js/app/console.js
+msgid "No roles found."
+msgstr ""
+
+#: js/app/console.js
+msgid "Role Name"
+msgstr ""
+
+#: js/app/console.js
+msgid "Please, first select the roles you want to delete."
+msgstr ""
+
+#: js/app/console.js
+msgid "Unable to delete role"
+msgstr ""
+
+#: js/app/console.js
+msgid "No permission information retrieved."
+msgstr ""
+
+#: js/app/console.js
+msgid "Unable to load role's inactivity value."
+msgstr ""
+
+#: js/app/console.js
+msgid "Loading %s permissions..."
+msgstr ""
+
+#: js/app/console.js
+msgid "Unable to retrieve %s role permissions."
+msgstr ""
+
+#: js/app/console.js
+msgid "Unable to delete permission"
+msgstr ""
+
+#: js/app/console.js
+msgid "Unable to add permission"
+msgstr ""
+
+#: js/app/console.js
+msgid "Please select a verb"
+msgstr ""
+
+#: js/app/console.js
+msgid "Unable to remove Permission"
+msgstr ""
+
+#: js/app/console.js
+msgid "Unable to add group to role"
+msgstr ""
+
+#: js/app/console.js
+msgid "Please, first select the groups you want to delete for this role."
+msgstr ""
+
+#: js/app/console.js
+msgid "Unable to remove group from role:"
+msgstr ""
+
+#: js/app/console.js
+msgid "Unable to retrieve activities."
+msgstr ""
+
+#: js/app/console.js
+msgid "No activities found."
+msgstr ""
+
+#: js/app/console.js
+msgid "No counter data."
+msgstr ""
+
+#: js/app/console.js
+msgid "No counter data"
+msgstr ""
+
+#: js/app/console.js
+msgid "Unable to retrieve Users."
+msgstr ""
+
+#: js/app/console.js
+msgid "Unable to retrieve Groups."
+msgstr ""
+
+#: js/app/console.js
+msgid "Unable to retrieve Roles."
+msgstr ""
+
+#: js/app/console.js
+msgid "No Logged In User"
+msgstr ""
+
+#: js/app/console.js
+msgid "Invalid organization name: %s"
+msgstr ""
+
+#: js/app/console.js
+msgid "Invalid username: %s"
+msgstr ""
+
+#: js/app/console.js
+msgid "Name cannot be blank."
+msgstr ""
+
+#: js/app/console.js
+msgid "Invalid email: %s"
+msgstr ""
+
+#: js/app/console.js
+msgid "Passwords must match."
+msgstr ""
+
+#: js/app/console.js
+msgid "Unable to create new organization at this time"
+msgstr ""
+
+#: js/app/console.js
+msgid "Leave"
+msgstr ""
+
+#: js/app/console.js
+msgid "New passwords don't match"
+msgstr ""
+
+#: js/app/console.js
+msgid "Unable to update account settings"
+msgstr ""
+
+#: js/app/console.js
+msgid "No organizations created."
+msgstr ""
+
+#: js/app/console.js
+msgid "Are you sure you want to leave this Organization?"
+msgstr ""
+
+#: js/app/console.js
+msgid "You will lose all access to it."
+msgstr ""
+
+#: js/app/console.js
+msgid "Unable to leave organization"
+msgstr ""
+
+#: js/app/ui/collections.user.js
+msgid "A representation of a person, company, organization, or place"
+msgstr ""
+
+#: js/app/ui/collections.user.js
+msgid "Formatted Name"
+msgstr ""
+
+#: js/app/ui/collections.user.js
+msgid "User Title"
+msgstr ""
+
+#: js/app/ui/collections.user.js
+msgid "Home Page"
+msgstr ""
+
+#: js/app/ui/collections.user.js
+msgid "Telephone"
+msgstr ""
+
+#: js/app/ui/collections.user.js
+msgid "Picture URL"
+msgstr ""
+
+#: js/app/ui/collections.user.js
+msgid "Birthday"
+msgstr ""
+
+#: js/app/ui/collections.user.js
+msgid "Street 1"
+msgstr ""
+
+#: js/app/ui/collections.user.js
+msgid "Street 2"
+msgstr ""
+
+#: js/app/ui/collections.user.js
+msgid "City"
+msgstr ""
+
+#: js/app/ui/collections.user.js
+msgid "State"
+msgstr ""
+
+#: js/app/ui/collections.user.js
+msgid "Zip"
+msgstr ""
+
+#: js/app/ui/collections.user.js
+msgid "Country"
+msgstr ""
+
+#: js/app/ui/collections.user.js
+msgid "Address"
+msgstr ""
+
+#: js/app/ui/collections.user.js
+msgid "A representation of a group"
 msgstr ""
 

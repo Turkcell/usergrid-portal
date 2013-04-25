@@ -11,12 +11,16 @@ msgstr ""
 "Language: en_US\n"
 
 {% macro print message -%}
-    {{ message|raw|replace('"', '\"', 'g') }}
+    {{ message|raw|replace('"', '\"', 'g')|trim }}
 {%- endmacro %}
 
 {% for msg in messages -%}
-#. FRAGMENT {{ msg._fragment|raw }}
-#: {{ msg._file }}
+{% for fragment in msg._fragment -%}
+#. FRAGMENT {{ fragment|raw|replace("\n", '', 'g') }}
+{% endfor -%}
+{% for file in msg._file -%}
+#: {{ file }}
+{% endfor -%}
 {% if msg.context -%}
 msgctxt "{{ print(msg.context) }}"
 {% endif -%}
