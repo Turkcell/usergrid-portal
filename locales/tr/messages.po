@@ -18,7 +18,7 @@ msgstr ""
 #. FRAGMENT <title data-trans="">Apigee App Services Admin Portal</title>
 #: index.html
 msgid "Apigee App Services Admin Portal"
-msgstr "Apigee Uygulama Servisleri Yönetim Portalı"
+msgstr "Turkcell Geleceği Yazanlar Uygulama Servisleri Yönetim Portalı"
 
 #. FRAGMENT <h2 id="ActualPage1" data-trans="">Admin Portal</h2>
 #: index.html
