@@ -192,13 +192,13 @@ body {
 
 /* line 22, ../../opt/vagrant_ruby/lib/ruby/gems/1.8/gems/bootstrap-sass-2.0.0/vendor/assets/stylesheets/bootstrap/_scaffolding.scss */
 a {
-  color: #1b97d1;
+  color: #1b8dbe;
   text-decoration: none;
 }
 
 /* line 26, ../../opt/vagrant_ruby/lib/ruby/gems/1.8/gems/bootstrap-sass-2.0.0/vendor/assets/stylesheets/bootstrap/_scaffolding.scss */
 a:hover {
-  color: #12668d;
+  color: #115b7b;
   text-decoration: underline;
 }
 
@@ -2207,7 +2207,7 @@ table .span12 {
 .dropdown-menu li > a:hover, .dropdown-menu .active > a, .dropdown-menu .active > a:hover {
   color: white;
   text-decoration: none;
-  background-color: #1b97d1;
+  background-color: #1b8dbe;
 }
 
 /* line 108, ../../opt/vagrant_ruby/lib/ruby/gems/1.8/gems/bootstrap-sass-2.0.0/vendor/assets/stylesheets/bootstrap/_dropdowns.scss */
@@ -2422,26 +2422,26 @@ table .span12 {
 
 /* line 108, ../../opt/vagrant_ruby/lib/ruby/gems/1.8/gems/bootstrap-sass-2.0.0/vendor/assets/stylesheets/bootstrap/_buttons.scss */
 .btn-primary {
-  background-color: #1b7ed1;
-  background-image: -moz-linear-gradient(top, #1b97d1, #1b5ad1);
-  background-image: -ms-linear-gradient(top, #1b97d1, #1b5ad1);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#1b97d1), to(#1b5ad1));
-  background-image: -webkit-linear-gradient(top, #1b97d1, #1b5ad1);
-  background-image: -o-linear-gradient(top, #1b97d1, #1b5ad1);
-  background-image: linear-gradient(top, #1b97d1, #1b5ad1);
+  background-color: #1b77be;
+  background-image: -moz-linear-gradient(top, #1b8dbe, #1b57be);
+  background-image: -ms-linear-gradient(top, #1b8dbe, #1b57be);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#1b8dbe), to(#1b57be));
+  background-image: -webkit-linear-gradient(top, #1b8dbe, #1b57be);
+  background-image: -o-linear-gradient(top, #1b8dbe, #1b57be);
+  background-image: linear-gradient(top, #1b8dbe, #1b57be);
   background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF1B97D1', endColorstr='#FF1B5AD1', GradientType=0);
-  border-color: #1b5ad1 #1b5ad1 #123d8d;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF1B8DBE', endColorstr='#FF1B57BE', GradientType=0);
+  border-color: #1b57be #1b57be #11387b;
   border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) fadein(rgba(0, 0, 0, 0.1), 15%);
   filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
 }
 /* line 431, ../../opt/vagrant_ruby/lib/ruby/gems/1.8/gems/bootstrap-sass-2.0.0/vendor/assets/stylesheets/bootstrap/_mixins.scss */
 .btn-primary:hover, .btn-primary:active, .btn-primary.active, .btn-primary.disabled, .btn-primary[disabled] {
-  background-color: #1b5ad1;
+  background-color: #1b57be;
 }
 /* line 436, ../../opt/vagrant_ruby/lib/ruby/gems/1.8/gems/bootstrap-sass-2.0.0/vendor/assets/stylesheets/bootstrap/_mixins.scss */
 .btn-primary:active, .btn-primary.active {
-  background-color: #1547a4 \9;
+  background-color: #154291 \9;
 }
 
 /* line 112, ../../opt/vagrant_ruby/lib/ruby/gems/1.8/gems/bootstrap-sass-2.0.0/vendor/assets/stylesheets/bootstrap/_buttons.scss */
@@ -2842,7 +2842,7 @@ button.btn.small, input[type="submit"].btn.small {
 .nav-list .active > a {
   color: white;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2);
-  background-color: #1b97d1;
+  background-color: #1b8dbe;
 }
 
 /* line 56, ../../opt/vagrant_ruby/lib/ruby/gems/1.8/gems/bootstrap-sass-2.0.0/vendor/assets/stylesheets/bootstrap/_navs.scss */
@@ -2924,7 +2924,7 @@ button.btn.small, input[type="submit"].btn.small {
 /* line 124, ../../opt/vagrant_ruby/lib/ruby/gems/1.8/gems/bootstrap-sass-2.0.0/vendor/assets/stylesheets/bootstrap/_navs.scss */
 .nav-pills .active > a, .nav-pills .active > a:hover {
   color: white;
-  background-color: #1b97d1;
+  background-color: #1b8dbe;
 }
 
 /* line 135, ../../opt/vagrant_ruby/lib/ruby/gems/1.8/gems/bootstrap-sass-2.0.0/vendor/assets/stylesheets/bootstrap/_navs.scss */
@@ -2995,13 +2995,13 @@ button.btn.small, input[type="submit"].btn.small {
 
 /* line 186, ../../opt/vagrant_ruby/lib/ruby/gems/1.8/gems/bootstrap-sass-2.0.0/vendor/assets/stylesheets/bootstrap/_navs.scss */
 .nav-tabs .dropdown-toggle .caret, .nav-pills .dropdown-toggle .caret {
-  border-top-color: #1b97d1;
+  border-top-color: #1b8dbe;
   margin-top: 6px;
 }
 
 /* line 190, ../../opt/vagrant_ruby/lib/ruby/gems/1.8/gems/bootstrap-sass-2.0.0/vendor/assets/stylesheets/bootstrap/_navs.scss */
 .nav-tabs .dropdown-toggle:hover .caret, .nav-pills .dropdown-toggle:hover .caret {
-  border-top-color: #12668d;
+  border-top-color: #115b7b;
 }
 
 /* line 196, ../../opt/vagrant_ruby/lib/ruby/gems/1.8/gems/bootstrap-sass-2.0.0/vendor/assets/stylesheets/bootstrap/_navs.scss */
@@ -4029,7 +4029,7 @@ button.btn.small, input[type="submit"].btn.small {
 
 /* line 22, ../../opt/vagrant_ruby/lib/ruby/gems/1.8/gems/bootstrap-sass-2.0.0/vendor/assets/stylesheets/bootstrap/_thumbnails.scss */
 a.thumbnail:hover {
-  border-color: #1b97d1;
+  border-color: #1b8dbe;
   -webkit-box-shadow: 0 1px 4px rgba(0, 105, 214, 0.25);
   -moz-box-shadow: 0 1px 4px rgba(0, 105, 214, 0.25);
   box-shadow: 0 1px 4px rgba(0, 105, 214, 0.25);
@@ -4485,7 +4485,7 @@ a:visited {
 }
 /* line 46, ../sass/usergrid.scss */
 a:hover {
-  color: #ff4300;
+  color: #1b8dbe;
   text-decoration: none;
 }
 /* line 51, ../sass/usergrid.scss */
@@ -4613,10 +4613,10 @@ a:active {
   height: 8px;
   margin-bottom: -8px;
   position: absolute;
-  background-image: -moz-linear-gradient(top, #ff4300, #f03800);
-  background-image: -ms-linear-gradient(top, #ff4300, #f03800);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ff4300), to(#f03800));
-  background-image: -webkit-linear-gradient(top, #ff4300, #f03800);
+  background-image: -moz-linear-gradient(top, #1b8dbe, #187eab);
+  background-image: -ms-linear-gradient(top, #1b8dbe, #187eab);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#1b8dbe), to(#187eab));
+  background-image: -webkit-linear-gradient(top, #1b8dbe, #187eab);
   background-repeat: repeat-x;
   bottom: 8px;
   left: 0px;
@@ -4626,7 +4626,7 @@ a:active {
 .navbar {
   height: 48px;
   min-width: 760px;
-  background-color: #ff4300;
+  background-color: #1b8dbe;
   margin: 0px 1px 20px 1px;
 }
 /* line 180, ../sass/usergrid.scss */
@@ -4640,7 +4640,7 @@ a:active {
   float: left;
   top: 48px;
   left: -83px;
-  border-top: 8px solid #f03800;
+  border-top: 8px solid #187eab;
   border-left: 8px solid transparent;
   border-right: 8px solid transparent;
   opacity: 1;
@@ -4711,7 +4711,7 @@ a:active {
 }
 /* line 268, ../sass/usergrid.scss */
 .navbar .nav .active {
-  background-color: #b22714 !important;
+  background-color: #0d465f !important;
 }
 /* line 271, ../sass/usergrid.scss */
 .navbar .nav .active .go-home {
@@ -4742,7 +4742,7 @@ a:active {
   left: -1px;
   right: -2px;
   margin-bottom: 18px;
-  background-color: #b22714;
+  background-color: #0d465f;
   z-index: 130;
   height: 42px;
   min-width: 880px;
@@ -4858,7 +4858,7 @@ a:active {
 }
 /* line 408, ../sass/usergrid.scss */
 .nav-list .active > a:hover {
-  color: #ff4300;
+  color: #1b8dbe;
   background: #e5e5e5 !important;
 }
 /* line 414, ../sass/usergrid.scss */
@@ -4869,7 +4869,7 @@ a:active {
 }
 /* line 419, ../sass/usergrid.scss */
 .nav-list .dropdown-menu a:hover {
-  color: #ff4300;
+  color: #1b8dbe;
   background: #e5e5e5 !important;
 }
 
@@ -4879,7 +4879,7 @@ a:active {
 }
 /* line 432, ../sass/usergrid.scss */
 #system-panel-buttons .active > a {
-  color: #ff4300;
+  color: #1b8dbe;
   text-shadow: 1px 1px 0 rgba(255, 59, 0, 0.2);
   font-weight: bold;
 }
@@ -4915,7 +4915,7 @@ a:active {
 
 /* line 507, ../sass/usergrid.scss */
 .icon-black, #application-panel-buttons .active > a:hover i, #app-end-users-buttons .active > a:hover i, #notification-buttons .active > a:hover i, #left-collections-content .active > a:hover i {
-  background-image: url('../images/glyphicons-halflings.png?1364841732');
+  background-image: url('../images/glyphicons-halflings.png?1365234431');
 }
 
 /* line 511, ../sass/usergrid.scss */
@@ -5646,7 +5646,7 @@ hr.col-divider {
 /* line 1186, ../sass/usergrid.scss */
 .ui-widget-header {
   background: white;
-  color: #ff4300;
+  color: #1b8dbe;
   border: none;
   border-bottom: 1px solid #e5e5e5;
 }
@@ -5678,13 +5678,13 @@ hr.col-divider {
 
 /* line 1214, ../sass/usergrid.scss */
 .btn-usergrid {
-  background-color: #ff4300;
-  background-image: -moz-linear-gradient(top, #ff4300, #ff0303);
-  background-image: -ms-linear-gradient(top, #ff4300, #ff0303);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ff4300), to(#ff0303));
-  background-image: -webkit-linear-gradient(top, #ff4300, #ff0303);
-  background-image: -o-linear-gradient(top, #ff4300, #ff0303);
-  background-image: linear-gradient(top, #ff4300, #ff0303);
+  background-color: #1b8dbe;
+  background-image: -moz-linear-gradient(top, #1b8dbe, #48a3cb);
+  background-image: -ms-linear-gradient(top, #1b8dbe, #48a3cb);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#1b8dbe), to(#48a3cb));
+  background-image: -webkit-linear-gradient(top, #1b8dbe, #48a3cb);
+  background-image: -o-linear-gradient(top, #1b8dbe, #48a3cb);
+  background-image: linear-gradient(top, #1b8dbe, #48a3cb);
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$apigeeOrange', endColorstr='$apigeeNavSelection', GradientType=0);
   border-color: #c84b27 #c84b27 #ad6704;
@@ -5943,7 +5943,7 @@ hr.col-divider {
 
 /* line 1463, ../sass/usergrid.scss */
 .modal-header h4 {
-  color: #ff4300;
+  color: #1b8dbe;
   font-size: 16px;
   padding: 5px;
 }
@@ -5957,13 +5957,13 @@ hr.col-divider {
 /* line 1474, ../sass/usergrid.scss */
 .btn-link {
   border: none;
-  color: #1b97d1;
+  color: #1b8dbe;
   box-shadow: none;
   background: transparent;
 }
 /* line 1480, ../sass/usergrid.scss */
 .btn-link:hover {
-  color: #ff4300;
+  color: #1b8dbe;
 }
 
 /* line 1485, ../sass/usergrid.scss */
@@ -6206,7 +6206,7 @@ table .zebraRows:nth-child(2n), table .query-result-table-obj tr:nth-child(2n), 
 
 /* line 1716, ../sass/usergrid.scss */
 a.data-explorer-link {
-  color: #1b97d1;
+  color: #1b8dbe;
 }
 
 /* ---------------- Account Panel ------------ */
@@ -6348,7 +6348,7 @@ a.data-explorer-link {
 }
 /* line 1846, ../sass/usergrid.scss */
 .notifications-get-started a {
-  color: #1b97d1;
+  color: #1b8dbe;
 }
 /* line 1850, ../sass/usergrid.scss */
 .notifications-get-started .header {
