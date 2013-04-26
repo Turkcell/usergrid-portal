@@ -4655,7 +4655,7 @@ a:active {
 /* line 203, ../sass/usergrid.scss */
 .navbar h1 {
   height: 32px;
-  width: 64px;
+  width: 170px;
   overflow: hidden;
   position: relative;
   color: transparent !important;
@@ -5698,7 +5698,7 @@ hr.col-divider {
 .btn-usergrid.active,
 .btn-usergrid.disabled,
 .btn-usergrid[disabled] {
-  background-color: #C84B27;
+  background-color: #0d465f;
 }
 
 /* line 1235, ../sass/usergrid.scss */
@@ -6299,12 +6299,7 @@ a.data-explorer-link {
   background-image: url('../images/glyphicons_halflings_135_wrench.png?1362726070') !important;
 }
 
-/* line 1801, ../sass/usergrid.scss */
-.apigee .logo {
-  width: 57px;
-}
-
-/* line 1807, ../sass/usergrid.scss */
+/* line 1800, ../sass/usergrid.scss */
 .app-menu {
   overflow: hidden;
   text-overflow: ellipsis;
@@ -6312,15 +6307,15 @@ a.data-explorer-link {
   float: left;
 }
 
-/* line 1814, ../sass/usergrid.scss */
+/* line 1807, ../sass/usergrid.scss */
 .go-home {
   overflow: hidden;
 }
-/* line 1817, ../sass/usergrid.scss */
+/* line 1810, ../sass/usergrid.scss */
 .go-home .icon-home {
   float: left;
 }
-/* line 1821, ../sass/usergrid.scss */
+/* line 1814, ../sass/usergrid.scss */
 .go-home #organization-name {
   width: 80%;
   float: left;
@@ -6330,27 +6325,27 @@ a.data-explorer-link {
   margin-left: 5px;
 }
 
-/* line 1832, ../sass/usergrid.scss */
+/* line 1825, ../sass/usergrid.scss */
 .dropdown-menu {
   max-width: 700px;
 }
 
-/* line 1836, ../sass/usergrid.scss */
+/* line 1829, ../sass/usergrid.scss */
 .bold-header {
   font-weight: 600;
   color: black;
 }
 
-/* line 1842, ../sass/usergrid.scss */
+/* line 1835, ../sass/usergrid.scss */
 .notifications-get-started {
   padding: 20px 20px 0 20px;
   border-bottom: 1px solid #e5e5e5;
 }
-/* line 1846, ../sass/usergrid.scss */
+/* line 1839, ../sass/usergrid.scss */
 .notifications-get-started a {
   color: #1b8dbe;
 }
-/* line 1850, ../sass/usergrid.scss */
+/* line 1843, ../sass/usergrid.scss */
 .notifications-get-started .header {
   font-size: 14px;
   font-weight: 600;
