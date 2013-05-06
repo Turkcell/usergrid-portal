@@ -7,7 +7,8 @@
   var LOCAL_STANDALONE_API_URL = "http://localhost/usergrid";
   var LOCAL_TOMCAT_API_URL = "http://localhost:8080/ROOT";
   var LOCAL_API_URL = LOCAL_STANDALONE_API_URL;
-  var PUBLIC_API_URL = "https://api.usergrid.com/";
+  var PUBLIC_API_URL = "https://usergridstack.dnsdynamic.com:8443/";
+  Usergrid.ApiClient.setApiUrl(Usergrid.SSO.default.api_url);
   var FORCE_PUBLIC_API = true; // Always use public API
   if (!FORCE_PUBLIC_API && (document.domain.substring(0,9) == "localhost")) {
     Usergrid.ApiClient.setApiUrl(LOCAL_API_URL);

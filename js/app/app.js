@@ -14,9 +14,13 @@ $(document).ready(function () {
 
   initCore();
   initUI(query_params);
-  startApp();
+  $.when(Usergrid.authenticationPromise).then(function(status){
+      console.log(status);
+      startApp();
+  });
 
-  function initCore() {
+
+    function initCore() {
     prepareLocalStorage();
     parseParams();
   }
