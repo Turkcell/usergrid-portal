@@ -7,7 +7,7 @@
   var LOCAL_STANDALONE_API_URL = "http://localhost/usergrid";
   var LOCAL_TOMCAT_API_URL = "http://localhost:8080/ROOT";
   var LOCAL_API_URL = LOCAL_STANDALONE_API_URL;
-  var PUBLIC_API_URL = "https://usergridstack.dnsdynamic.com:8443/";
+  var PUBLIC_API_URL = "https://api.usergrid.com/";
   Usergrid.ApiClient.setApiUrl(Usergrid.SSO.default.api_url);
   var FORCE_PUBLIC_API = true; // Always use public API
   if (!FORCE_PUBLIC_API && (document.domain.substring(0,9) == "localhost")) {
@@ -944,14 +944,14 @@ function buildContentArea(obj2) {
 
   function get_gravatar(email, size) {
     var size = size || 50;
-    return 'https://secure.gravatar.com/avatar/' + MD5(email) + '?s=' + size + encodeURI("&d=http://apigee.com/usergrid/images/user_profile.png");
+    return 'https://secure.gravatar.com/avatar/' + MD5(email) + '?s=' + size + encodeURI("&d=https://mobildb.turkcell.com.tr/portal/images/user_profile.png");
   }
 
   function get_replacementGravatar(picture) {
     picture = picture.replace(/^http:\/\/www.gravatar/i, 'https://secure.gravatar');
     //note: changing this to use the image on apigee.com - since the gravatar default won't work on any non-public domains such as localhost
     //this_data.picture = this_data.picture + encodeURI("?d="+window.location.protocol+"//" + window.location.host + window.location.pathname + "images/user_profile.png");
-    picture = picture + encodeURI("?d=http://apigee.com/usergrid/images/user_profile.png");
+    picture = picture + encodeURI("?d=https://mobildb.turkcell.com.tr/portal/images/user_profile.png");
     return picture;
   }
 
@@ -2279,7 +2279,7 @@ function buildContentArea(obj2) {
         entity.picture = entity.picture.replace(/^http:\/\/www.gravatar/i, 'https://secure.gravatar');
         //note: changing this to use the image on apigee.com - since the gravatar default won't work on any non-public domains such as localhost
         //this_data.picture = this_data.picture + encodeURI("?d="+window.location.protocol+"//" + window.location.host + window.location.pathname + "images/user_profile.png");
-        picture = entity.picture + encodeURI("?d=http://apigee.com/usergrid/images/user_profile.png");
+        picture = entity.picture + encodeURI("?d=https://mobildb.turkcell.com.tr/portal/images/user_profile.png");
       }
 
     var data = {
@@ -3245,9 +3245,9 @@ function buildContentArea(obj2) {
           //note: changing this to use the image on apigee.com - since the gravatar default won't work on any non-public domains such as localhost
           //this_data.picture = this_data.picture + encodeURI("?d="+window.location.protocol+"//" + window.location.host + window.location.pathname + "images/user_profile.png");
           if (~this_data.actor.picture.indexOf('http')) {
-            this_data.actor.picture = this_data.actor.picture + encodeURI("?d=http://apigee.com/usergrid/images/user_profile.png");
+            this_data.actor.picture = this_data.actor.picture + encodeURI("?d=https://mobildb.turkcell.com.tr/portal/images/user_profile.png");
           } else {
-            this_data.actor.picture = 'http://apigee.com/usergrid/images/user_profile.png';
+            this_data.actor.picture = 'https://mobildb.turkcell.com.tr/portal/images/user_profile.png';
           }
         }
 

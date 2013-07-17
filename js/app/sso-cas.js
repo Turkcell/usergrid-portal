@@ -10,9 +10,9 @@
     Usergrid.SSO = function () {
     };
     Usergrid.ssoconfig={
-           domain: "usergrid.dnsdynamic.com",
-           casapp:"https://casdeneme.dnsdynamic.com/cas",
-           stackapp:"https://usergridstack.dnsdynamic.com"
+           domain: "mobildb.turkcell.com.tr",
+           casapp:"https://sso.gelecegiyazanlar.org",
+           stackapp:"https://mobildb.turkcell.com.tr"
     };
 
     Usergrid.SSO.prototype = {
@@ -21,7 +21,7 @@
             use_sso: true, // flag to override use SSO if needed set to ?use_sso=no
             login_url: Usergrid.ssoconfig.casapp+"/login",
             gatewayService: Usergrid.ssoconfig.stackapp+"/management/token",
-            loginService: "https://"+Usergrid.ssoconfig.domain+"/index.html",
+            loginService: "https://"+Usergrid.ssoconfig.domain+"/portal/index.html",
             logout_url: Usergrid.ssoconfig.casapp+"/logout",
             api_url: Usergrid.ssoconfig.stackapp+"/"
         },
