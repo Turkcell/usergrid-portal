@@ -11,7 +11,7 @@
     };
     Usergrid.ssoconfig={
            domain: "mobildb.turkcell.com.tr",
-           casapp:"https://sso.gelecegiyazanlar.org",
+           casapp:"https://sso.gelecegiyazanlar.org/cas",
            stackapp:"https://mobildb.turkcell.com.tr"
     };
 
@@ -23,7 +23,8 @@
             gatewayService: Usergrid.ssoconfig.stackapp+"/management/token",
             loginService: "https://"+Usergrid.ssoconfig.domain+"/portal/index.html",
             logout_url: Usergrid.ssoconfig.casapp+"/logout",
-            api_url: Usergrid.ssoconfig.stackapp+"/"
+            api_url: Usergrid.ssoconfig.stackapp+"/",
+            profile_url: "https://www.gelecegiyazanlar.org/user"
         },
 
         isTopLevelDomain: function () {

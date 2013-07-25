@@ -17,11 +17,11 @@
         Usergrid.userSession.setUserUUID(data.user.uuid);
         Usergrid.userSession.setUserEmail(data.user.email);
         Usergrid.userSession.setAccessToken(data.access_token);
+        Usergrid.userSession.clearticketFailureCount();
         dfd.resolve("authentication ok");
     }
 
-    function loginWithGateway() {
-        var success = false;
+    function loginWithGateway(sessionExists) {
         $.jsonp({
             url: Usergrid.SSO.getGatewayUrl(),
             callbackParameter: "callback",
@@ -29,6 +29,8 @@
                 setParameters(data);
             },
             error:function(xOptions,status){
+                //in case of session exists and gateway is unsuccessful
+                Usergrid.userSession.clearAll();
                 Usergrid.SSO.sendToSSOLoginPage();
             }
         });
@@ -67,7 +69,12 @@
             },
             function (response) {
                 //call the error function
-                loginWithGateway();
+                if(response=="invalid username or password" && Usergrid.userSession.ticketFailureCount()>2){
+                    //TODO show warning page
+                    console.log('should show warning page about usergrid service enable')
+                }
+                Usergrid.userSession.incrementFailureCount();
+                loginWithGateway(false);
             }
         ));
     }
@@ -86,9 +93,9 @@
                 if (ticket != "null")
                     login(ticket);
                 else
-                    loginWithGateway();
+                    loginWithGateway(sessionExists);
             } else {
-                dfd.resolve("authentication not sso");
+                loginWithGateway(sessionExists);
             }
         }
 
