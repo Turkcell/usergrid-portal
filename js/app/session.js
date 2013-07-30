@@ -165,11 +165,10 @@ Usergrid = Usergrid || {};
       localStorage.removeItem('userUUID');
       localStorage.removeItem('userEmail');
       localStorage.removeItem('accessToken');
-      localStorage.removeItem('ticketFailureCount');
     },
     ticketFailureCount:function(){
         var count=localStorage.getItem('ticketFailureCount');
-        return count==null?0:count;
+        return count==null?0:parseInt(count);
     },
     clearticketFailureCount:function(){
         localStorage.removeItem('ticketFailureCount');
