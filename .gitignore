@@ -6,3 +6,4 @@ nbproject/
 *.swp
 node_modules
 .vagrant
+.sass-cache

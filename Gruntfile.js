@@ -15,6 +15,23 @@ module.exports = function(grunt) {
     ].join('|'));
 
     grunt.initConfig({
+        watch: {
+            css: {
+                files: 'sass/*',
+                tasks: ['compass']
+            }
+        },
+        compass: {
+            dev: {
+                options: {
+                    require: 'bootstrap-sass',
+                    sassDir: 'sass',
+                    cssDir: 'css',
+                    imagesDir: 'images',
+                    environment: 'development'
+                }
+            }
+        },
         clean: {
             dist: ['dist']
         },
@@ -39,6 +56,8 @@ module.exports = function(grunt) {
 
     grunt.loadNpmTasks('grunt-contrib-clean');
     grunt.loadNpmTasks('grunt-contrib-copy');
+    grunt.loadNpmTasks('grunt-contrib-compass');
+    grunt.loadNpmTasks('grunt-contrib-watch');
 
     grunt.registerTask('default', ['clean', 'copy']);
 
