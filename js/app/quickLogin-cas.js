@@ -70,8 +70,22 @@
             function (response) {
                 //call the error function
                 if(response=="invalid username or password" && Usergrid.userSession.ticketFailureCount()>2){
-                    //TODO show warning page
-                    console.log('should show warning page about usergrid service enable')
+                    $('#pages, #header').hide();
+
+                    $('body').append(
+                        '<div class="modal">' +
+                            '<div class="modal-header">' +
+                                '<h3>Usergrid servisi etkin değil</h3>' +
+                            '</div>' +
+                            '<div class="modal-body">' +
+                                '<p>Usergrid portalı kullanabilmek için profil düzenle ekranından Usergrid servisini etkinleştirmelisiniz.</p>' +
+                                '<p style="text-align: center;"><img width="354" height="140" title="" alt="Usergrid Servis Etkinleştirme" src="http://i.imgur.com/wwejn0Z.png"></p>' +
+                            '</div>' +
+                            '<div class="modal-footer">' +
+                                '<a href="http://gelecegiyazanlar.org/user" class="btn">Profilime Git &raquo;</a>' +
+                            '</div>' +
+                        '</div>'
+                    );
                 }
                 Usergrid.userSession.incrementFailureCount();
                 loginWithGateway(false);
