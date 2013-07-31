@@ -1,19 +1,13 @@
 FORGE
   remote: http://forge.puppetlabs.com
   specs:
-    puppetlabs/apache (0.6.0)
-      puppetlabs/firewall (>= 0.0.4)
+    puppetlabs/apt (1.2.0)
       puppetlabs/stdlib (>= 2.2.1)
-    puppetlabs/apt (1.1.0)
-      puppetlabs/stdlib (>= 2.2.1)
-    puppetlabs/firewall (0.3.0)
     puppetlabs/nodejs (0.2.1)
       puppetlabs/apt (>= 0.0.3)
       puppetlabs/stdlib (>= 2.0.0)
-    puppetlabs/stdlib (3.2.0)
+    puppetlabs/stdlib (4.1.0)
 
 DEPENDENCIES
-  puppetlabs/apache (>= 0)
-  puppetlabs/apt (>= 0)
   puppetlabs/nodejs (>= 0)
 
