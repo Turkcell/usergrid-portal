@@ -79,7 +79,7 @@
                             '</div>' +
                             '<div class="modal-body">' +
                                 '<p>Usergrid portalı kullanabilmek için profil düzenle ekranından Usergrid servisini etkinleştirmelisiniz.</p>' +
-                                '<p style="text-align: center;"><img width="354" height="140" title="" alt="Usergrid Servis Etkinleştirme" src="http://i.imgur.com/wwejn0Z.png"></p>' +
+                                '<p style="text-align: center;"><img width="354" height="140" title="" alt="Usergrid Servis Etkinleştirme" src="images/gywarning.png"></p>' +
                             '</div>' +
                             '<div class="modal-footer">' +
                                 '<a href="http://gelecegiyazanlar.org/user" class="btn">Profilime Git &raquo;</a>' +
