@@ -86,9 +86,12 @@
                             '</div>' +
                         '</div>'
                     );
+
+                    Usergrid.userSession.clearticketFailureCount();
+                }else{
+                    Usergrid.userSession.incrementFailureCount();
+                    loginWithGateway(false);
                 }
-                Usergrid.userSession.incrementFailureCount();
-                loginWithGateway(false);
             }
         ));
     }
