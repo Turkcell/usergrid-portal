@@ -174,7 +174,7 @@ Usergrid = Usergrid || {};
         localStorage.removeItem('ticketFailureCount');
     },
     incrementFailureCount:function(){
-        localStorage.setItem('ticketFailureCount',localStorage.getItem('ticketFailureCount')==null?0:parseInt(localStorage.getItem('ticketFailureCount'))+1);
+        localStorage.setItem('ticketFailureCount',this.ticketFailureCount()+1);
     }
   };
 })(Usergrid);
