@@ -15,6 +15,39 @@ module.exports = function(grunt) {
     ].join('|'));
 
     grunt.initConfig({
+        concurrent: {
+            target: {
+                tasks: ['watch', 'connect'],
+                options: {
+                    logConcurrentOutput: true
+                }
+            }
+        },
+        watch: {
+            css: {
+                files: 'sass/*',
+                tasks: ['compass']
+            }
+        },
+        compass: {
+            dev: {
+                options: {
+                    require: 'bootstrap-sass',
+                    sassDir: 'sass',
+                    cssDir: 'css',
+                    imagesDir: 'images',
+                    environment: 'development'
+                }
+            }
+        },
+        connect: {
+            server: {
+                options: {
+                    hostname: '*',
+                    keepalive: true
+                }
+            }
+        },
         clean: {
             dist: ['dist']
         },
@@ -39,8 +72,12 @@ module.exports = function(grunt) {
 
     grunt.loadNpmTasks('grunt-contrib-clean');
     grunt.loadNpmTasks('grunt-contrib-copy');
+    grunt.loadNpmTasks('grunt-contrib-compass');
+    grunt.loadNpmTasks('grunt-contrib-watch');
+    grunt.loadNpmTasks('grunt-contrib-connect');
+    grunt.loadNpmTasks('grunt-concurrent');
 
-    grunt.registerTask('default', ['clean', 'copy']);
+    grunt.registerTask('default', ['concurrent']);
 
     grunt.registerMultiTask('i18n-extract', 'Extracts translatable strings from HTML files', function() {
         var done = this.async();
