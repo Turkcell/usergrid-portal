@@ -19,7 +19,7 @@
             tr    : 'Türkçe'
         },
 
-        defaultLang: 'en_US',
+        defaultLang: 'tr',
 
         init: function() {
             this._createLangMenu();
