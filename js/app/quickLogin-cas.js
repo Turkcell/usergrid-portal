@@ -82,7 +82,7 @@
                                 '<p style="text-align: center;"><img width="354" height="140" title="" alt="Usergrid Servis Etkinleştirme" src="images/gywarning.png"></p>' +
                             '</div>' +
                             '<div class="modal-footer">' +
-                                '<a href="http://gelecegiyazanlar.org/user" class="btn">Profilime Git &raquo;</a>' +
+                                '<a href="https://gelecegiyazanlar.turkcell.com.tr/user" class="btn">Profilime Git &raquo;</a>' +
                             '</div>' +
                         '</div>'
                     );
