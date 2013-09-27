@@ -24,7 +24,7 @@
             loginService: "https://"+Usergrid.ssoconfig.domain+"/portal/index.html",
             logout_url: Usergrid.ssoconfig.casapp+"/logout",
             api_url: Usergrid.ssoconfig.stackapp+"/",
-            profile_url: "https://www.gelecegiyazanlar.org/user"
+            profile_url: "https://gelecegiyazanlar.turkcell.com.tr/user"
         },
 
         isTopLevelDomain: function () {
