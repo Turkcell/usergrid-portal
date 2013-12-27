@@ -18,6 +18,11 @@ $apigeeBlue            : #1b97d1;
 @import "compass/reset";
 @import "bootstrap";
 
+// icon url fixes
+[class^="icon-"] { background-image: image-url("glyphicons-halflings.png") !important; }
+.icon-white { background-image: image-url("glyphicons-halflings-white.png") !important; }
+
+
 //--------------General ------------------------------------------------------------
 html, body {
     height: 100%;
