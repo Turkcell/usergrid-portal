@@ -1,5 +1,5 @@
 package { 'compass':
-    ensure => present,
+    ensure => latest,
     provider => gem
 }
 
@@ -13,7 +13,7 @@ include apt
 apt::ppa { 'ppa:chris-lea/node.js': }
 ->
 package { ['nodejs']:
-    ensure => present
+    ensure => latest
 }
 ->
 package { 'grunt-cli':
