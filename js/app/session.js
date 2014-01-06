@@ -165,6 +165,16 @@ Usergrid = Usergrid || {};
       localStorage.removeItem('userUUID');
       localStorage.removeItem('userEmail');
       localStorage.removeItem('accessToken');
+    },
+    ticketFailureCount:function(){
+        var count=localStorage.getItem('ticketFailureCount');
+        return count==null?0:parseInt(count);
+    },
+    clearticketFailureCount:function(){
+        localStorage.removeItem('ticketFailureCount');
+    },
+    incrementFailureCount:function(){
+        localStorage.setItem('ticketFailureCount',this.ticketFailureCount()+1);
     }
   };
 })(Usergrid);
